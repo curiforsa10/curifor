@@ -42,8 +42,8 @@ GRUPO_A = [
     "cuenta_ficha_revisados.json",
 ]
 
-GITHUB_USUARIO = "Cjerez-curi"
-GITHUB_REPO    = "curifor-ots"
+GITHUB_USUARIO = os.environ.get("GITHUB_USUARIO", "curiforsa10")
+GITHUB_REPO    = os.environ.get("GITHUB_REPO", "curifor")
 
 
 def _leer_secrets():

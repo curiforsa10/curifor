@@ -98,8 +98,11 @@ CARPETA_AGENDA_FORD = r"C:\Users\cjerez\OneDrive - Curifor S.A\Documentos\Claude
 #   Rellena estos datos una sola vez después de crear el repo
 #   en GitHub. Si no quieres el dashboard web, deja en blanco.
 # =============================================================
-GITHUB_USUARIO   = "Cjerez-curi"          # ej: "ragnarcj12"
-GITHUB_REPO      = "curifor-ots"          # ej: "curifor-ots"
+#   Repo de datos: el mismo al que apunta app.py. Se puede sobre-escribir con
+#   las variables de entorno GITHUB_USUARIO / GITHUB_REPO sin tocar el codigo,
+#   para que el PC que consolida pueda alimentar un despliegue u otro.
+GITHUB_USUARIO   = os.environ.get("GITHUB_USUARIO", "curiforsa10")
+GITHUB_REPO      = os.environ.get("GITHUB_REPO", "curifor")
 # Token leído desde archivo local (nunca subir el token directamente al código)
 _token_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "github_token.txt")
 GITHUB_TOKEN = open(_token_file).read().strip() if os.path.exists(_token_file) else ""

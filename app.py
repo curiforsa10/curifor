@@ -10,6 +10,7 @@ import pandas as pd
 import requests
 import json
 import base64
+import os
 import gzip
 import hashlib
 import secrets
@@ -57,17 +58,38 @@ LOGO_B64 = "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABt
 LOGO_DATA_URI = f"data:image/jpeg;base64,{LOGO_B64}"
 
 # Imagenes reales del documento oficial Ford "Hoja Multipuntos" (VCU) — el mismo
-# archivo escaneado exacto que exige la marca, no una recreacion en HTML. Se hospedan
-# como archivos aparte en GitHub (no embebidas en base64 aqui — pesan ~300-420KB c/u)
-# y se cargan por URL directa en el navegador dentro del modulo del Planificador.
-VCU_FORD_P1_URL = f"https://raw.githubusercontent.com/Cjerez-curi/curifor-ots/main/vcu_ford_p1.jpg"
-VCU_FORD_P2_URL = f"https://raw.githubusercontent.com/Cjerez-curi/curifor-ots/main/vcu_ford_p2.jpg"
+# archivo escaneado exacto que exige la marca, no una recreacion en HTML. Pesan
+# ~300-420KB c/u, por eso no van embebidas en base64 en el fuente como el logo.
+#
+# Antes se servian por raw.githubusercontent.com. Eso NO funciona con el repo en
+# privado (el CDN publico devuelve 404) y, con el repo publico, entregaba los
+# archivos a cualquiera — el mismo problema que se corrigio el 11/08/2026 para
+# los JSON (ver la nota de seguridad mas abajo). Ahora se leen del disco: el
+# deploy de Streamlit clona el repo, asi que estan junto a este archivo. El
+# data URI se arma una sola vez por proceso gracias al cache.
+@st.cache_data(show_spinner=False)
+def _img_data_uri(nombre_archivo):
+    """Imagen del repo -> data URI. Cadena vacia si el archivo no esta."""
+    try:
+        ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), nombre_archivo)
+        with open(ruta, "rb") as f:
+            return "data:image/jpeg;base64," + base64.b64encode(f.read()).decode()
+    except Exception:
+        return ""
+
+
+VCU_FORD_P1_URL = _img_data_uri("vcu_ford_p1.jpg")
+VCU_FORD_P2_URL = _img_data_uri("vcu_ford_p2.jpg")
 
 # ============================================================
 #   CONFIGURACIÓN GITHUB  (antes de check_password)
 # ============================================================
-GITHUB_USUARIO        = "Cjerez-curi"
-GITHUB_REPO           = "curifor-ots"
+# Repo donde viven los JSON de estado. Parametrizado via secrets para que cada
+# despliegue apunte a SU propio repo de datos: dos instancias escribiendo sobre
+# el mismo repo se pisan entre si. El default es la plataforma nueva; el deploy
+# de produccion de Cristian sobre-escribe estos dos valores en sus secrets.
+GITHUB_USUARIO        = st.secrets.get("GITHUB_USUARIO", "curiforsa10")
+GITHUB_REPO           = st.secrets.get("GITHUB_REPO", "curifor")
 GITHUB_ARCHIVO        = "datos_dashboard.json"
 GITHUB_COMENTARIOS    = "comentarios_log.json"
 GITHUB_USUARIOS       = "usuarios_curifor.json"

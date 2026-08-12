@@ -53,10 +53,17 @@ subir ese tope sin probar el arranque primero.
 ## Datos
 
 Hoy la persistencia va contra la **Contents API de GitHub**: `app.py` lee y
-escribe los `.json` del repo usando `GITHUB_TOKEN` (ver `_leer_json_github_raw`
-y `_guardar_json_github_raw`). Deliberadamente **no** se usa
-`raw.githubusercontent.com` — obligaba a tener el repo público. Ver la nota de
-seguridad en `app.py:342`.
+escribe los `.json` **de este repo** usando `GITHUB_TOKEN` (ver
+`_leer_json_github_raw` y `_guardar_json_github_raw`). Deliberadamente **no** se
+usa `raw.githubusercontent.com` — obligaba a tener el repo público. Ver la nota
+de seguridad en `app.py`.
+
+> **Esta plataforma es independiente del despliegue de producción**
+> (`Cjerez-curi/curifor-ots`). El repo de datos está parametrizado
+> (`GITHUB_USUARIO` / `GITHUB_REPO` en secrets, con default a este repo)
+> justamente para eso: dos instancias escribiendo los mismos JSON se pisan entre
+> sí. Al levantar esta app, sus datos parten del snapshot commiteado acá y
+> evolucionan por su cuenta.
 
 Archivos principales: `datos_dashboard.json` (OTs), `usuarios_curifor.json`
 (cuentas y permisos), `control_taller*.json` (por sucursal), `stock_repuestos.json`,

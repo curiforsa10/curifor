@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Búsqueda por patente para el Cotizador embebido en la app de Curifor
-(repo Cjerez-curi/curifor-ots, `app.py`, modo "cotizador").
+(repo curiforsa10/curifor, `app.py`, modo "cotizador").
 
-NO es un script ejecutable: es el bloque a insertar en `app.py` cuando tengamos
-permiso de escritura. Se mantiene acá, junto al cotizador, para que el código
-viva con su fuente y no se pierda en un chat.
+NO es un script ejecutable: es el bloque a insertar en `app.py`. Se mantiene
+acá, junto al cotizador, para que el código viva con su fuente y no se pierda
+en un chat.
 
     ¿Por qué la consulta la hace el servidor y no el navegador?
 

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 publicar_bundle.py — empaqueta el Cotizador de Mantenciones y lo publica en la
-app Streamlit de Curifor (repo Cjerez-curi/curifor-ots).
+app Streamlit de Curifor (repo curiforsa10/curifor).
 
-La app de Cristian no ejecuta la carpeta `plataforma/`: la embebe como un
+La app no ejecuta la carpeta `plataforma/`: la embebe como un
 componente HTML dentro de un iframe (app.py, modo "cotizador"). Todo el
 cotizador —HTML, CSS, JS, la librería XLSX, el logo, el índice, el stock y las
 273 pautas— viaja comprimido gzip+base64 en el campo 'gz' de
@@ -299,7 +299,7 @@ def main() -> None:
     repo = Path(args.repo)
     if not (repo / ".git").exists():
         sys.exit(f"ERROR: {repo} no es un clon de git. Clónalo con:\n"
-                 f"       gh repo clone Cjerez-curi/curifor-ots {repo}")
+                 f"       gh repo clone curiforsa10/curifor {repo}")
 
     destino = repo / ARCHIVO_BUNDLE
     if destino.exists():

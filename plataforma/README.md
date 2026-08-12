@@ -38,7 +38,7 @@ Sin key configurada el campo avisa y el catálogo sigue funcionando normal.
 ## Publicar en la app de Curifor (`curifor-ots`)
 
 El cotizador también vive **dentro de la app Streamlit de Curifor**
-(`Cjerez-curi/curifor-ots`), embebido en un iframe. Ahí no corre esta carpeta:
+(`curiforsa10/curifor`), embebido en un iframe. Ahí no corre esta carpeta:
 va compilado en `cotizador_data.json` (HTML+CSS+JS+XLSX+logo+índice+stock+pautas,
 todo gzip+base64). Para regenerarlo y publicarlo:
 
