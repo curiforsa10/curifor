@@ -103,6 +103,14 @@ GITHUB_REPO      = "curifor-ots"          # ej: "curifor-ots"
 # Token leído desde archivo local (nunca subir el token directamente al código)
 _token_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "github_token.txt")
 GITHUB_TOKEN = open(_token_file).read().strip() if os.path.exists(_token_file) else ""
+
+# Migración del backend a Supabase: dual-write (sombra) a la tabla `documentos`.
+# Fail-safe — inerte si no hay supabase_pwd.txt / SUPABASE_DB_PASSWORD; nunca
+# interrumpe la consolidación. GitHub sigue siendo la fuente de verdad.
+try:
+    import supabase_sync
+except Exception:
+    supabase_sync = None
 GITHUB_HISTORIAL = "historial_cierres.json"   # Archivo de registro de OTs cerradas
 GITHUB_RANKING   = "ranking_cierres.json"     # Ranking de OTs cerradas con >90 días
 GITHUB_AGENDA    = "agenda_hoy.json"          # Citas del día (Agenda Curifor)
@@ -2952,6 +2960,8 @@ def subir_a_github(ruta_json):
 
         if resp_put.status_code in [200, 201]:
             log("Dashboard web actualizado correctamente en GitHub")
+            if supabase_sync:
+                supabase_sync.upsert_archivo(ruta_json, "datos_dashboard.json")  # dual-write Supabase (sombra)
         else:
             log(f"(!)  GitHub respondio con estado {resp_put.status_code}: {resp_put.text[:200]}")
 
@@ -4683,6 +4693,8 @@ def _subir_json_github_simple(nombre_archivo, datos, sha, mensaje, timeout=30):
     try:
         r = requests.put(url, headers=headers, json=payload, timeout=timeout, verify=False)
         if r.status_code in (200, 201):
+            if supabase_sync:
+                supabase_sync.upsert(nombre_archivo, datos, mensaje)  # dual-write Supabase (sombra)
             return True
         # Diagnostico: antes esto se perdia en silencio (solo se logueaba en
         # excepcion) — ahora se ve el status y el motivo real que da GitHub.
@@ -4882,6 +4894,8 @@ def _subir_json_github_gitdata(nombre_archivo, datos, mensaje, timeout=60):
                 if _intento > 1:
                     log(f"    {nombre_archivo}: subido en el intento {_intento} "
                         f"(la rama main habia avanzado, se reintento sobre el head nuevo).")
+                if supabase_sync:
+                    supabase_sync.upsert(nombre_archivo, datos, mensaje)  # dual-write Supabase (sombra)
                 return True
 
             # 422 = alguien mas movio main entremedio -> reintentar con head fresco.

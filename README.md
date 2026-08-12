@@ -65,15 +65,43 @@ Archivos principales: `datos_dashboard.json` (OTs), `usuarios_curifor.json`
 
 ## Migración a Supabase (en curso)
 
-El backend se está moviendo a Supabase (proyecto `ordgsglujssgzmnlmcus`):
+El backend se está moviendo a Supabase (proyecto `ordgsglujssgzmnlmcus`). La
+tabla `documentos` (JSONB, una fila por archivo) reemplaza a los `.json` del repo.
 
-- `supabase_sync.py` ya escribe en paralelo a la tabla `documentos` (JSONB)
-  desde el consolidador. GitHub sigue siendo la fuente de verdad.
-- `plataforma/` ya opera nativo contra Supabase (`reservas_web`, auth por
-  dominio `@curifor.com`, RLS). Esquema en
-  `plataforma/herramientas/setup_supabase_*.sql`.
-- Falta la capa de **lectura** en `app.py` para cortar la dependencia de la
-  Contents API.
+**Ya está en el código:**
 
-La `anonKey` en `plataforma/js/agenda-config.js` es pública por diseño (la
-protege RLS). La `service_role` nunca va al repo.
+- `app.py` tiene la capa Supabase (`_sb_leer` / `_sb_guardar`, por API REST) con
+  una lista blanca `SUPABASE_DOCS` y **fallback a GitHub en ambos sentidos**.
+  Sin los secrets cargados la capa queda inerte y todo funciona como hoy, así que
+  publicar este código no cambia nada por sí solo.
+- `consolidar_OTs.py` hace dual-write a `documentos` vía `supabase_sync.py`
+  (conexión Postgres, fail-safe: sin password es un no-op).
+- `plataforma/` ya opera nativo contra Supabase (`reservas_web`, auth por dominio
+  `@curifor.com`, RLS).
+
+**Para encenderla** (grupo A: `usuarios_curifor`, `notificaciones`, `audit_log`,
+`cuenta_ficha_revisados`):
+
+1. Crear la tabla — SQL Editor de Supabase →
+   `plataforma/herramientas/setup_supabase_documentos.sql`.
+2. Cargar los datos:
+   ```bash
+   python plataforma/herramientas/migrar_documentos_supabase.py --dry-run
+   ```
+   y luego sin `--dry-run`. Lee la versión **viva** desde GitHub (la copia local
+   está atrasada: la app auto-commitea todo el día).
+3. Cargar `SUPABASE_URL` y `SUPABASE_SERVICE_KEY` en los secrets del deploy.
+
+Mientras un documento no esté en la tabla, `app.py` lo sigue leyendo de GitHub.
+La migración se enciende archivo por archivo y es reversible: basta con sacar el
+secret.
+
+Los que **no** están en la lista blanca los genera `consolidar_OTs.py`
+(`datos_dashboard`, `control_taller*`, `stock_repuestos`, `cotizador_data`…);
+migrarlos antes de mover el consolidador dejaría a la app leyendo datos que nadie
+actualiza.
+
+Sobre las claves: la `anonKey` de `plataforma/js/agenda-config.js` es pública por
+diseño (la protege RLS). La `service_role` **saltea RLS** y nunca va al repo ni al
+navegador — solo a los secrets del servidor. Por eso `documentos` tiene RLS
+encendido y cero policies: contiene los hashes de las cuentas.

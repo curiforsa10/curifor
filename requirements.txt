@@ -6,6 +6,11 @@ python-calamine>=0.2.0
 reportlab>=4.0.0
 matplotlib>=3.7.0
 
+# Driver Postgres puro-Python que usa supabase_sync.py (dual-write del
+# consolidador contra el session pooler). app.py NO lo necesita: habla con
+# Supabase por API REST (PostgREST) usando requests.
+pg8000>=1.30.0
+
 # --- Dependencia indirecta fijada a proposito (05/08/2026) -------------------
 # starlette 1.4.0 se publico el 05/08/2026 y volvio OBLIGATORIO el argumento
 # 'thread_minimum_size' en GZipResponder.__init__(). Streamlit todavia lo llama

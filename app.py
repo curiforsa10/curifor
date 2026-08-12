@@ -5319,8 +5319,100 @@ def _github_headers():
     }
 
 
+# ============================================================
+#   CAPA SUPABASE (migración progresiva del backend)
+# ============================================================
+# Documentos migrados a la tabla 'documentos' (JSONB) de Supabase. El resto de
+# los JSON siguen leyéndose/escribiéndose en GitHub EXACTAMENTE como antes.
+# Solo entran aquí archivos que escribe EXCLUSIVAMENTE esta app: consolidar_OTs.py
+# (que corre en el PC de Cristian y sube JSON a GitHub) NO los genera ni los lee,
+# así que no hay riesgo de que una fuente pise a la otra.
+#   - usuarios_curifor.json         (login/gestión de usuarios)
+#   - notificaciones.json           (bandeja de notificaciones)
+#   - audit_log.json                (log de auditoría)
+#   - cuenta_ficha_revisados.json   (marcas "Revisado"; consolidar solo lo nombra en un comentario)
+# NO migrar aún (los genera/sube consolidar_OTs.py -> serían datos desactualizados):
+#   control_taller, datos_dashboard, tecnicos_sucursal_manual, stock_repuestos,
+#   cotizador_data, cuenta_ficha, produccion_tecnicos, agenda_hoy, campanas_curifor,
+#   tempario, historial_cierres, ranking_cierres.
+SUPABASE_DOCS = {
+    "usuarios_curifor.json",
+    "notificaciones.json",
+    "audit_log.json",
+    "cuenta_ficha_revisados.json",
+}
+
+
+def _sb_cfg():
+    """(url, service_key) desde st.secrets, o (None, None) si no están cargados.
+    Sin secret -> toda la capa Supabase queda inerte y se usa GitHub (como hoy)."""
+    try:
+        url = st.secrets.get("SUPABASE_URL")
+        key = st.secrets.get("SUPABASE_SERVICE_KEY")
+        if url and key:
+            return url.rstrip("/"), key
+    except Exception:
+        pass
+    return None, None
+
+
+def _sb_doc(nombre_archivo):
+    return nombre_archivo in SUPABASE_DOCS
+
+
+def _sb_leer(nombre_archivo):
+    """Lee data (dict) de la tabla documentos. None si no existe / error / sin secret."""
+    url, key = _sb_cfg()
+    if not url:
+        return None
+    try:
+        r = requests.get(
+            f"{url}/rest/v1/documentos",
+            params={"nombre": f"eq.{nombre_archivo}", "select": "data"},
+            headers={"apikey": key, "Authorization": f"Bearer {key}"},
+            timeout=15, verify=False,
+        )
+        r.raise_for_status()
+        filas = r.json()
+        if filas:
+            return filas[0].get("data")
+    except Exception:
+        pass
+    return None
+
+
+def _sb_guardar(nombre_archivo, datos_dict, mensaje_commit):
+    """Upsert en la tabla documentos. True si OK, False si error / sin secret."""
+    url, key = _sb_cfg()
+    if not url:
+        return False
+    try:
+        r = requests.post(
+            f"{url}/rest/v1/documentos",
+            params={"on_conflict": "nombre"},
+            headers={
+                "apikey": key,
+                "Authorization": f"Bearer {key}",
+                "Content-Type": "application/json",
+                "Prefer": "resolution=merge-duplicates",
+            },
+            json={"nombre": nombre_archivo, "data": datos_dict, "mensaje": mensaje_commit},
+            timeout=30, verify=False,
+        )
+        return r.status_code in (200, 201, 204)
+    except Exception:
+        return False
+
+
 def _leer_json_github_raw(nombre_archivo):
     """Lee un JSON pequeño de GitHub via Contents API. Retorna (sha, dict) o (None, {})."""
+    # --- Capa Supabase: si el doc está migrado y existe en Supabase, se lee de ahí.
+    #     (sha ficticio "supabase" para no romper callers que chequean `if sha`).
+    if _sb_doc(nombre_archivo):
+        datos = _sb_leer(nombre_archivo)
+        if datos is not None:
+            return "supabase", datos
+        # None -> aún no está en Supabase o falló: cae a GitHub (bootstrap / fallback).
     url = f"https://api.github.com/repos/{GITHUB_USUARIO}/{GITHUB_REPO}/contents/{nombre_archivo}"
     try:
         resp = requests.get(url, headers=_github_headers(), timeout=15, verify=False)
@@ -5359,6 +5451,12 @@ def _leer_json_github_blob(nombre_archivo):
     siendo raw.githubusercontent.com, reintroduciendo el mismo problema).
     Devuelve el dict, o None si algo falla.
     """
+    # --- Capa Supabase: docs migrados se leen de Supabase (nunca del CDN cacheado).
+    if _sb_doc(nombre_archivo):
+        datos = _sb_leer(nombre_archivo)
+        if datos is not None:
+            return datos
+        # None -> fallback a GitHub abajo.
     try:
         base_url = f"https://api.github.com/repos/{GITHUB_USUARIO}/{GITHUB_REPO}"
         hdrs = _github_headers()
@@ -5383,6 +5481,11 @@ def _leer_json_github_blob(nombre_archivo):
 
 def _guardar_json_github_raw(nombre_archivo, datos_dict, mensaje_commit):
     """Guarda JSON en GitHub via Contents API. Retorna True/False."""
+    # --- Capa Supabase: docs migrados se guardan en Supabase. Si falla, cae a
+    #     GitHub para no perder el dato (fallback seguro).
+    if _sb_doc(nombre_archivo):
+        if _sb_guardar(nombre_archivo, datos_dict, mensaje_commit):
+            return True
     url = f"https://api.github.com/repos/{GITHUB_USUARIO}/{GITHUB_REPO}/contents/{nombre_archivo}"
     try:
         sha, _ = _leer_json_github_raw(nombre_archivo)
