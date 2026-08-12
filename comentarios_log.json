@@ -1,0 +1,2373 @@
+{
+  "comentarios": [
+    {
+      "folio_ot": "1154076",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/05/2026 16:47",
+      "comentario": "repuesto con devolución, cerrar caso $1"
+    },
+    {
+      "folio_ot": "1154076",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/05/2026 16:48",
+      "comentario": "repuesto con devolución, cerrar caso $1"
+    },
+    {
+      "folio_ot": "1154076",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 16:51",
+      "comentario": "Cerrada $1"
+    },
+    {
+      "folio_ot": "1155800",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 17:02",
+      "comentario": "cerrada $1"
+    },
+    {
+      "folio_ot": "1155800",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 17:02",
+      "comentario": "cerrada a $1"
+    },
+    {
+      "folio_ot": "1155800",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 17:03",
+      "comentario": "cerrada a $1"
+    },
+    {
+      "folio_ot": "1155800",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/05/2026 17:04",
+      "comentario": "cerrada a $1"
+    },
+    {
+      "folio_ot": "1155800",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/05/2026 17:04",
+      "comentario": "cerrada a $1"
+    },
+    {
+      "folio_ot": "1157977",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 17:13",
+      "comentario": "correo enviado con fecha 18-05 por respaldos a rodrigo muñoz"
+    },
+    {
+      "folio_ot": "1157977",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 17:13",
+      "comentario": "correo enviado con fecha 18-05 por respaldos a rodrigo muñoz"
+    },
+    {
+      "folio_ot": "1139799",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 17:30",
+      "comentario": "solicitud de cierre gerencia 1969, enviada a Juan Pablo fecha 18-05-2026"
+    },
+    {
+      "folio_ot": "1139799",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 17:30",
+      "comentario": "solicitud de cierre gerencia 1969, enviada a Juan Pablo fecha 18-05-2026"
+    },
+    {
+      "folio_ot": "1139799",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 19:25",
+      "comentario": "cierre gerencia aprobado por carlos flores, fecha 18-05-2026"
+    },
+    {
+      "folio_ot": "1160630",
+      "autor": "fordonez@curifor.com",
+      "fecha": "18/05/2026 20:14",
+      "comentario": "Orden cerrada"
+    },
+    {
+      "folio_ot": "1169276",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 20:34",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1169276",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 20:34",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1168258",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 20:36",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1168258",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 20:36",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1168258",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 20:36",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1168897",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 20:58",
+      "comentario": "se solicita respaldo a andres muñoz"
+    },
+    {
+      "folio_ot": "1166530",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 21:47",
+      "comentario": "se envía liquidación a Sandra barrios para que realice pago 19-05"
+    },
+    {
+      "folio_ot": "1166530",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 21:47",
+      "comentario": "se envía liquidación a Sandra barrios para que realice pago 19-05"
+    },
+    {
+      "folio_ot": "1166530",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 21:48",
+      "comentario": "se envía liquidación a Sandra barrios para que realice pago 19-05"
+    },
+    {
+      "folio_ot": "1169954",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 21:51",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1169954",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 21:51",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1168897",
+      "autor": "fordonez@curifor.com",
+      "fecha": "19/05/2026 21:53",
+      "comentario": "se envían respaldos a carolayn para cobro en garantía"
+    },
+    {
+      "folio_ot": "1111363",
+      "autor": "fordonez@curifor.com",
+      "fecha": "20/05/2026 17:20",
+      "comentario": "Se solicita cierre gerencia N° 1970"
+    },
+    {
+      "folio_ot": "1111363",
+      "autor": "fordonez@curifor.com",
+      "fecha": "20/05/2026 17:20",
+      "comentario": "Se solicita cierre gerencia N° 1970"
+    },
+    {
+      "folio_ot": "1111363",
+      "autor": "fordonez@curifor.com",
+      "fecha": "20/05/2026 17:20",
+      "comentario": "cierre gerencia N° 1970"
+    },
+    {
+      "folio_ot": "1169015",
+      "autor": "fordonez@curifor.com",
+      "fecha": "20/05/2026 18:43",
+      "comentario": "correo enviado a margarita parada por caso"
+    },
+    {
+      "folio_ot": "1165819",
+      "autor": "fordonez@curifor.com",
+      "fecha": "20/05/2026 19:17",
+      "comentario": "SE ENVIA FACTURA X A COSTANZA PARA QUE SE GESTIONE PAGO"
+    },
+    {
+      "folio_ot": "1161807",
+      "autor": "fordonez@curifor.com",
+      "fecha": "22/05/2026 12:14",
+      "comentario": "cierre gerencia N°1971"
+    },
+    {
+      "folio_ot": "1161807",
+      "autor": "fordonez@curifor.com",
+      "fecha": "22/05/2026 12:14",
+      "comentario": "cierre gerencia N°1971"
+    },
+    {
+      "folio_ot": "1174912",
+      "autor": "eortiz@curifor.com",
+      "fecha": "22/05/2026 12:15",
+      "comentario": "SE GESTIONARA REFACTURACION"
+    },
+    {
+      "folio_ot": "1174912",
+      "autor": "eortiz@curifor.com",
+      "fecha": "22/05/2026 12:15",
+      "comentario": "SE GESTIONARA REFACTURACION"
+    },
+    {
+      "folio_ot": "1125749",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "25/05/2026 11:56",
+      "comentario": "Unidad lista y informada para retiro"
+    },
+    {
+      "folio_ot": "1163957",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "25/05/2026 11:56",
+      "comentario": "CERRADA"
+    },
+    {
+      "folio_ot": "1170269",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "25/05/2026 11:57",
+      "comentario": "SE ANULARA LIQUIDACION Y SE CERRARA A $1"
+    },
+    {
+      "folio_ot": "1181154",
+      "autor": "cjerez@curifor.com",
+      "fecha": "25/05/2026 12:53",
+      "comentario": "Solicitada a ST"
+    },
+    {
+      "folio_ot": "1184999",
+      "autor": "cjerez@curifor.com",
+      "fecha": "25/05/2026 13:06",
+      "comentario": "Solicitada a ST"
+    },
+    {
+      "folio_ot": "1185234",
+      "autor": "cjerez@curifor.com",
+      "fecha": "25/05/2026 13:18",
+      "comentario": "Solicitada a ST"
+    },
+    {
+      "folio_ot": "1123752",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "25/05/2026 13:54",
+      "comentario": "Se envía correo a soporte para dar solución a problema de linea adicional, Ot facturada"
+    },
+    {
+      "folio_ot": "1166530",
+      "autor": "fordonez@curifor.com",
+      "fecha": "25/05/2026 17:34",
+      "comentario": "cerrada con factura Nº 852412"
+    },
+    {
+      "folio_ot": "1166530",
+      "autor": "fordonez@curifor.com",
+      "fecha": "25/05/2026 17:34",
+      "comentario": "cerrada con factura Nº 852412"
+    },
+    {
+      "folio_ot": "1166530",
+      "autor": "fordonez@curifor.com",
+      "fecha": "25/05/2026 17:34",
+      "comentario": "cerrada con factura Nº 852412"
+    },
+    {
+      "folio_ot": "1142579",
+      "autor": "fordonez@curifor.com",
+      "fecha": "25/05/2026 17:59",
+      "comentario": "se debe de refrescar ot, solicitado a Eduardo"
+    },
+    {
+      "folio_ot": "1142579",
+      "autor": "fordonez@curifor.com",
+      "fecha": "25/05/2026 17:59",
+      "comentario": "se debe de refrescar ot, solicitado a Eduardo"
+    },
+    {
+      "folio_ot": "856313",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "26/05/2026 11:40",
+      "comentario": "OT FACTURADA ENVIADA A SOPORTE PARA ELIMINAR LINEA ADICIONAL EN ESPERA DE RESPUESTA"
+    },
+    {
+      "folio_ot": "856313",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "26/05/2026 11:40",
+      "comentario": "OT FACTURADA ENVIADA A SOPORTE PARA ELIMINAR LINEA ADICIONAL EN ESPERA DE RESPUESTA"
+    },
+    {
+      "folio_ot": "856555",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "26/05/2026 11:41",
+      "comentario": "CG APPRBADO CORREO ENVIADO A SOPORTE PARA ELIMINAR LINEA ADICIONAL"
+    },
+    {
+      "folio_ot": "1143243",
+      "autor": "pabaca@curifor.com",
+      "fecha": "26/05/2026 13:06",
+      "comentario": "OCI solicitada a Ricardo Soto"
+    },
+    {
+      "folio_ot": "873953",
+      "autor": "pabaca@curifor.com",
+      "fecha": "26/05/2026 13:07",
+      "comentario": "CI con fecha 10-12-2024, no podemos hacer nada debido a periodo, se debe ver con ERP"
+    },
+    {
+      "folio_ot": "853525",
+      "autor": "pabaca@curifor.com",
+      "fecha": "26/05/2026 13:09",
+      "comentario": "Garantía jamás gestionada, Ricardo soto estuvo a cargo de gestionar y nunca se subió a portal, por lo cual se deberá asumir, se verán valores dealer"
+    },
+    {
+      "folio_ot": "1142579",
+      "autor": "fordonez@curifor.com",
+      "fecha": "26/05/2026 16:46",
+      "comentario": "ORDEN CERRADA"
+    },
+    {
+      "folio_ot": "1163561",
+      "autor": "fordonez@curifor.com",
+      "fecha": "26/05/2026 16:50",
+      "comentario": "EN TRABAJO PARA CIERRE PROXIMO"
+    },
+    {
+      "folio_ot": "1172688",
+      "autor": "fordonez@curifor.com",
+      "fecha": "26/05/2026 17:48",
+      "comentario": "se realiza cierre a $1,"
+    },
+    {
+      "folio_ot": "1169838",
+      "autor": "fordonez@curifor.com",
+      "fecha": "26/05/2026 17:53",
+      "comentario": "se realiza cierre de orden"
+    },
+    {
+      "folio_ot": "1170025",
+      "autor": "fordonez@curifor.com",
+      "fecha": "26/05/2026 18:09",
+      "comentario": "se realiza cierre de orden"
+    },
+    {
+      "folio_ot": "1144059",
+      "autor": "cjerez@curifor.com",
+      "fecha": "27/05/2026 15:41",
+      "comentario": "CERRAR OT CIERRE GERENCIA"
+    },
+    {
+      "folio_ot": "862578",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 16:05",
+      "comentario": "OT ya se pudo cerrar"
+    },
+    {
+      "folio_ot": "1164952",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 16:10",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1164953",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 16:13",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1164956",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 16:15",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1164957",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 16:16",
+      "comentario": "revisar antena de radio cargada"
+    },
+    {
+      "folio_ot": "1168863",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/05/2026 17:04",
+      "comentario": "espera creación de cliente para pago con OC"
+    },
+    {
+      "folio_ot": "1168863",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/05/2026 17:04",
+      "comentario": "espera creación de cliente para pago con OC"
+    },
+    {
+      "folio_ot": "1165660",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 17:11",
+      "comentario": "CERRADA CON COBRO A DYP"
+    },
+    {
+      "folio_ot": "1166051",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 17:36",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1166129",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 17:40",
+      "comentario": "CERRADA"
+    },
+    {
+      "folio_ot": "1166129",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 17:40",
+      "comentario": "CERRADA"
+    },
+    {
+      "folio_ot": "1166129",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 17:40",
+      "comentario": "CERRADA"
+    },
+    {
+      "folio_ot": "1166164",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/05/2026 18:03",
+      "comentario": "se solicito OCI a Cristian Salazar, se espera hasta mañana si no se realiza cierre sin OC"
+    },
+    {
+      "folio_ot": "1129467",
+      "autor": "cromero@curifor.com",
+      "fecha": "28/05/2026 14:21",
+      "comentario": "ot migro a la ot 1186580 cobrado a gtias con el numero 214053 cgtia 9563\nse realiza cierre gerencia 1981 por 700 pesos aprox, lavaparabrisas no cobrable"
+    },
+    {
+      "folio_ot": "1160791",
+      "autor": "cromero@curifor.com",
+      "fecha": "28/05/2026 14:23",
+      "comentario": "ot migra a la ot 1186593 para refresh\not 1160791 cierre a 1 peso"
+    },
+    {
+      "folio_ot": "1166164",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "28/05/2026 15:54",
+      "comentario": "ot cerrada"
+    },
+    {
+      "folio_ot": "1129467",
+      "autor": "fordonez@curifor.com",
+      "fecha": "28/05/2026 16:57",
+      "comentario": "cierre gerencia N°1981"
+    },
+    {
+      "folio_ot": "1168501",
+      "autor": "fordonez@curifor.com",
+      "fecha": "28/05/2026 17:01",
+      "comentario": "migra ot 1186635 reclamo 214055, orden cerrada con CI 20257 $1"
+    },
+    {
+      "folio_ot": "1128481",
+      "autor": "fordonez@curifor.com",
+      "fecha": "28/05/2026 17:20",
+      "comentario": "cierre gerencia N°1987 se solicita autorización a Juan Pablo"
+    },
+    {
+      "folio_ot": "1171304",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 12:52",
+      "comentario": "se realiza cierre con cargo interno movil 20468"
+    },
+    {
+      "folio_ot": "1171304",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 12:54",
+      "comentario": "se realiza cierre con cargo interno movil 20468"
+    },
+    {
+      "folio_ot": "1171654",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 12:58",
+      "comentario": "cerrado con  cargo interno 20470"
+    },
+    {
+      "folio_ot": "906662",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 13:04",
+      "comentario": "cierre gerencia 1989"
+    },
+    {
+      "folio_ot": "1169484",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 13:09",
+      "comentario": "se realiza cierre por $1"
+    },
+    {
+      "folio_ot": "1172899",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 14:41",
+      "comentario": "cerrada $1"
+    },
+    {
+      "folio_ot": "1172200",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 14:45",
+      "comentario": "cierre gerencia 1990"
+    },
+    {
+      "folio_ot": "902819",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 17:26",
+      "comentario": "cierre gerencia N°1991"
+    },
+    {
+      "folio_ot": "834124",
+      "autor": "fordonez@curifor.com",
+      "fecha": "01/06/2026 17:42",
+      "comentario": "cerrada en factura  713715 del 31-10-2023, se levanta caso con nuevamente con soporte soporte,"
+    },
+    {
+      "folio_ot": "2561",
+      "autor": "cjerez@curifor.com",
+      "fecha": "02/06/2026 16:02",
+      "comentario": "En revisión con Soporte"
+    },
+    {
+      "folio_ot": "1124243",
+      "autor": "cjerez@curifor.com",
+      "fecha": "02/06/2026 16:03",
+      "comentario": "En revisión con soporte"
+    },
+    {
+      "folio_ot": "1173310",
+      "autor": "fordonez@curifor.com",
+      "fecha": "03/06/2026 17:19",
+      "comentario": "se debe realizar facturacion"
+    },
+    {
+      "folio_ot": "1173261",
+      "autor": "fordonez@curifor.com",
+      "fecha": "03/06/2026 17:23",
+      "comentario": "cerrada $1"
+    },
+    {
+      "folio_ot": "1001186",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "03/06/2026 23:44",
+      "comentario": "revisar con gisselle si existe repuesto fisico"
+    },
+    {
+      "folio_ot": "1115678",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "03/06/2026 23:50",
+      "comentario": "anular liquidación 70059 y realizar CG ya que no se cambiaron bujías en mantencion que correspondía."
+    },
+    {
+      "folio_ot": "1118085",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "03/06/2026 23:58",
+      "comentario": "eliminar CI 20491, anular liquidación 84307 y realizar CG"
+    },
+    {
+      "folio_ot": "1118698",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:03",
+      "comentario": "realizar CG repuestos dañados en ST durante estadía de unidad en taller, vehículo aun dentro de taller por demanda"
+    },
+    {
+      "folio_ot": "1119105",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:06",
+      "comentario": "revisar con gisselle la garantia de lo contrario realizar CG"
+    },
+    {
+      "folio_ot": "1119149",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:11",
+      "comentario": "se realiza CG 1992 pendiente de aprobación, no se encuentra información por garantía ni repuesto físico, ademas no existen abono en cuenta"
+    },
+    {
+      "folio_ot": "1119414",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:18",
+      "comentario": "cerrada $1 CI 20535 pendiente de aprobación"
+    },
+    {
+      "folio_ot": "1126195",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:27",
+      "comentario": "revisar con gisselle si repuestos existen fisicos"
+    },
+    {
+      "folio_ot": "1127251",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:28",
+      "comentario": "revisar si ya se levanto garantía con el importador"
+    },
+    {
+      "folio_ot": "1127488",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:29",
+      "comentario": "cobrar campaña"
+    },
+    {
+      "folio_ot": "1130181",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:31",
+      "comentario": "repuesto se encuentra, levantar garantía con importador"
+    },
+    {
+      "folio_ot": "1130306",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:32",
+      "comentario": "repuestos se encuentran, gisselle debe levantar información para garantía"
+    },
+    {
+      "folio_ot": "1131482",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:38",
+      "comentario": "anular liquidación 70072 y realizar CG, no se encuentran repuestos ni información  para garantía"
+    },
+    {
+      "folio_ot": "1132824",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "04/06/2026 00:39",
+      "comentario": "en revisión por juan pablo para analizar acuerdo comercial, se debe dar cCG"
+    },
+    {
+      "folio_ot": "1178157",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 12:28",
+      "comentario": "unidad en trabajo"
+    },
+    {
+      "folio_ot": "1178052",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 12:35",
+      "comentario": "cerrada a $1"
+    },
+    {
+      "folio_ot": "1178244",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 15:31",
+      "comentario": "ACTUALIZADA Y CERRADA"
+    },
+    {
+      "folio_ot": "1178042",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 15:32",
+      "comentario": "CERRADA $1"
+    },
+    {
+      "folio_ot": "1177858",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 15:38",
+      "comentario": "servicio no se realiza, cierre a $1"
+    },
+    {
+      "folio_ot": "1177600",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 15:53",
+      "comentario": "se esta solicitando"
+    },
+    {
+      "folio_ot": "1177250",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 16:03",
+      "comentario": "se esta gestionando garantia"
+    },
+    {
+      "folio_ot": "1176476",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 16:16",
+      "comentario": "CERRADA CON CARGO INTERNO A TALLER MOVIL"
+    },
+    {
+      "folio_ot": "1176305",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 16:21",
+      "comentario": "se esta consultando a margarita parada"
+    },
+    {
+      "folio_ot": "1175875",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 16:23",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1175566",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 16:43",
+      "comentario": "cierre gerencia N°1995 solicitada a JP"
+    },
+    {
+      "folio_ot": "1175283",
+      "autor": "fordonez@curifor.com",
+      "fecha": "04/06/2026 17:03",
+      "comentario": "sin respaldo de fall\nrodrigo se comunicara con cliente para sacar respaldos"
+    },
+    {
+      "folio_ot": "1177600",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 09:09",
+      "comentario": "cerrada CI 20571"
+    },
+    {
+      "folio_ot": "1177600",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 09:09",
+      "comentario": "cerrada CI 20571"
+    },
+    {
+      "folio_ot": "1176679",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 09:45",
+      "comentario": "cerrada con CI 20575"
+    },
+    {
+      "folio_ot": "1178243",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 11:45",
+      "comentario": "cerrada $1"
+    },
+    {
+      "folio_ot": "1175283",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 11:51",
+      "comentario": "se realiza orden nueva y se sacan respaldos, se realiza cerrado $1"
+    },
+    {
+      "folio_ot": "1176644",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 11:56",
+      "comentario": "se solicita cierre gerencia N°1996"
+    },
+    {
+      "folio_ot": "1173527",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 17:13",
+      "comentario": "cerrada $1"
+    },
+    {
+      "folio_ot": "1173515",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 17:15",
+      "comentario": "cerrada $1"
+    },
+    {
+      "folio_ot": "1172784",
+      "autor": "fordonez@curifor.com",
+      "fecha": "05/06/2026 17:28",
+      "comentario": "error en vale de consumo 57584, se encuentra rechazado"
+    },
+    {
+      "folio_ot": "1121027",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 00:16",
+      "comentario": "revisa con gisselle si se puede salvar como garantia"
+    },
+    {
+      "folio_ot": "1134171",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 00:28",
+      "comentario": "revisar con sthefany el cierre de ot para poder facturar"
+    },
+    {
+      "folio_ot": "1134171",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 00:29",
+      "comentario": "revisar con sthefany el cierre de ot para poder facturar, oc por repuesto se encuentra en portal HDI disponible."
+    },
+    {
+      "folio_ot": "1134475",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 00:31",
+      "comentario": "1134475"
+    },
+    {
+      "folio_ot": "1134475",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 00:31",
+      "comentario": "revisar con gisselle si se puede salvar garantía"
+    },
+    {
+      "folio_ot": "1135468",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 00:40",
+      "comentario": "buscar repuesto y ver si existen respaldos para poder cobrar garantia con gisselle"
+    },
+    {
+      "folio_ot": "1137982",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 14:55",
+      "comentario": "se debe liquidar y realiza entrega a cliente"
+    },
+    {
+      "folio_ot": "1138609",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 15:03",
+      "comentario": "revisar con gisselle y juan CERRAR GARANTIA"
+    },
+    {
+      "folio_ot": "1141081",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 15:07",
+      "comentario": "unidad ya en trabajo, terminado de armar para realizar prueba de ruta y entrega"
+    },
+    {
+      "folio_ot": "1141456",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "09/06/2026 15:08",
+      "comentario": "caso escalado con Jorge Gomez para que compañia pueda valorizar repuestos y dar cierre a OT"
+    },
+    {
+      "folio_ot": "1174330",
+      "autor": "fordonez@curifor.com",
+      "fecha": "09/06/2026 16:31",
+      "comentario": "CIERRE GERENCIA 1999"
+    },
+    {
+      "folio_ot": "1174209",
+      "autor": "fordonez@curifor.com",
+      "fecha": "09/06/2026 16:34",
+      "comentario": "unidad de metropolitan care, en trabajo"
+    },
+    {
+      "folio_ot": "1173911",
+      "autor": "fordonez@curifor.com",
+      "fecha": "09/06/2026 16:45",
+      "comentario": "en consulta a margarita parada"
+    },
+    {
+      "folio_ot": "1173794",
+      "autor": "fordonez@curifor.com",
+      "fecha": "09/06/2026 16:49",
+      "comentario": "cerrada"
+    },
+    {
+      "folio_ot": "1173092",
+      "autor": "fordonez@curifor.com",
+      "fecha": "09/06/2026 16:53",
+      "comentario": "cierre gerencia 1998"
+    },
+    {
+      "folio_ot": "1173088",
+      "autor": "fordonez@curifor.com",
+      "fecha": "09/06/2026 16:54",
+      "comentario": "se subira garantia"
+    },
+    {
+      "folio_ot": "1171508",
+      "autor": "fordonez@curifor.com",
+      "fecha": "09/06/2026 18:01",
+      "comentario": "unidad de DYP"
+    },
+    {
+      "folio_ot": "1149249",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "10/06/2026 12:51",
+      "comentario": "Enviado a facturar"
+    },
+    {
+      "folio_ot": "1160743",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 12:13",
+      "comentario": "Flavio, como van con el avance de esta OT",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1160743",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 12:13",
+      "comentario": "Flavio, como van con el avance de esta OT",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1160743",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 12:14",
+      "comentario": "Flavio, como van con el avance de esta OT",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1160743",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 12:15",
+      "comentario": "Flavio, como van con el avance",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1160743",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 12:26",
+      "comentario": "hacete cargo",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1111925",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 15:18",
+      "comentario": "Favor actualización de este caso",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1111925",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 15:19",
+      "comentario": "Favor actualización de este caso",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "5130",
+      "autor": "cjerez@curifor.com",
+      "fecha": "12/06/2026 15:42",
+      "comentario": "ver con ERP",
+      "mencionado": "mlopez@curifor.com"
+    },
+    {
+      "folio_ot": "1170248",
+      "autor": "fordonez@curifor.com",
+      "fecha": "15/06/2026 11:23",
+      "comentario": "como le fue con esta",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1173911",
+      "autor": "fordonez@curifor.com",
+      "fecha": "15/06/2026 16:15",
+      "comentario": "en consulta a margarita parada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1173794",
+      "autor": "fordonez@curifor.com",
+      "fecha": "15/06/2026 16:16",
+      "comentario": "CI 20646",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1168863",
+      "autor": "fordonez@curifor.com",
+      "fecha": "15/06/2026 16:22",
+      "comentario": "consultado con helmut",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1167195",
+      "autor": "fordonez@curifor.com",
+      "fecha": "15/06/2026 16:29",
+      "comentario": "cerrada CI 20740",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1176054",
+      "autor": "eortiz@curifor.com",
+      "fecha": "15/06/2026 17:28",
+      "comentario": "Flavio favor de su ayuda con cierre de esta ot ya que  no me corresponde",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1167190",
+      "autor": "fordonez@curifor.com",
+      "fecha": "15/06/2026 17:53",
+      "comentario": "se esta solicitando OC a Paulina",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1165633",
+      "autor": "fordonez@curifor.com",
+      "fecha": "15/06/2026 18:15",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1158702",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "16/06/2026 12:06",
+      "comentario": "carito, alguna novedad con las mpp de omoda?",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1182443",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/06/2026 22:28",
+      "comentario": "priorizar garantía para que sea facturada este mes - repuestos en bodega Linderos desde 09 de Junio (5 milones estancados)",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1182443",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/06/2026 22:29",
+      "comentario": "priorizar garantía para que sea facturada este mes - repuestos en bodega Linderos desde 09 de Junio (5 milones estancados)",
+      "mencionado": "lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1169218",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/06/2026 23:23",
+      "comentario": "que pasa con este caso? repuesto pendiente en bodega desde marzo",
+      "mencionado": "dfigueroa@curifor.com"
+    },
+    {
+      "folio_ot": "1182641",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/06/2026 23:26",
+      "comentario": "que le falta a esta servicio? tienen repuestos esperando en bodega desde el 28 de mayo",
+      "mencionado": "lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1182641",
+      "autor": "cjerez@curifor.com",
+      "fecha": "18/06/2026 23:27",
+      "comentario": "que le falta a esta servicio? tienen repuestos esperando en bodega desde el 28 de mayo",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1161428",
+      "autor": "jherrera@curifor.com",
+      "fecha": "19/06/2026 14:07",
+      "comentario": "REVISAR EN CONJUNTO CON JPLORETO",
+      "mencionado": "jploreto@curifor.com"
+    },
+    {
+      "folio_ot": "1008175",
+      "autor": "cjerez@curifor.com",
+      "fecha": "22/06/2026 15:20",
+      "comentario": "Hubo forma de recuperar este caso? Si no fue así debemos proceder con el cierre",
+      "mencionado": "dfigueroa@curifor.com, gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1181295",
+      "autor": "cjerez@curifor.com",
+      "fecha": "22/06/2026 15:47",
+      "comentario": "Hola Nico, favor cuando tengan actualización de este caso nos avisan",
+      "mencionado": "nmorales@curifor.com, amarin@curifor.com"
+    },
+    {
+      "folio_ot": "1188791",
+      "autor": "cjerez@curifor.com",
+      "fecha": "22/06/2026 15:47",
+      "comentario": "Hola Nico, favor cuando tengan actualización de este caso nos avisan",
+      "mencionado": "amarin@curifor.com, nmorales@curifor.com"
+    },
+    {
+      "folio_ot": "11844004",
+      "autor": "cjerez@curifor.com",
+      "fecha": "22/06/2026 16:12",
+      "comentario": "cerrar OT $1 duplicada con mal numeración - repuesto pendiente en OT antigua donde nunca fue consumido",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "833183",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 18:25",
+      "comentario": "OT SOLO COMO MO CORTESIA, REPUESTOS CARGADOS EN 6360, SE DEBE CERRAR COMO GERENCIA PERO SE ENCUENTRA CRUZADAS LAS OT, CRISTOBAL SU AYUDA PARA PODER DAR CIERRE",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "828326",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 18:26",
+      "comentario": "MANTENCION FLUJO ANTIGUO QUE NO TENGO RESPALDOS PARA PODER DAR CIERRE, CRISTOBAL EN QUE QUEDO CON ERP SOBRE ESTOS CASOS",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "820918",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 18:27",
+      "comentario": "CAMIONETA YA REPARADA, ESTA OT ES DEL FLUJO ANTIGUO Y REPUESTOS NO SE ENCONTRARON CRITSOBAL ESTABA CON ERP PARA VER COMO DAR CIERRE",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "788701",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 18:28",
+      "comentario": "OT FLUJO ANTIGUO, V/C MEC 184476 RECHAZADO, REPUESTO NO SE ENTREGO, SE DEBE ELIMINAR VALE DE CONSUMO PARA CERRAR, CRISTOBAL COMO VA CON ERP SOBRE ESTA OT",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "668878",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 18:31",
+      "comentario": "CERRADA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1180729",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:01",
+      "comentario": "Anular liquidación  85792 y cambiar cargo de ventas y tipo de ventas, volver a realizar CI con cierre por $1",
+      "mencionado": "dmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1180700",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:04",
+      "comentario": "CERRADA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1180663",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:05",
+      "comentario": "REVISAR REPUESTO QUE SALE PENDIENTE Y VER SI DEBEMSO INSTALAR",
+      "mencionado": "ariquelme@curifor.com, jfuentes@curifor.com"
+    },
+    {
+      "folio_ot": "1180492",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:29",
+      "comentario": "CERRADA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1179551",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:31",
+      "comentario": "CERRADA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1179415",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:34",
+      "comentario": "REVISAR SI SE REALIZARON CAMPAÑAS PENDIENTES PARA COBRAR",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1179411",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:36",
+      "comentario": "REVISAR SI CAMPAÑAS SE REALIZARON PARA COBRAR",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1179388",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:39",
+      "comentario": "REVISAR SI LAS CAMPAÑAS SE REALIZARON PARA COBRAR",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1179384",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "22/06/2026 22:41",
+      "comentario": "REVISAR SI CAMPAÑAS FUERON REALIZADAS PARA COBRAR",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1177033",
+      "autor": "jarmijo@curifor.com",
+      "fecha": "23/06/2026 14:15",
+      "comentario": "DANIEL MARTINEZ CUENTA CON DOCUMENTACION PARA COBRAR GARANTIA",
+      "mencionado": "dmartinez@curifor.com, gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1178799",
+      "autor": "jarmijo@curifor.com",
+      "fecha": "23/06/2026 15:19",
+      "comentario": "UNIDAD POR REVISION 30 DIAS  SE DEBE COBRAR EN PORTAL",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1181583",
+      "autor": "jarmijo@curifor.com",
+      "fecha": "23/06/2026 15:22",
+      "comentario": "COBRAR A USADOS",
+      "mencionado": "dmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1181772",
+      "autor": "jarmijo@curifor.com",
+      "fecha": "23/06/2026 15:23",
+      "comentario": "CARGO INTERNO SIN APROBAR",
+      "mencionado": "dfigueroa@curifor.com"
+    },
+    {
+      "folio_ot": "1181772",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "23/06/2026 15:29",
+      "comentario": "favor de aprobar CG 2017 para que se salga de listado de OT vigente",
+      "mencionado": "jploreto@curifor.com, cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1001186",
+      "autor": "jfuentes@curifor.com",
+      "fecha": "23/06/2026 17:41",
+      "comentario": "Se entregan respaldos de falla. Favor cobrar.",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1115238",
+      "autor": "jfuentes@curifor.com",
+      "fecha": "23/06/2026 18:16",
+      "comentario": "Realizar devolución de repuesto y cargar en OT 1187772. Vale consumo que debes devolver 31950.\nEsta OT se debe cerrar a 1$",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1182025",
+      "autor": "cjerez@curifor.com",
+      "fecha": "23/06/2026 20:50",
+      "comentario": "don Luis que pasa con este caso? Favor confirmar los repuestos que están pendientes en bodega desde Mayo",
+      "mencionado": "lmartinez@curifor.com, jploreto@curifor.com"
+    },
+    {
+      "folio_ot": "1189431",
+      "autor": "cjerez@curifor.com",
+      "fecha": "24/06/2026 16:19",
+      "comentario": "será cobrada por Caro 24-06",
+      "mencionado": "lmartinez@curifor.com, cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1115238",
+      "autor": "gmaldonado@curifor.com",
+      "fecha": "24/06/2026 16:25",
+      "comentario": "se realiza cierre de ot a $1. Pero repuesto se carga en ot 1187772 y se cobra en reclamo de garantía n° 204239",
+      "mencionado": "cjerez@curifor.com, dfigueroa@curifor.com, jploreto@curifor.com, amarin@curifor.com"
+    },
+    {
+      "folio_ot": "1186630",
+      "autor": "cjerez@curifor.com",
+      "fecha": "24/06/2026 16:33",
+      "comentario": "Favor notificar cierre",
+      "mencionado": "jarmijo@curifor.com, jfuentes@curifor.com"
+    },
+    {
+      "folio_ot": "1186630",
+      "autor": "jfuentes@curifor.com",
+      "fecha": "25/06/2026 09:44",
+      "comentario": "OT CERRADA CON FACTURA EN CAJA N° 856637",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1180663",
+      "autor": "jfuentes@curifor.com",
+      "fecha": "25/06/2026 09:56",
+      "comentario": "Hay que citar a cliente para cambio del módulo. Mecánico Nico Medina.",
+      "mencionado": "ariquelme@curifor.com, dfigueroa@curifor.com"
+    },
+    {
+      "folio_ot": "1067988",
+      "autor": "jfuentes@curifor.com",
+      "fecha": "25/06/2026 10:09",
+      "comentario": "COBRAR CON EVIDENCIA DE PARASOL TECHO DE FORD ESCAPE.",
+      "mencionado": "gmaldonado@curifor.com"
+    },
+    {
+      "folio_ot": "1008175",
+      "autor": "gmaldonado@curifor.com",
+      "fecha": "25/06/2026 10:25",
+      "comentario": "se cobró por garantía en reclamo 204241",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1182025",
+      "autor": "lmartinez@curifor.com",
+      "fecha": "25/06/2026 10:36",
+      "comentario": "Falta un repuesto \nETA 29/06 BO fuente SOPORTE - APOYO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1173722",
+      "autor": "gmaldonado@curifor.com",
+      "fecha": "25/06/2026 11:26",
+      "comentario": "se realiza cobro de repuesto en el portal de garantía con numero de reclamo 204243",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1173722",
+      "autor": "gmaldonado@curifor.com",
+      "fecha": "25/06/2026 11:27",
+      "comentario": "se realiza cobro en portal de garantía con numero de reclamo 204243",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1179415",
+      "autor": "gmaldonado@curifor.com",
+      "fecha": "25/06/2026 11:35",
+      "comentario": "campaña cobrada en reclamo 204242",
+      "mencionado": "dfigueroa@curifor.com"
+    },
+    {
+      "folio_ot": "1179411",
+      "autor": "gmaldonado@curifor.com",
+      "fecha": "25/06/2026 13:33",
+      "comentario": "se realiza cobro en reclamo 204244",
+      "mencionado": "dfigueroa@curifor.com"
+    },
+    {
+      "folio_ot": "1165889",
+      "autor": "gcarrasco@curifor.com",
+      "fecha": "26/06/2026 13:09",
+      "comentario": "?????????????????????????",
+      "mencionado": "nmorales@curifor.com"
+    },
+    {
+      "folio_ot": "1165889",
+      "autor": "cjerez@curifor.com",
+      "fecha": "26/06/2026 13:10",
+      "comentario": "hacete cargo",
+      "mencionado": "gcarrasco@curifor.com"
+    },
+    {
+      "folio_ot": "1172610",
+      "autor": "nmorales@curifor.com",
+      "fecha": "03/07/2026 10:08",
+      "comentario": "VOR ENVIADO EL 25-06 PARA FINIQUITAR SU CIERRE.",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1172610",
+      "autor": "nmorales@curifor.com",
+      "fecha": "03/07/2026 10:08",
+      "comentario": "VOR ENVIADO EL 25-06 PARA FINIQUITAR SU CIERRE.",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1181936",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/07/2026 14:34",
+      "comentario": "Caso de caja transmision, por garantia\nclienta bloqueada para cerrar",
+      "mencionado": "fordonez@curifor.com, lmartinez@curifor.com, cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1187938",
+      "autor": "cjerez@curifor.com",
+      "fecha": "07/07/2026 15:07",
+      "comentario": "Señores, en qué estado se encuentra este servicio?",
+      "mencionado": "cpasten@curifor.com, mmunoz@curifor.com"
+    },
+    {
+      "folio_ot": "1177348",
+      "autor": "cjerez@curifor.com",
+      "fecha": "07/07/2026 16:54",
+      "comentario": "que pasa con este caso?",
+      "mencionado": "fordonez@curifor.com, eortiz@curifor.com"
+    },
+    {
+      "folio_ot": "1178461",
+      "autor": "cjerez@curifor.com",
+      "fecha": "07/07/2026 16:56",
+      "comentario": "Que pasa con este caso? Matías no tiene usuario en la App, ya han pasado meses",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1176054",
+      "autor": "cjerez@curifor.com",
+      "fecha": "07/07/2026 17:10",
+      "comentario": "cerrar $1",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1178461",
+      "autor": "cjerez@curifor.com",
+      "fecha": "07/07/2026 18:28",
+      "comentario": "Cerrada a $1 - trabajo realizado en otra OT",
+      "mencionado": "fordonez@curifor.com"
+    },
+    {
+      "folio_ot": "1171126",
+      "autor": "mmunoz@curifor.com",
+      "fecha": "13/07/2026 13:29",
+      "comentario": "A ESPERA DE GRABADO DE MOTOR 15/07/2026",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1170049",
+      "autor": "mmunoz@curifor.com",
+      "fecha": "13/07/2026 13:30",
+      "comentario": "CASO DE DYP, FAVOR COMENTAR QUE SE HARA CON ESTE CASO, CLIENTE NO QUIERE PAGAR DEDUSIBLE",
+      "mencionado": "cpasten@curifor.com"
+    },
+    {
+      "folio_ot": "1193283",
+      "autor": "fespinoza@curifor.com",
+      "fecha": "15/07/2026 13:11",
+      "comentario": "Cristobal favor revisar",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1175045",
+      "autor": "cjerez@curifor.com",
+      "fecha": "15/07/2026 13:17",
+      "comentario": "hola Felipe",
+      "mencionado": "fespinoza@curifor.com"
+    },
+    {
+      "folio_ot": "1181451",
+      "autor": "caliaga@curifor.com",
+      "fecha": "15/07/2026 13:49",
+      "comentario": "Premio entregado a técnico Jonathan Neira por cumplir con estándares de la marca Ford",
+      "mencionado": "cjerez@curifor.com, cflores@curifor.com, rsoto@curifor.com"
+    },
+    {
+      "folio_ot": "1180260",
+      "autor": "caliaga@curifor.com",
+      "fecha": "15/07/2026 13:54",
+      "comentario": "Embrague de ford focus costo cliente y en proceso de cambio técnico daña repuesto, este se debe asumir, pero don Ricardo Soto quedo como responsable de esta acción",
+      "mencionado": "rsoto@curifor.com, cjerez@curifor.com, cflores@curifor.com"
+    },
+    {
+      "folio_ot": "834124",
+      "autor": "fordonez@curifor.com",
+      "fecha": "17/07/2026 11:51",
+      "comentario": "enviado correo a soporte nuevamente",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "834124",
+      "autor": "fordonez@curifor.com",
+      "fecha": "17/07/2026 11:53",
+      "comentario": "se envio correo a soporte nuevamentes",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1180416",
+      "autor": "fordonez@curifor.com",
+      "fecha": "17/07/2026 11:58",
+      "comentario": "cerrada con cargo interno 21270 17-07-26",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1180416",
+      "autor": "fordonez@curifor.com",
+      "fecha": "17/07/2026 12:00",
+      "comentario": "cerrada con cargo interno 21270 17-07-26",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1180318",
+      "autor": "fordonez@curifor.com",
+      "fecha": "17/07/2026 12:05",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1180167",
+      "autor": "fordonez@curifor.com",
+      "fecha": "17/07/2026 12:09",
+      "comentario": "CERRADA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1162272",
+      "autor": "mmartinez@curifor.com",
+      "fecha": "20/07/2026 12:55",
+      "comentario": "PROBLEMA CON VALE DE CONSUMO ANULADO/ SE ESTA REVISANDO CON AREA CONTABLE/SOPORTE/REPUESTOS. VALE DE CONSUMO ANULADO NO DEJA LIQUIDAR OT.",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1177545",
+      "autor": "oescobar@curifor.com",
+      "fecha": "24/07/2026 10:10",
+      "comentario": "SE CERRÓ A UN PESO POR PERDIDA TOTAL",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1179632",
+      "autor": "fordonez@curifor.com",
+      "fecha": "24/07/2026 12:01",
+      "comentario": "deben de retirar unidad, cuando la retira cliente",
+      "mencionado": "rmunoz@curifor.com"
+    },
+    {
+      "folio_ot": "1182101",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:14",
+      "comentario": "cerrada costo RAC",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182100",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:17",
+      "comentario": "cerrada costo rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182098",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:20",
+      "comentario": "cerrada CI rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182095",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:23",
+      "comentario": "cerrada ci rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182094",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:26",
+      "comentario": "cerrada ci rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182093",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:35",
+      "comentario": "cerrada rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182092",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:39",
+      "comentario": "cerrada ci rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182089",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:44",
+      "comentario": "cerrada rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "900733",
+      "autor": "cjerez@curifor.com",
+      "fecha": "27/07/2026 15:50",
+      "comentario": "OT con Factura X a $1 - favor corregir",
+      "mencionado": "dfigueroa@curifor.com, jploreto@curifor.com"
+    },
+    {
+      "folio_ot": "1182087",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:53",
+      "comentario": "cerrada CI rac",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182036",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 15:57",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182025",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:01",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1181936",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:03",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1181936",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:04",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1181858",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:07",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1181764",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:17",
+      "comentario": "se solicita OC a carolina",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1181433",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:19",
+      "comentario": "garantia",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1178693",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:25",
+      "comentario": "cierre gerencia 2050",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1178496",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:46",
+      "comentario": "consultando a taller movil",
+      "mencionado": "mparada@curifor.com"
+    },
+    {
+      "folio_ot": "1177250",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 16:53",
+      "comentario": "garantia",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1173911",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 17:03",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1169015",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 17:12",
+      "comentario": "se consulta a margarita parada por cierre de orden",
+      "mencionado": "mparada@curifor.com"
+    },
+    {
+      "folio_ot": "1178830",
+      "autor": "fordonez@curifor.com",
+      "fecha": "27/07/2026 17:55",
+      "comentario": "cg 2052",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "900733",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "27/07/2026 22:38",
+      "comentario": "se elimina factura y se pide anulación de liquidaciones para ver cierre",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "900733",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "28/07/2026 09:49",
+      "comentario": "cerrada",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "46245",
+      "autor": "ssarmiento@curifor.com",
+      "fecha": "28/07/2026 10:53",
+      "comentario": "Se ha solicitado desde 03/03/2025 la regularización de este caso a soporteERP, a la fecha sin solución.\nNúmero 46245 errado por defecto de sistema.\nLa ORDEN DE TRABAJO correspondiente al caso es la OT N°875433 que se encuentra liquidada, facturada y con estado “Finalizado” \nFactura Seguro ST N°754818 con fecha 05/07/2024.",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1161665",
+      "autor": "fordonez@curifor.com",
+      "fecha": "28/07/2026 17:37",
+      "comentario": "se esta solicitando anulacion de liquidacion 77898 para reliquidar",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1176037",
+      "autor": "fordonez@curifor.com",
+      "fecha": "28/07/2026 17:40",
+      "comentario": "cierre gerencia 2048 por caroline",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1165645",
+      "autor": "cjerez@curifor.com",
+      "fecha": "29/07/2026 12:09",
+      "comentario": "Estimados que tenemos con este caso? Cliente tiene un abono en cuenta ficha",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185561",
+      "autor": "cjerez@curifor.com",
+      "fecha": "29/07/2026 16:17",
+      "comentario": "OT Abierta por campañas, está camino a 90 días",
+      "mencionado": "lmartinez@curifor.com, fordonez@curifor.com, cromero@curifor.com, eortiz@curifor.com"
+    },
+    {
+      "folio_ot": "1176637",
+      "autor": "oescobar@curifor.com",
+      "fecha": "31/07/2026 10:43",
+      "comentario": "SE CIERRA OT PORQUE ESTABA DUPLICADA, OT INICIAL SE FACTURÓ.",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1182683",
+      "autor": "oescobar@curifor.com",
+      "fecha": "04/08/2026 09:02",
+      "comentario": "SE CERRÓ OT PORQUE AL CLIENTE LO INDEMNIZARON DESDE CIA",
+      "mencionado": "ssarmiento@curifor.com"
+    },
+    {
+      "folio_ot": "1177634",
+      "autor": "mmatta@curifor.com",
+      "fecha": "04/08/2026 11:38",
+      "comentario": "revisar falta vale de consumo para cerra ot",
+      "mencionado": "mvillanueva@curifor.com"
+    },
+    {
+      "folio_ot": "1160572",
+      "autor": "oescobar@curifor.com",
+      "fecha": "05/08/2026 12:47",
+      "comentario": "se cierra ot vor, se envió por correo conformidad.",
+      "mencionado": "ssarmiento@curifor.com"
+    },
+    {
+      "folio_ot": "1160572",
+      "autor": "ctroncoso@curifor.com",
+      "fecha": "05/08/2026 17:00",
+      "comentario": "favor cerrar vor",
+      "mencionado": "oescobar@curifor.com"
+    },
+    {
+      "folio_ot": "1179632",
+      "autor": "eortiz@curifor.com",
+      "fecha": "06/08/2026 11:11",
+      "comentario": "favor de su ayuda para el cierre de OT",
+      "mencionado": "rmunoz@curifor.com, lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1190039",
+      "autor": "eortiz@curifor.com",
+      "fecha": "06/08/2026 11:21",
+      "comentario": "UNIDAD EN REPARACION CAMBIO DE MOTOR UNIDAD DE USADOS",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1193057",
+      "autor": "eortiz@curifor.com",
+      "fecha": "06/08/2026 11:43",
+      "comentario": "unidad en reparación con pts de adicionales  aprobado",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1193318",
+      "autor": "eortiz@curifor.com",
+      "fecha": "06/08/2026 11:56",
+      "comentario": "unidad se realizo la mantención de los 100.000km.\nahora se encuentra en d&p aun no factura el caso",
+      "mencionado": "cjerez@curifor.com"
+    },
+    {
+      "folio_ot": "1193398",
+      "autor": "eortiz@curifor.com",
+      "fecha": "06/08/2026 12:11",
+      "comentario": "unidad se encuentra en reparación.\nunidad se le cambio soporte de diferencial delantero.",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1183594",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:12",
+      "comentario": "OT CERRADA\nGRABADO DE PATENTE",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1183916",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:13",
+      "comentario": "MANTENCION PREPAGADA\nOT ENTREGADA A CARO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1184386",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:14",
+      "comentario": "MANTENCION PREPAGADA \nOT ENTREGADA A CARO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1184542",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:15",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185037",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:16",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185286",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:18",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185450",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:20",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185614",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:21",
+      "comentario": "MANTENCION PREPAGADA \nOT ENTREGADA A CARO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185803",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:22",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185821",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:22",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1185930",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:23",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1186249",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:23",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1186384",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:36",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1186477",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:37",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1186563",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:39",
+      "comentario": "GARANTIA REEMPLAZO DE BATERIA\nRESPALDOS ENVIADOS A CARO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1186907",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:40",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1186907",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:42",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187127",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:44",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187226",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:46",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187399",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:50",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187433",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:51",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187537",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 12:58",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187640",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 13:00",
+      "comentario": "OT CERRADA 1$\nA LA ESPERA DE REPUESTO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187668",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 13:02",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187743",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 13:04",
+      "comentario": "GARANTIA FOCO PLAFONIER\nRESPALDOS ENVIADOS A CARO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187819",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "06/08/2026 13:12",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1173358",
+      "autor": "jgomez@curifor.com",
+      "fecha": "06/08/2026 15:41",
+      "comentario": "ESPERA ADICIONAL Pendiente solicitud OR adicional por refuerzo, se debe enviar respaldos para entregar a liquidador. Se envía a pedir valor de repuesto",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1158213",
+      "autor": "cjerez@curifor.com",
+      "fecha": "06/08/2026 16:16",
+      "comentario": "Comentario de prueba",
+      "mencionado": "jgomez@curifor.com"
+    },
+    {
+      "folio_ot": "1176076",
+      "autor": "jgomez@curifor.com",
+      "fecha": "07/08/2026 09:26",
+      "comentario": "EN TRABAJO Vehículo en Servicio Técnico en revisión por ruido en AC y mantención, ingresará a DyP Lunes 10 de agosto para finalizar trabajos, se debe confirmar que no tenga adicionales.",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1160633",
+      "autor": "jgomez@curifor.com",
+      "fecha": "07/08/2026 09:27",
+      "comentario": "ESPERA REPUESTO Pendiente Bisel Portalon, solicitado apoyo a AG dado que está en importación, sin respuesta por un desarme",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1167010",
+      "autor": "ssarmiento@curifor.com",
+      "fecha": "07/08/2026 09:36",
+      "comentario": "Facturado 07/08/26\nFact x deducible F:862128\nFactura compañia F:862131",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1167010",
+      "autor": "ssarmiento@curifor.com",
+      "fecha": "07/08/2026 09:44",
+      "comentario": "Facturado 07/08/2026\nFactura cliente F:862128 (Deducible)\nFactura compañía F:862131",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1134673",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "07/08/2026 10:46",
+      "comentario": "ICASTRO ENVIARÁ ANTECEDENTES PARA FACTURAR SIN NECESIDAD DE CI, SE HARÁ IGUAL PARA OTROS CASOS HDI",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1186363",
+      "autor": "eortiz@curifor.com",
+      "fecha": "07/08/2026 13:23",
+      "comentario": "caro de su ayuda cobro de ot",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1186500",
+      "autor": "eortiz@curifor.com",
+      "fecha": "07/08/2026 13:28",
+      "comentario": "realizar cobro a departamento de usados",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1188011",
+      "autor": "eortiz@curifor.com",
+      "fecha": "07/08/2026 13:30",
+      "comentario": "favor de su ayuda en cobro de OT CAMPAÑA",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1192142",
+      "autor": "eortiz@curifor.com",
+      "fecha": "07/08/2026 14:04",
+      "comentario": "unidad paso a D&P  tiene que pagar 3 horas por diagnostico",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1191752",
+      "autor": "eortiz@curifor.com",
+      "fecha": "07/08/2026 14:06",
+      "comentario": "mantención de cortesía cobrar a nuevo",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1195672",
+      "autor": "eortiz@curifor.com",
+      "fecha": "07/08/2026 17:37",
+      "comentario": "unidad en diagnostico por rejilla activa",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1183972",
+      "autor": "eortiz@curifor.com",
+      "fecha": "07/08/2026 17:47",
+      "comentario": "cambio de batería por garantía.",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1187840",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 13:13",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1183302",
+      "autor": "eortiz@curifor.com",
+      "fecha": "10/08/2026 13:15",
+      "comentario": "FAVOR DE SU AYUDA EN COBRO DE OT",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1188210",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 13:15",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1188313",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 13:19",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1183879",
+      "autor": "eortiz@curifor.com",
+      "fecha": "10/08/2026 13:19",
+      "comentario": "FAVOR DE SU AYUDA EN COBRO DE CAMAPAÑA",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1179632",
+      "autor": "eortiz@curifor.com",
+      "fecha": "10/08/2026 13:21",
+      "comentario": "FAVOR DE SU AYUDA EN CIERRE DE OT",
+      "mencionado": "rmunoz@curifor.com, lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1188584",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 13:21",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1183576",
+      "autor": "eortiz@curifor.com",
+      "fecha": "10/08/2026 13:28",
+      "comentario": "FAVOR DE SU AYUDA EN COBRO DE OT",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1183571",
+      "autor": "eortiz@curifor.com",
+      "fecha": "10/08/2026 13:30",
+      "comentario": "FAVOR DE SU AYUDA EN COBRO DE CAMPAÑA",
+      "mencionado": "cromero@curifor.com"
+    },
+    {
+      "folio_ot": "1185618",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:03",
+      "comentario": "VEHICULO EN TALLER",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1189118",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:42",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1189211",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:44",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1189384",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:45",
+      "comentario": "VEHICULO EN TALLER",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1189444",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:45",
+      "comentario": "VEHICULO EN TALLER, GARANTIA REEMPLAZO DE BATERIA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1189547",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:47",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1189683",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:49",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1167472",
+      "autor": "cjerez@curifor.com",
+      "fecha": "10/08/2026 16:50",
+      "comentario": "¡GESTIONAR CIERRE DE ORDEN",
+      "mencionado": "mvillanueva@curifor.com"
+    },
+    {
+      "folio_ot": "1189686",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:50",
+      "comentario": "TRABAJO SERVICIO 3° EMBALATADO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1190236",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 16:55",
+      "comentario": "GARANTIA SENSOR OXIGENO, RESPALDOS ENVIADOS A CARO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1190860",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 17:19",
+      "comentario": "MANTENCION DE CORTESIA JAECOO",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1190903",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "10/08/2026 17:23",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1112507",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 12:10",
+      "comentario": "RESPALDOS EXISTENTES, REPUESTOS REEMPLAZADOS NO ESTAN EN BODEGA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1117806",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 12:10",
+      "comentario": "SIN RESPALDOS PARA COBRAR GARANTIA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1188405",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 13:58",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "884765",
+      "autor": "ariquelme@curifor.com",
+      "fecha": "11/08/2026 14:06",
+      "comentario": "REPUESTO NO SE ENCUENTRA EN SUCURSAL SIN PODER COBRAR",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1136267",
+      "autor": "ariquelme@curifor.com",
+      "fecha": "11/08/2026 14:09",
+      "comentario": "SOLICITAR AUTORIZACION A JUAN PABLO PARA CIERRE COSTO VENTAS SIN OC",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1136267",
+      "autor": "ariquelme@curifor.com",
+      "fecha": "11/08/2026 14:12",
+      "comentario": "correo enviado a Juan Pablo en espera de aprobacion",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1153027",
+      "autor": "ariquelme@curifor.com",
+      "fecha": "11/08/2026 14:14",
+      "comentario": "se buscara espejo para revisar cobro",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1159201",
+      "autor": "ariquelme@curifor.com",
+      "fecha": "11/08/2026 14:19",
+      "comentario": "se entrega documentación a Giselle para cobro",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1191075",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 14:30",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1166317",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "11/08/2026 15:12",
+      "comentario": "REVISAR CASO CON JUAN PABLO POR COBRO A FORD CON FELIPE FERRADA",
+      "mencionado": "jploreto@curifor.com"
+    },
+    {
+      "folio_ot": "1170269",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "11/08/2026 15:18",
+      "comentario": "se envía a anular liquidación 75683 despues se cierra CI",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1172025",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "11/08/2026 15:28",
+      "comentario": "se solicita anular liquidación 75915 y posterior se debe facturar, dinero en cuenta ficha empresa",
+      "mencionado": "ariquelme@curifor.com"
+    },
+    {
+      "folio_ot": "1172175",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "11/08/2026 15:33",
+      "comentario": "se pide anular liquidación 76199, posterior realizar CI con OC 33250",
+      "mencionado": "ariquelme@curifor.com"
+    },
+    {
+      "folio_ot": "1172808",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "11/08/2026 15:36",
+      "comentario": "CERRADA",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1174300",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "11/08/2026 15:45",
+      "comentario": "se envía correo a Marcelo guerrero con cobro por traslado en grúa a sucursal Rancagua, garantía de trabajo realizado por taller móvil",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1174441",
+      "autor": "dfigueroa@curifor.com",
+      "fecha": "11/08/2026 15:58",
+      "comentario": "se da cierre sin oc por tiempo, existe respaldo de cobro y aprobación por correo sin respuesta se informa al area por el cierre.",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1191236",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 16:04",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1191199",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 16:04",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1154744",
+      "autor": "cjerez@curifor.com",
+      "fecha": "11/08/2026 16:23",
+      "comentario": "Favor confirmar caso, figuran repuestos pendientes en bodega",
+      "mencionado": "fordonez@curifor.com, lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1190272",
+      "autor": "cjerez@curifor.com",
+      "fecha": "11/08/2026 16:26",
+      "comentario": "gestionar caso, repuesto en bodega",
+      "mencionado": "eortiz@curifor.com, lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1181469",
+      "autor": "cjerez@curifor.com",
+      "fecha": "11/08/2026 16:36",
+      "comentario": "favor gestionar esta garantía con urgencia. lleva muchos de apertura",
+      "mencionado": "rmunoz@curifor.com, cromero@curifor.com, lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1191990",
+      "autor": "cjerez@curifor.com",
+      "fecha": "11/08/2026 16:40",
+      "comentario": "vehiculo pendiente de ingreso para instalacion de repuesto en bodega",
+      "mencionado": "rmunoz@curifor.com, lmartinez@curifor.com"
+    },
+    {
+      "folio_ot": "1180165",
+      "autor": "cjerez@curifor.com",
+      "fecha": "11/08/2026 16:43",
+      "comentario": "en que está este caso? tiene un repuesto en bodega asoiado a esta patente",
+      "mencionado": "dfigueroa@curifor.com, jploreto@curifor.com"
+    },
+    {
+      "folio_ot": "1142225",
+      "autor": "jgomez@curifor.com",
+      "fecha": "11/08/2026 17:16",
+      "comentario": "VH FACTURADO 10/08",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1187253",
+      "autor": "fagurto@curifor.com",
+      "fecha": "11/08/2026 17:21",
+      "comentario": "VH EN REPARACIONES, CON FECHA ESTIMADA DE ENTREGA PARA 21/08",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1191345",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 17:49",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1191975",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 17:53",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    },
+    {
+      "folio_ot": "1191990",
+      "autor": "rmunoz@curifor.com",
+      "fecha": "11/08/2026 17:55",
+      "comentario": "OT CERRADA 1$",
+      "mencionado": ""
+    }
+  ]
+}

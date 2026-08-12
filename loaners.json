@@ -1,0 +1,40 @@
+{
+  "loaners": {
+    "3FTTW8S94RRB81297": {
+      "sucursal": "Talca 2",
+      "kms_salida": 1485,
+      "fecha_solicitud": "2026-08-07",
+      "vin_cliente": "8AFBR01C3SJ411048",
+      "nombre_cliente": "Matias Fernández Perez",
+      "modelo_cliente": "RANGER",
+      "fecha_ot": "2026-07-30",
+      "caso_sf": "",
+      "_editado_por": "mmunoz@curifor.com",
+      "_editado": "07/08/2026 16:00"
+    },
+    "3FTTW8M3XRRB81541": {
+      "sucursal": "Curicó (LINDEROS)",
+      "kms_salida": 10806,
+      "fecha_solicitud": "2026-08-03",
+      "vin_cliente": "1FTFW3L54SFC54179",
+      "nombre_cliente": "ASESORIAS E INVERSIONES EMF LIMITADA",
+      "modelo_cliente": "F150",
+      "fecha_ot": "2026-08-03",
+      "caso_sf": "1641800",
+      "_editado_por": "cjerez@curifor.com",
+      "_editado": "06/08/2026 09:48"
+    },
+    "8AFBR01C9SJ472257": {
+      "sucursal": "Linderos (RANCAGUA)",
+      "kms_salida": 21014,
+      "fecha_solicitud": "Disponible",
+      "vin_cliente": "",
+      "nombre_cliente": "",
+      "modelo_cliente": "",
+      "fecha_ot": "",
+      "caso_sf": "",
+      "_editado_por": "dfigueroa@curifor.com",
+      "_editado": "10/08/2026 09:17"
+    }
+  }
+}

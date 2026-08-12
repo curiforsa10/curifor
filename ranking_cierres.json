@@ -1,0 +1,1637 @@
+{
+  "fecha_generacion": "10/08/2026 12:09",
+  "periodo_desde": "2026-01-01",
+  "total_ots_90mas": 32,
+  "por_asesor": [
+    {
+      "ASESOR": "ALEXANDER RIQUELME",
+      "total": 5,
+      "dias_promedio": 123.0,
+      "dias_max": 161
+    },
+    {
+      "ASESOR": "VANESSA PIZARRO",
+      "total": 4,
+      "dias_promedio": 165.8,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "JUAN ARMIJO",
+      "total": 2,
+      "dias_promedio": 246.0,
+      "dias_max": 256
+    },
+    {
+      "ASESOR": "FRANCISCO GONZALEZ",
+      "total": 2,
+      "dias_promedio": 139.0,
+      "dias_max": 156
+    },
+    {
+      "ASESOR": "Gonzalo Aliaga ",
+      "total": 2,
+      "dias_promedio": 606.0,
+      "dias_max": 607
+    },
+    {
+      "ASESOR": "OSCAR ESCOBAR",
+      "total": 2,
+      "dias_promedio": 254.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "ALEX GUTIERREZ",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "BASTIAN ARENAS",
+      "total": 1,
+      "dias_promedio": 261.0,
+      "dias_max": 261
+    },
+    {
+      "ASESOR": "DANIEL MARTINEZ",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "CALIAGAC",
+      "total": 1,
+      "dias_promedio": 593.0,
+      "dias_max": 593
+    },
+    {
+      "ASESOR": "Giovanni Salcedo",
+      "total": 1,
+      "dias_promedio": 546.0,
+      "dias_max": 546
+    },
+    {
+      "ASESOR": "GIOVANNI SALCEDO",
+      "total": 1,
+      "dias_promedio": 201.0,
+      "dias_max": 201
+    },
+    {
+      "ASESOR": "Felipe Fuentes",
+      "total": 1,
+      "dias_promedio": 761.0,
+      "dias_max": 761
+    },
+    {
+      "ASESOR": "FABRITZIO VALENZUELA",
+      "total": 1,
+      "dias_promedio": 544.0,
+      "dias_max": 544
+    },
+    {
+      "ASESOR": "Juan Armijo V",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "JAVIER VALDIVIA",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "LEONOR QUINZACARA",
+      "total": 1,
+      "dias_promedio": 144.0,
+      "dias_max": 144
+    },
+    {
+      "ASESOR": "RODRIGO MUNOZ",
+      "total": 1,
+      "dias_promedio": 212.0,
+      "dias_max": 212
+    }
+  ],
+  "por_sucursal": [
+    {
+      "SUCURSAL": "RANCAGUA",
+      "total": 13,
+      "dias_promedio": 192.3,
+      "dias_max": 365
+    },
+    {
+      "SUCURSAL": "LINDEROS",
+      "total": 4,
+      "dias_promedio": 213.8,
+      "dias_max": 365
+    },
+    {
+      "SUCURSAL": "PLACILLA",
+      "total": 4,
+      "dias_promedio": 388.0,
+      "dias_max": 546
+    },
+    {
+      "SUCURSAL": "CURICO",
+      "total": 3,
+      "dias_promedio": 601.7,
+      "dias_max": 607
+    },
+    {
+      "SUCURSAL": "TALCA",
+      "total": 3,
+      "dias_promedio": 710.0,
+      "dias_max": 761
+    },
+    {
+      "SUCURSAL": "CHILLAN",
+      "total": 2,
+      "dias_promedio": 563.0,
+      "dias_max": 761
+    },
+    {
+      "SUCURSAL": "LO BLANCO",
+      "total": 2,
+      "dias_promedio": 254.0,
+      "dias_max": 365
+    },
+    {
+      "SUCURSAL": "COQUIMBO",
+      "total": 1,
+      "dias_promedio": 144.0,
+      "dias_max": 144
+    }
+  ],
+  "por_asesor_sucursal": [
+    {
+      "ASESOR": "ALEXANDER RIQUELME",
+      "SUCURSAL": "RANCAGUA",
+      "total": 5,
+      "dias_promedio": 123.0,
+      "dias_max": 161
+    },
+    {
+      "ASESOR": "VANESSA PIZARRO",
+      "SUCURSAL": "RANCAGUA",
+      "total": 4,
+      "dias_promedio": 165.8,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "JUAN ARMIJO",
+      "SUCURSAL": "RANCAGUA",
+      "total": 2,
+      "dias_promedio": 246.0,
+      "dias_max": 256
+    },
+    {
+      "ASESOR": "FRANCISCO GONZALEZ",
+      "SUCURSAL": "LINDEROS",
+      "total": 2,
+      "dias_promedio": 139.0,
+      "dias_max": 156
+    },
+    {
+      "ASESOR": "Gonzalo Aliaga ",
+      "SUCURSAL": "CURICO",
+      "total": 2,
+      "dias_promedio": 606.0,
+      "dias_max": 607
+    },
+    {
+      "ASESOR": "OSCAR ESCOBAR",
+      "SUCURSAL": "LO BLANCO",
+      "total": 2,
+      "dias_promedio": 254.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "ALEX GUTIERREZ",
+      "SUCURSAL": "CHILLAN",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "BASTIAN ARENAS",
+      "SUCURSAL": "PLACILLA",
+      "total": 1,
+      "dias_promedio": 261.0,
+      "dias_max": 261
+    },
+    {
+      "ASESOR": "DANIEL MARTINEZ",
+      "SUCURSAL": "RANCAGUA",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "CALIAGAC",
+      "SUCURSAL": "CURICO",
+      "total": 1,
+      "dias_promedio": 593.0,
+      "dias_max": 593
+    },
+    {
+      "ASESOR": "Giovanni Salcedo",
+      "SUCURSAL": "PLACILLA",
+      "total": 1,
+      "dias_promedio": 546.0,
+      "dias_max": 546
+    },
+    {
+      "ASESOR": "GIOVANNI SALCEDO",
+      "SUCURSAL": "PLACILLA",
+      "total": 1,
+      "dias_promedio": 201.0,
+      "dias_max": 201
+    },
+    {
+      "ASESOR": "Felipe Fuentes",
+      "SUCURSAL": "TALCA",
+      "total": 1,
+      "dias_promedio": 761.0,
+      "dias_max": 761
+    },
+    {
+      "ASESOR": "FABRITZIO VALENZUELA",
+      "SUCURSAL": "PLACILLA",
+      "total": 1,
+      "dias_promedio": 544.0,
+      "dias_max": 544
+    },
+    {
+      "ASESOR": "Juan Armijo V",
+      "SUCURSAL": "RANCAGUA",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "JAVIER VALDIVIA",
+      "SUCURSAL": "LINDEROS",
+      "total": 1,
+      "dias_promedio": 365.0,
+      "dias_max": 365
+    },
+    {
+      "ASESOR": "LEONOR QUINZACARA",
+      "SUCURSAL": "COQUIMBO",
+      "total": 1,
+      "dias_promedio": 144.0,
+      "dias_max": 144
+    },
+    {
+      "ASESOR": "RODRIGO MUNOZ",
+      "SUCURSAL": "LINDEROS",
+      "total": 1,
+      "dias_promedio": 212.0,
+      "dias_max": 212
+    }
+  ],
+  "top_ots": [
+    {
+      "folio_ot": "829246",
+      "sucursal": "TALCA",
+      "asesor": "",
+      "dias_al_cierre": "761",
+      "fecha_apertura": "01/07/2024",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA INTERNA-CURI",
+      "marca": ""
+    },
+    {
+      "folio_ot": "844482",
+      "sucursal": "CHILLAN",
+      "asesor": "",
+      "dias_al_cierre": "761",
+      "fecha_apertura": "01/07/2024",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA INTERNA-CURI",
+      "marca": ""
+    },
+    {
+      "folio_ot": "1007715",
+      "sucursal": "TALCA",
+      "asesor": "Felipe Fuentes",
+      "dias_al_cierre": "761",
+      "fecha_apertura": "01/07/2024",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA MEC",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "844670",
+      "sucursal": "TALCA",
+      "asesor": "",
+      "dias_al_cierre": "608",
+      "fecha_apertura": "01/12/2024",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA INTERNA-CURI",
+      "marca": ""
+    },
+    {
+      "folio_ot": "904553",
+      "sucursal": "CURICO",
+      "asesor": "Gonzalo Aliaga ",
+      "dias_al_cierre": "607",
+      "fecha_apertura": "02/12/2024",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA INTERNA-CURI",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "904921",
+      "sucursal": "CURICO",
+      "asesor": "Gonzalo Aliaga ",
+      "dias_al_cierre": "605",
+      "fecha_apertura": "04/12/2024",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA DYP",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "906529",
+      "sucursal": "CURICO",
+      "asesor": "CALIAGAC",
+      "dias_al_cierre": "593",
+      "fecha_apertura": "16/12/2024",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA INTERNA-CURI",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "868239",
+      "sucursal": "PLACILLA",
+      "asesor": "Giovanni Salcedo",
+      "dias_al_cierre": "546",
+      "fecha_apertura": "01/02/2025",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA DYP",
+      "marca": "BMW"
+    },
+    {
+      "folio_ot": "909641",
+      "sucursal": "PLACILLA",
+      "asesor": "FABRITZIO VALENZUELA",
+      "dias_al_cierre": "544",
+      "fecha_apertura": "01/02/2025",
+      "fecha_cierre": "30/07/2026",
+      "tipo_venta": "VTA MEC",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "854810",
+      "sucursal": "LO BLANCO",
+      "asesor": "OSCAR ESCOBAR",
+      "dias_al_cierre": "365",
+      "fecha_apertura": "01/08/2025",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA INTERNA-DYP",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "869289",
+      "sucursal": "LINDEROS",
+      "asesor": "JAVIER VALDIVIA",
+      "dias_al_cierre": "365",
+      "fecha_apertura": "01/08/2025",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "1120487",
+      "sucursal": "CHILLAN",
+      "asesor": "ALEX GUTIERREZ",
+      "dias_al_cierre": "365",
+      "fecha_apertura": "01/08/2025",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1136651",
+      "sucursal": "RANCAGUA",
+      "asesor": "Juan Armijo V",
+      "dias_al_cierre": "365",
+      "fecha_apertura": "01/08/2025",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA MANTENCIONES",
+      "marca": "BAIC"
+    },
+    {
+      "folio_ot": "1162959",
+      "sucursal": "RANCAGUA",
+      "asesor": "DANIEL MARTINEZ",
+      "dias_al_cierre": "365",
+      "fecha_apertura": "30/01/2025",
+      "fecha_cierre": "30/01/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "1181257",
+      "sucursal": "RANCAGUA",
+      "asesor": "VANESSA PIZARRO",
+      "dias_al_cierre": "365",
+      "fecha_apertura": "22/04/2025",
+      "fecha_cierre": "22/04/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1146688",
+      "sucursal": "PLACILLA",
+      "asesor": "BASTIAN ARENAS",
+      "dias_al_cierre": "261",
+      "fecha_apertura": "09/09/2025",
+      "fecha_cierre": "28/05/2026",
+      "tipo_venta": "VTA INTERNA-CURI",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "1140617",
+      "sucursal": "RANCAGUA",
+      "asesor": "JUAN ARMIJO",
+      "dias_al_cierre": "256",
+      "fecha_apertura": "31/07/2025",
+      "fecha_cierre": "13/04/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "1143560",
+      "sucursal": "RANCAGUA",
+      "asesor": "JUAN ARMIJO",
+      "dias_al_cierre": "236",
+      "fecha_apertura": "20/08/2025",
+      "fecha_cierre": "13/04/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "906800",
+      "sucursal": "LINDEROS",
+      "asesor": "RODRIGO MUNOZ",
+      "dias_al_cierre": "212",
+      "fecha_apertura": "01/01/2026",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA INTERNA-CURI",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "1141772",
+      "sucursal": "PLACILLA",
+      "asesor": "GIOVANNI SALCEDO",
+      "dias_al_cierre": "201",
+      "fecha_apertura": "07/08/2025",
+      "fecha_cierre": "24/02/2026",
+      "tipo_venta": "VTA MEC",
+      "marca": "PEUGEOT"
+    },
+    {
+      "folio_ot": "1169776",
+      "sucursal": "RANCAGUA",
+      "asesor": "ALEXANDER RIQUELME",
+      "dias_al_cierre": "161",
+      "fecha_apertura": "11/02/2026",
+      "fecha_cierre": "22/07/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1161755",
+      "sucursal": "LINDEROS",
+      "asesor": "FRANCISCO GONZALEZ",
+      "dias_al_cierre": "156",
+      "fecha_apertura": "22/12/2025",
+      "fecha_cierre": "27/05/2026",
+      "tipo_venta": "VTA DYP",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1161768",
+      "sucursal": "RANCAGUA",
+      "asesor": "ALEXANDER RIQUELME",
+      "dias_al_cierre": "154",
+      "fecha_apertura": "22/12/2025",
+      "fecha_cierre": "25/05/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "903386",
+      "sucursal": "COQUIMBO",
+      "asesor": "LEONOR QUINZACARA",
+      "dias_al_cierre": "144",
+      "fecha_apertura": "01/12/2025",
+      "fecha_cierre": "24/04/2026",
+      "tipo_venta": "VTA MEC",
+      "marca": "HYUNDAI"
+    },
+    {
+      "folio_ot": "1160062",
+      "sucursal": "LO BLANCO",
+      "asesor": "OSCAR ESCOBAR",
+      "dias_al_cierre": "143",
+      "fecha_apertura": "01/02/2026",
+      "fecha_cierre": "24/06/2026",
+      "tipo_venta": "VTA DYP",
+      "marca": "JAC"
+    },
+    {
+      "folio_ot": "1132396",
+      "sucursal": "LINDEROS",
+      "asesor": "FRANCISCO GONZALEZ",
+      "dias_al_cierre": "122",
+      "fecha_apertura": "01/04/2026",
+      "fecha_cierre": "01/08/2026",
+      "tipo_venta": "VTA DYP",
+      "marca": "BAIC"
+    },
+    {
+      "folio_ot": "1156553",
+      "sucursal": "RANCAGUA",
+      "asesor": "VANESSA PIZARRO",
+      "dias_al_cierre": "110",
+      "fecha_apertura": "13/11/2025",
+      "fecha_cierre": "03/03/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1151366",
+      "sucursal": "RANCAGUA",
+      "asesor": "ALEXANDER RIQUELME",
+      "dias_al_cierre": "105",
+      "fecha_apertura": "13/10/2025",
+      "fecha_cierre": "26/01/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1170988",
+      "sucursal": "RANCAGUA",
+      "asesor": "ALEXANDER RIQUELME",
+      "dias_al_cierre": "101",
+      "fecha_apertura": "23/02/2026",
+      "fecha_cierre": "04/06/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1175091",
+      "sucursal": "RANCAGUA",
+      "asesor": "VANESSA PIZARRO",
+      "dias_al_cierre": "97",
+      "fecha_apertura": "13/03/2026",
+      "fecha_cierre": "18/06/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1173722",
+      "sucursal": "RANCAGUA",
+      "asesor": "ALEXANDER RIQUELME",
+      "dias_al_cierre": "94",
+      "fecha_apertura": "06/03/2026",
+      "fecha_cierre": "08/06/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    },
+    {
+      "folio_ot": "1169273",
+      "sucursal": "RANCAGUA",
+      "asesor": "VANESSA PIZARRO",
+      "dias_al_cierre": "91",
+      "fecha_apertura": "06/02/2026",
+      "fecha_cierre": "08/05/2026",
+      "tipo_venta": "VTA GARANTIA",
+      "marca": "FORD"
+    }
+  ],
+  "por_mes": [
+    {
+      "mes": "2026-01",
+      "total": 2
+    },
+    {
+      "mes": "2026-02",
+      "total": 1
+    },
+    {
+      "mes": "2026-03",
+      "total": 1
+    },
+    {
+      "mes": "2026-04",
+      "total": 4
+    },
+    {
+      "mes": "2026-05",
+      "total": 4
+    },
+    {
+      "mes": "2026-06",
+      "total": 4
+    },
+    {
+      "mes": "2026-07",
+      "total": 2
+    },
+    {
+      "mes": "2026-08",
+      "total": 14
+    }
+  ],
+  "cierres_periodo": {
+    "desde": "2026-01-01",
+    "total": 15964,
+    "por_rango": {
+      "c_0_30": 15882,
+      "c_31_60": 37,
+      "c_61_90": 13,
+      "c_91_mas": 32
+    },
+    "por_sucursal": [
+      {
+        "sucursal": "LINDEROS",
+        "c_0_30": 3618,
+        "c_31_60": 8,
+        "c_61_90": 3,
+        "c_91_mas": 4,
+        "total": 3633,
+        "dias_promedio": 7.5
+      },
+      {
+        "sucursal": "CURICO",
+        "c_0_30": 2763,
+        "c_31_60": 2,
+        "c_61_90": 0,
+        "c_91_mas": 3,
+        "total": 2768,
+        "dias_promedio": 3.5
+      },
+      {
+        "sucursal": "RANCAGUA",
+        "c_0_30": 2510,
+        "c_31_60": 17,
+        "c_61_90": 10,
+        "c_91_mas": 13,
+        "total": 2550,
+        "dias_promedio": 6.5
+      },
+      {
+        "sucursal": "CHILLAN",
+        "c_0_30": 2474,
+        "c_31_60": 5,
+        "c_61_90": 0,
+        "c_91_mas": 2,
+        "total": 2481,
+        "dias_promedio": 4.5
+      },
+      {
+        "sucursal": "TALCA",
+        "c_0_30": 2369,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 3,
+        "total": 2373,
+        "dias_promedio": 4.8
+      },
+      {
+        "sucursal": "CHILLAN VIEJO",
+        "c_0_30": 662,
+        "c_31_60": 2,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 664,
+        "dias_promedio": 7.2
+      },
+      {
+        "sucursal": "LO BLANCO",
+        "c_0_30": 526,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 2,
+        "total": 528,
+        "dias_promedio": 15.0
+      },
+      {
+        "sucursal": "PLACILLA",
+        "c_0_30": 442,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 4,
+        "total": 447,
+        "dias_promedio": 10.9
+      },
+      {
+        "sucursal": "TALCA (2)",
+        "c_0_30": 351,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 352,
+        "dias_promedio": 8.9
+      },
+      {
+        "sucursal": "CD REPUESTOS",
+        "c_0_30": 159,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 159,
+        "dias_promedio": 5.2
+      },
+      {
+        "sucursal": "RANCAGUA 2",
+        "c_0_30": 4,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 4,
+        "dias_promedio": 15.2
+      },
+      {
+        "sucursal": "COQUIMBO",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 2,
+        "dias_promedio": 73.5
+      },
+      {
+        "sucursal": "Autopark",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 0.0
+      },
+      {
+        "sucursal": "LIRA",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": -35.0
+      },
+      {
+        "sucursal": "SAN FERNANDO",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 0.0
+      }
+    ],
+    "por_asesor": [
+      {
+        "asesor": "CRISTIAN ALIAGA",
+        "c_0_30": 1479,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1479,
+        "dias_promedio": 1.6
+      },
+      {
+        "asesor": "RODRIGO MUNOZ",
+        "c_0_30": 1400,
+        "c_31_60": 3,
+        "c_61_90": 1,
+        "c_91_mas": 1,
+        "total": 1405,
+        "dias_promedio": 7.5
+      },
+      {
+        "asesor": "JUAN ORTEGA",
+        "c_0_30": 1186,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1186,
+        "dias_promedio": 3.0
+      },
+      {
+        "asesor": "ANA MARIA SANDOVAL",
+        "c_0_30": 1154,
+        "c_31_60": 5,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1159,
+        "dias_promedio": 5.5
+      },
+      {
+        "asesor": "ALEX GUTIERREZ",
+        "c_0_30": 1120,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 1121,
+        "dias_promedio": 3.2
+      },
+      {
+        "asesor": "ALEXANDER RIQUELME",
+        "c_0_30": 1044,
+        "c_31_60": 10,
+        "c_61_90": 3,
+        "c_91_mas": 5,
+        "total": 1062,
+        "dias_promedio": 4.7
+      },
+      {
+        "asesor": "Felipe Espinoza",
+        "c_0_30": 735,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 735,
+        "dias_promedio": 2.4
+      },
+      {
+        "asesor": "DANIEL MARTINEZ",
+        "c_0_30": 453,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 455,
+        "dias_promedio": 4.1
+      },
+      {
+        "asesor": "Andres Muñoz",
+        "c_0_30": 420,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 420,
+        "dias_promedio": 6.2
+      },
+      {
+        "asesor": "Eduardo Ortiz",
+        "c_0_30": 398,
+        "c_31_60": 0,
+        "c_61_90": 1,
+        "c_91_mas": 0,
+        "total": 399,
+        "dias_promedio": 8.6
+      },
+      {
+        "asesor": "JUAN ARMIJO",
+        "c_0_30": 380,
+        "c_31_60": 1,
+        "c_61_90": 1,
+        "c_91_mas": 2,
+        "total": 384,
+        "dias_promedio": 8.0
+      },
+      {
+        "asesor": "EDUARDO ORTIZ",
+        "c_0_30": 373,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 373,
+        "dias_promedio": 5.4
+      },
+      {
+        "asesor": "VANESSA PIZARRO",
+        "c_0_30": 355,
+        "c_31_60": 5,
+        "c_61_90": 5,
+        "c_91_mas": 4,
+        "total": 369,
+        "dias_promedio": 7.4
+      },
+      {
+        "asesor": "Gonzalo Aliaga",
+        "c_0_30": 355,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 2,
+        "total": 358,
+        "dias_promedio": 11.1
+      },
+      {
+        "asesor": "Matias Figueroa",
+        "c_0_30": 355,
+        "c_31_60": 2,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 357,
+        "dias_promedio": 5.4
+      },
+      {
+        "asesor": "JOCELYN HERRERA",
+        "c_0_30": 342,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 343,
+        "dias_promedio": 6.7
+      },
+      {
+        "asesor": "VICENTE CACERES",
+        "c_0_30": 337,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 337,
+        "dias_promedio": 6.0
+      },
+      {
+        "asesor": "Boris Poblete S",
+        "c_0_30": 315,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 315,
+        "dias_promedio": 3.4
+      },
+      {
+        "asesor": "FRANCISCO GONZALEZ",
+        "c_0_30": 309,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 2,
+        "total": 311,
+        "dias_promedio": 14.7
+      },
+      {
+        "asesor": "OSCAR ESCOBAR",
+        "c_0_30": 289,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 2,
+        "total": 291,
+        "dias_promedio": 16.0
+      },
+      {
+        "asesor": "Christopher Carrasco",
+        "c_0_30": 284,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 285,
+        "dias_promedio": 11.2
+      },
+      {
+        "asesor": "Felipe Fuentes",
+        "c_0_30": 275,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 277,
+        "dias_promedio": 7.2
+      },
+      {
+        "asesor": "IGNACIO CASTRO",
+        "c_0_30": 269,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 269,
+        "dias_promedio": 12.2
+      },
+      {
+        "asesor": "FELIPE AGURTO",
+        "c_0_30": 224,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 224,
+        "dias_promedio": 14.0
+      },
+      {
+        "asesor": "MARGARITA PARADA",
+        "c_0_30": 215,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 215,
+        "dias_promedio": 5.0
+      },
+      {
+        "asesor": "CRISTOBAL LOPEZ",
+        "c_0_30": 207,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 207,
+        "dias_promedio": 5.5
+      },
+      {
+        "asesor": "Miguel Martinez",
+        "c_0_30": 181,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 181,
+        "dias_promedio": 9.2
+      },
+      {
+        "asesor": "CRISTIAN SILVA R",
+        "c_0_30": 153,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 154,
+        "dias_promedio": 4.9
+      },
+      {
+        "asesor": "Steephany Landaeta",
+        "c_0_30": 120,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 121,
+        "dias_promedio": 12.0
+      },
+      {
+        "asesor": "GENESIS CARRASCO C",
+        "c_0_30": 118,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 118,
+        "dias_promedio": 2.2
+      },
+      {
+        "asesor": "CESAR VALENZUELA",
+        "c_0_30": 90,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 90,
+        "dias_promedio": 0.2
+      },
+      {
+        "asesor": "LUIS FUENTEALBA G",
+        "c_0_30": 90,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 90,
+        "dias_promedio": 4.2
+      },
+      {
+        "asesor": "BORIS POBLETE S",
+        "c_0_30": 80,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 80,
+        "dias_promedio": 1.0
+      },
+      {
+        "asesor": "ERICK CIFUENTES",
+        "c_0_30": 60,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 60,
+        "dias_promedio": 4.4
+      },
+      {
+        "asesor": "FELIPE ESPINOZA",
+        "c_0_30": 59,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 59,
+        "dias_promedio": 2.3
+      },
+      {
+        "asesor": "NICOLAS  MUÑOZ",
+        "c_0_30": 58,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 58,
+        "dias_promedio": 5.0
+      },
+      {
+        "asesor": "GONZALO ALIAGA",
+        "c_0_30": 56,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 56,
+        "dias_promedio": 6.2
+      },
+      {
+        "asesor": "CHRISTOPHER CARRASCO",
+        "c_0_30": 47,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 48,
+        "dias_promedio": 2.9
+      },
+      {
+        "asesor": "ANDRES MUÑOZ",
+        "c_0_30": 47,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 47,
+        "dias_promedio": 3.3
+      },
+      {
+        "asesor": "Kevin Morales",
+        "c_0_30": 44,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 44,
+        "dias_promedio": 4.0
+      },
+      {
+        "asesor": "BASTIAN ARENAS",
+        "c_0_30": 40,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 41,
+        "dias_promedio": 13.4
+      },
+      {
+        "asesor": "Giovanni Salcedo",
+        "c_0_30": 37,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 38,
+        "dias_promedio": 24.9
+      },
+      {
+        "asesor": "CRISTOBAL SAAVEDRA",
+        "c_0_30": 33,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 34,
+        "dias_promedio": 3.7
+      },
+      {
+        "asesor": "FELIPE FUENTES",
+        "c_0_30": 33,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 33,
+        "dias_promedio": 6.4
+      },
+      {
+        "asesor": "MATIAS FIGUEROA",
+        "c_0_30": 30,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 30,
+        "dias_promedio": 4.6
+      },
+      {
+        "asesor": "PAMELA  BRIONES",
+        "c_0_30": 28,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 28,
+        "dias_promedio": 3.9
+      },
+      {
+        "asesor": "STEEPHANY LANDAETA",
+        "c_0_30": 21,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 21,
+        "dias_promedio": 4.1
+      },
+      {
+        "asesor": "Tania Gomez",
+        "c_0_30": 20,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 20,
+        "dias_promedio": 0.4
+      },
+      {
+        "asesor": "CONSTANZA ABARZUA",
+        "c_0_30": 18,
+        "c_31_60": 1,
+        "c_61_90": 1,
+        "c_91_mas": 0,
+        "total": 20,
+        "dias_promedio": 8.3
+      },
+      {
+        "asesor": "KEVIN MORALES",
+        "c_0_30": 18,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 18,
+        "dias_promedio": 10.3
+      },
+      {
+        "asesor": "JUAN GONZALEZ ARIAS",
+        "c_0_30": 16,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 16,
+        "dias_promedio": 1.9
+      },
+      {
+        "asesor": "LUIS MARIN GARCIA",
+        "c_0_30": 14,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 14,
+        "dias_promedio": 10.3
+      },
+      {
+        "asesor": "MIGUEL MARTINEZ",
+        "c_0_30": 9,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 9,
+        "dias_promedio": 4.9
+      },
+      {
+        "asesor": "GIOVANNI SALCEDO",
+        "c_0_30": 8,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 9,
+        "dias_promedio": 30.8
+      },
+      {
+        "asesor": "ANYELA ACEVEDO MUÑOZ",
+        "c_0_30": 6,
+        "c_31_60": 1,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 7,
+        "dias_promedio": 9.3
+      },
+      {
+        "asesor": "GIOVANNI VERA",
+        "c_0_30": 6,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 6,
+        "dias_promedio": 16.0
+      },
+      {
+        "asesor": "IGNACIO GARCIA",
+        "c_0_30": 6,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 6,
+        "dias_promedio": 17.0
+      },
+      {
+        "asesor": "FESPINOZAS",
+        "c_0_30": 6,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 6,
+        "dias_promedio": 16.5
+      },
+      {
+        "asesor": "CRISTIAN  CERDA",
+        "c_0_30": 4,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 4,
+        "dias_promedio": 10.0
+      },
+      {
+        "asesor": "CALIAGAC",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 4,
+        "dias_promedio": 164.5
+      },
+      {
+        "asesor": "DAMIAN  MELLA",
+        "c_0_30": 4,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 4,
+        "dias_promedio": 15.2
+      },
+      {
+        "asesor": "Juan Armijo V",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 4,
+        "dias_promedio": 101.5
+      },
+      {
+        "asesor": "RODRIGO ARAVENA",
+        "c_0_30": 4,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 4,
+        "dias_promedio": 4.8
+      },
+      {
+        "asesor": "ICASTROG",
+        "c_0_30": 2,
+        "c_31_60": 0,
+        "c_61_90": 1,
+        "c_91_mas": 0,
+        "total": 3,
+        "dias_promedio": 43.0
+      },
+      {
+        "asesor": "CONSTANZA FIGUEROA",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 3,
+        "dias_promedio": 18.0
+      },
+      {
+        "asesor": "SIMON ARANCIBIA",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 3,
+        "dias_promedio": 19.3
+      },
+      {
+        "asesor": "ERICK CIFUENTES B",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 3,
+        "dias_promedio": 19.0
+      },
+      {
+        "asesor": "Evelyn Brown",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 3,
+        "dias_promedio": 8.3
+      },
+      {
+        "asesor": "Giovanni Vera",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 3,
+        "dias_promedio": 23.0
+      },
+      {
+        "asesor": "Javier Valdivia",
+        "c_0_30": 3,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 3,
+        "dias_promedio": 6.0
+      },
+      {
+        "asesor": "CRISTOBAL  LOPEZ",
+        "c_0_30": 2,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 2,
+        "dias_promedio": 0.0
+      },
+      {
+        "asesor": "ARIQUELMEP",
+        "c_0_30": 2,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 2,
+        "dias_promedio": 13.5
+      },
+      {
+        "asesor": "CRISTIAN CERDA",
+        "c_0_30": 2,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 2,
+        "dias_promedio": 12.0
+      },
+      {
+        "asesor": "JAVIER VALDIVIA",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 2,
+        "dias_promedio": 185.5
+      },
+      {
+        "asesor": "MARCELO REBOLLEDO",
+        "c_0_30": 2,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 2,
+        "dias_promedio": 23.0
+      },
+      {
+        "asesor": "Jorge Muñoz",
+        "c_0_30": 2,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 2,
+        "dias_promedio": 0.0
+      },
+      {
+        "asesor": "JOSE ROMERO",
+        "c_0_30": 2,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 2,
+        "dias_promedio": 13.0
+      },
+      {
+        "asesor": "FVALENZUELAA",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 27.0
+      },
+      {
+        "asesor": "FABRITZIO VALENZUELA",
+        "c_0_30": 0,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 1,
+        "dias_promedio": 544.0
+      },
+      {
+        "asesor": "CRISTOBAL PASTEN",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 0.0
+      },
+      {
+        "asesor": "Jean Carlos Fuentes",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 6.0
+      },
+      {
+        "asesor": "MARIELA MARTINEZ",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 6.0
+      },
+      {
+        "asesor": "MARIA CARRASQUERO",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 1.0
+      },
+      {
+        "asesor": "LEONOR QUINZACARA",
+        "c_0_30": 0,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 1,
+        "dias_promedio": 144.0
+      },
+      {
+        "asesor": "Matias Lopez",
+        "c_0_30": 1,
+        "c_31_60": 0,
+        "c_61_90": 0,
+        "c_91_mas": 0,
+        "total": 1,
+        "dias_promedio": 1.0
+      }
+    ],
+    "por_mes": [
+      {
+        "mes": "2026-04",
+        "c_0_30": 2601,
+        "c_31_60": 5,
+        "c_61_90": 3,
+        "c_91_mas": 4,
+        "total": 2613,
+        "dias_promedio": 7.3
+      },
+      {
+        "mes": "2026-07",
+        "c_0_30": 2308,
+        "c_31_60": 11,
+        "c_61_90": 0,
+        "c_91_mas": 2,
+        "total": 2321,
+        "dias_promedio": 7.3
+      },
+      {
+        "mes": "2026-03",
+        "c_0_30": 2297,
+        "c_31_60": 6,
+        "c_61_90": 2,
+        "c_91_mas": 1,
+        "total": 2306,
+        "dias_promedio": 5.6
+      },
+      {
+        "mes": "2026-06",
+        "c_0_30": 2107,
+        "c_31_60": 2,
+        "c_61_90": 3,
+        "c_91_mas": 4,
+        "total": 2116,
+        "dias_promedio": 5.2
+      },
+      {
+        "mes": "2026-05",
+        "c_0_30": 2099,
+        "c_31_60": 4,
+        "c_61_90": 3,
+        "c_91_mas": 4,
+        "total": 2110,
+        "dias_promedio": 6.0
+      },
+      {
+        "mes": "2026-01",
+        "c_0_30": 2102,
+        "c_31_60": 3,
+        "c_61_90": 1,
+        "c_91_mas": 2,
+        "total": 2108,
+        "dias_promedio": 4.1
+      },
+      {
+        "mes": "2026-02",
+        "c_0_30": 1989,
+        "c_31_60": 5,
+        "c_61_90": 0,
+        "c_91_mas": 1,
+        "total": 1995,
+        "dias_promedio": 4.4
+      },
+      {
+        "mes": "2026-08",
+        "c_0_30": 379,
+        "c_31_60": 1,
+        "c_61_90": 1,
+        "c_91_mas": 14,
+        "total": 395,
+        "dias_promedio": 19.9
+      }
+    ]
+  }
+}

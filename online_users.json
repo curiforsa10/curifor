@@ -1,0 +1,92 @@
+{
+  "usuarios": {
+    "lmartinez@curifor.com": {
+      "last_seen": "11/08/2026 17:55",
+      "last_seen_ts": 1786485311
+    },
+    "cjerez@curifor.com": {
+      "last_seen": "11/08/2026 17:57",
+      "last_seen_ts": 1786485423
+    },
+    "pabaca@curifor.com": {
+      "last_seen": "11/08/2026 09:34",
+      "last_seen_ts": 1786455277
+    },
+    "mmunoz@curifor.com": {
+      "last_seen": "11/08/2026 18:51",
+      "last_seen_ts": 1786488680
+    },
+    "eortiz@curifor.com": {
+      "last_seen": "11/08/2026 18:29",
+      "last_seen_ts": 1786487349
+    },
+    "oescobar@curifor.com": {
+      "last_seen": "11/08/2026 18:03",
+      "last_seen_ts": 1786485816
+    },
+    "dfigueroa@curifor.com": {
+      "last_seen": "11/08/2026 16:54",
+      "last_seen_ts": 1786481656
+    },
+    "fordonez@curifor.com": {
+      "last_seen": "11/08/2026 18:31",
+      "last_seen_ts": 1786487469
+    },
+    "ssarmiento@curifor.com": {
+      "last_seen": "11/08/2026 17:37",
+      "last_seen_ts": 1786484276
+    },
+    "rmunoz@curifor.com": {
+      "last_seen": "11/08/2026 17:55",
+      "last_seen_ts": 1786485301
+    },
+    "cpasten@curifor.com": {
+      "last_seen": "11/08/2026 10:12",
+      "last_seen_ts": 1786457549
+    },
+    "mvillanueva@curifor.com": {
+      "last_seen": "10/08/2026 23:15",
+      "last_seen_ts": 1786418156
+    },
+    "jortega@curifor.com": {
+      "last_seen": "11/08/2026 09:02",
+      "last_seen_ts": 1786453322
+    },
+    "mparada@curifor.com": {
+      "last_seen": "11/08/2026 12:48",
+      "last_seen_ts": 1786466906
+    },
+    "icastro@curifor.com": {
+      "last_seen": "11/08/2026 14:13",
+      "last_seen_ts": 1786472014
+    },
+    "mmartinez@curifor.com": {
+      "last_seen": "11/08/2026 17:17",
+      "last_seen_ts": 1786483073
+    },
+    "ariquelme@curifor.com": {
+      "last_seen": "11/08/2026 14:17",
+      "last_seen_ts": 1786472269
+    },
+    "gmaldonado@curifor.com": {
+      "last_seen": "11/08/2026 16:15",
+      "last_seen_ts": 1786479351
+    },
+    "mfigueroa@curifor.com": {
+      "last_seen": "11/08/2026 16:52",
+      "last_seen_ts": 1786481557
+    },
+    "csaavedra@curifor.com": {
+      "last_seen": "11/08/2026 17:18",
+      "last_seen_ts": 1786483130
+    },
+    "jgomez@curifor.com": {
+      "last_seen": "11/08/2026 18:17",
+      "last_seen_ts": 1786486659
+    },
+    "fagurto@curifor.com": {
+      "last_seen": "11/08/2026 18:22",
+      "last_seen_ts": 1786486973
+    }
+  }
+}

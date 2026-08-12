@@ -1,0 +1,857 @@
+# -*- coding: utf-8 -*-
+"""
+Genera data/stock.json cruzando el stock de Curifor con los códigos de repuestos
+que usan las pautas de mantención, y les pone el precio de la lista oficial.
+
+PRECIO (fuente de verdad):
+  Bases de datos\\Lista de precios\\Lista de precios curifor\\LISTA DE PRECIOS.xlsx
+  hoja "Lista sin duplicados", columna "Precio" (netos). Ruta: CURIFOR_LISTA_PRECIOS.
+
+STOCK y BODEGAS (la lista de precios no trae ubicación):
+  Bases de datos\\stock\\  -> se refresca solo todos los días. Ruta: CURIFOR_STOCK_DIARIO
+    - STOCK_BODEGAS_CURIFOR.xlsx  -> giro CURIFOR (autos livianos)
+    - stock_frontera.xlsx         -> giro FRONTERA (camiones)
+  Respaldo si esa carpeta no está: el snapshot de SharePoint en herramientas/stock_fuente/
+  (Stock bodegas.xlsx / Stock bodegas Frontera.xlsx).
+
+Uso:
+  python herramientas/actualizar_stock.py             # stock diario + lista de precios
+  python herramientas/actualizar_stock.py --descargar # refresca antes el snapshot de SharePoint
+
+La descarga reutiliza el módulo subir_sharepoint.py del proyecto Data BI
+(perfil Playwright ya logueado + REST). Si la sesión expiró, correr allá:
+  python subir_sharepoint.py login
+
+Salida: data/stock.json  (solo los códigos que aparecen en alguna pauta) y un
+resumen impreso + herramientas/stock_reporte.md.
+"""
+import glob
+import json
+import os
+import re
+import sys
+from collections import defaultdict
+
+AQUI = os.path.dirname(os.path.abspath(__file__))
+FUENTE = os.path.join(AQUI, "stock_fuente")
+DATA = os.path.normpath(os.path.join(AQUI, "..", "data"))
+AUTOM = r"C:\Users\icalderon\OneDrive - Curifor S.A\Documentos\Desarrollos\Automatizaciones\3. Actualizacion\automatizacion"
+
+ARCHIVO_CURIFOR = "Stock bodegas.xlsx"
+ARCHIVO_FRONTERA = "Stock bodegas Frontera.xlsx"
+
+# Stock diario: estas dos tablas se refrescan solas todos los días y son la
+# fuente por defecto. El snapshot de SharePoint en stock_fuente/ queda como
+# respaldo por si la carpeta no está disponible (OneDrive sin sincronizar).
+STOCK_DIARIO = os.environ.get(
+    "CURIFOR_STOCK_DIARIO",
+    r"C:\Users\icalderon\OneDrive - Curifor S.A\Documentos\Desarrollos\Bases de datos\stock")
+DIARIO_CURIFOR = "STOCK_BODEGAS_CURIFOR.xlsx"
+DIARIO_FRONTERA = "stock_frontera.xlsx"
+
+
+def fuentes_de_stock():
+    """Devuelve (ruta_curifor, ruta_frontera, etiqueta) eligiendo el stock diario
+    si está, o el snapshot de SharePoint como respaldo."""
+    d_cur = os.path.join(STOCK_DIARIO, DIARIO_CURIFOR)
+    d_fro = os.path.join(STOCK_DIARIO, DIARIO_FRONTERA)
+    if os.path.exists(d_cur):
+        return d_cur, (d_fro if os.path.exists(d_fro) else
+                       os.path.join(FUENTE, ARCHIVO_FRONTERA)), "diario"
+    print(f"  AVISO: no se encontró el stock diario en {STOCK_DIARIO}")
+    print("         Se usa el último snapshot de SharePoint (stock_fuente/).")
+    return os.path.join(FUENTE, ARCHIVO_CURIFOR), os.path.join(FUENTE, ARCHIVO_FRONTERA), "snapshot"
+
+# Lista de precios oficial de la empresa: es la FUENTE DE VERDAD del precio de
+# venta y del costo. El stock de SharePoint sigue mandando en disponibilidad y
+# ubicación por bodega (esta lista no las trae).
+LISTA_PRECIOS = os.environ.get(
+    "CURIFOR_LISTA_PRECIOS",
+    r"C:\Users\icalderon\OneDrive - Curifor S.A\Documentos\Desarrollos"
+    r"\Bases de datos\Lista de precios\Lista de precios curifor\LISTA DE PRECIOS.xlsx")
+HOJA_PRECIOS = "Lista sin duplicados"
+
+
+def norm(c):
+    return re.sub(r"[^A-Z0-9]", "", str(c).upper()) if c is not None else ""
+
+
+# El Producto de la lista viene con el rubro delante ("95 2630035505"); las
+# pautas usan el código pelado.
+_RUBRO = re.compile(r"^\d{1,3}\s+")
+
+
+def norm_producto(p):
+    return norm(_RUBRO.sub("", str(p).strip())) if p is not None else ""
+
+
+_XL = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
+_XLR = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
+
+
+def _col_a_indice(ref):
+    """'AB12' -> 27 (índice 0-based de la columna)."""
+    n = 0
+    for ch in ref:
+        if ch.isalpha():
+            n = n * 26 + (ord(ch.upper()) - 64)
+        else:
+            break
+    return n - 1
+
+
+def filas_xlsx(ruta, nombre_hoja):
+    """Lee una hoja de un .xlsx en streaming y va entregando listas de valores.
+
+    openpyxl (incluso en read_only) guarda un registro por fila leída y con
+    cientos de miles de filas se queda sin memoria; acá se parsea el XML de la
+    hoja directamente, descartando cada fila apenas se usa."""
+    import zipfile
+    from xml.etree import ElementTree as ET
+
+    with zipfile.ZipFile(ruta) as z:
+        # 1 · textos compartidos (las celdas de texto apuntan a esta tabla)
+        compartidos = []
+        if "xl/sharedStrings.xml" in z.namelist():
+            with z.open("xl/sharedStrings.xml") as f:
+                for _, el in ET.iterparse(f, events=("end",)):
+                    if el.tag == _XL + "si":
+                        compartidos.append("".join(t.text or "" for t in el.iter(_XL + "t")))
+                        el.clear()
+
+        # 2 · ubicar el XML de la hoja pedida
+        wbx = ET.fromstring(z.read("xl/workbook.xml"))
+        rid = None
+        for sh in wbx.iter(_XL + "sheet"):
+            if sh.get("name") == nombre_hoja:
+                rid = sh.get(_XLR + "id")
+                break
+        if not rid:
+            raise KeyError(f"la hoja '{nombre_hoja}' no está en {os.path.basename(ruta)}")
+        destino = None
+        for rel in ET.fromstring(z.read("xl/_rels/workbook.xml.rels")):
+            if rel.get("Id") == rid:
+                destino = rel.get("Target")
+                break
+        if not destino:
+            raise KeyError(f"no se pudo resolver la hoja '{nombre_hoja}'")
+        ruta_hoja = destino[1:] if destino.startswith("/") else "xl/" + destino.lstrip("./")
+
+        # 3 · recorrer las filas
+        with z.open(ruta_hoja) as f:
+            for _, fila in ET.iterparse(f, events=("end",)):
+                if fila.tag != _XL + "row":
+                    continue
+                valores = []
+                for c in fila:
+                    if c.tag != _XL + "c":
+                        continue
+                    i = _col_a_indice(c.get("r") or "")
+                    if i < 0:
+                        continue
+                    while len(valores) <= i:
+                        valores.append(None)
+                    t = c.get("t")
+                    if t == "inlineStr":
+                        v = "".join(x.text or "" for x in c.iter(_XL + "t")) or None
+                    else:
+                        nodo = c.find(_XL + "v")
+                        v = nodo.text if nodo is not None else None
+                        if v is not None:
+                            if t == "s":
+                                v = compartidos[int(v)] if int(v) < len(compartidos) else None
+                            elif t not in ("str", "e"):
+                                try:
+                                    v = float(v)
+                                    if v == int(v):
+                                        v = int(v)
+                                except ValueError:
+                                    pass
+                    valores[i] = v
+                yield valores
+                fila.clear()
+
+
+# ---- cruce por variante: el mismo código con un sufijo/prefijo de presentación ----
+# En la lista de Curifor el mismo producto aparece con variantes:
+#     104406    -> 104406-AG      (sufijo tras guion)
+#     104406    -> 104406ML       (sufijo corto de letras: presentación)
+#     100050    -> MOBIL100050    (prefijo de marca)
+#     XY75W85QL -> XY75W85QL-PLZ
+# Lo que NO vale es que sobren dígitos, porque entonces es otro código que
+# casualmente contiene la misma secuencia (103606 vs 10360626 "ELEVAVIDRIOS").
+_SEP = re.compile(r"[-/.]")
+
+# familias para descartar candidatos que no tienen nada que ver (BIL104406 =
+# "SOPORTE" no es el aceite 104406)
+_FAMILIAS = [
+    ("lubricante", r"aceite|lubric|anticongel|refriger|l[ií]quido|liquido|fluido|grasa|coolant|aditivo",
+     r"aceite|lubric|anticongel|refriger|liquido|l[ií]quido|fluido|grasa|coolant|aditivo|mobil|shell|"
+     r"castrol|petronas|total|valvoline|dot\s*-?\s*\d|\d+w-?\d+|sae|atf|granel|litro|lt\b|ml\b|balde|tambor"),
+    ("filtro", r"filtro", r"filtro|elemento|cartucho"),
+    ("bujia", r"buj[ií]a", r"buj[ií]a|spark"),
+    ("correa", r"correa", r"correa|belt"),
+]
+
+
+def _familia(texto):
+    t = (texto or "").lower()
+    for nombre, pat_pauta, pat_glosa in _FAMILIAS:
+        if re.search(pat_pauta, t):
+            return nombre, pat_glosa
+    return None, None
+
+
+def coherente(desc_pauta, glosa):
+    """¿La glosa de Curifor describe el mismo tipo de pieza que la pauta?
+    Si no se reconoce la familia, se deja pasar (no hay con qué juzgar)."""
+    fam, pat_glosa = _familia(desc_pauta)
+    if not fam:
+        return True
+    return bool(re.search(pat_glosa, (glosa or "").lower()))
+
+
+def variante_de(cod_pauta, prod_norm, prod_crudo):
+    """Motivo por el que 'prod_norm' es una variante de 'cod_pauta', o None."""
+    if prod_norm == cod_pauta or cod_pauta not in prod_norm:
+        return None
+    crudo = _RUBRO.sub("", str(prod_crudo).strip().upper())
+    if prod_norm.startswith(cod_pauta):
+        resto = prod_norm[len(cod_pauta):]
+        if _SEP.search(crudo[len(cod_pauta):len(cod_pauta) + 2] if len(crudo) > len(cod_pauta) else ""):
+            return "sufijo tras guion"
+        if re.search(re.escape(cod_pauta) + r"\s*[-/.]", crudo):
+            return "sufijo tras guion"
+        if resto.isalpha() and len(resto) <= 3:
+            return "sufijo de letras"
+        return None
+    if prod_norm.endswith(cod_pauta):
+        pre = prod_norm[:-len(cod_pauta)]
+        if pre.isalpha() and 2 <= len(pre) <= 8:
+            return "prefijo de marca"
+    return None
+
+
+def leer_lista_precios(usados, descripciones=None):
+    """Lee la lista de precios oficial y devuelve {codNorm: {precio, costo, glosa, stock}}
+    solo para los códigos que usan las pautas. Si el archivo no está, devuelve {}
+    y el generador sigue con los precios del stock (comportamiento anterior)."""
+    if not os.path.exists(LISTA_PRECIOS):
+        print(f"  AVISO: no se encontró la lista de precios en {LISTA_PRECIOS}")
+        print("         Los precios saldrán del stock, que está menos actualizado.")
+        return {}
+
+    # Si alguien tiene el Excel abierto, Windows lo bloquea y la lectura falla
+    # (la tarea diaria correría con el usuario trabajando): se lee una copia.
+    import shutil
+    import tempfile
+    fuente = LISTA_PRECIOS
+    copia = None
+    try:
+        copia = os.path.join(tempfile.gettempdir(), "_curifor_lista_precios.xlsx")
+        shutil.copy2(LISTA_PRECIOS, copia)
+        fuente = copia
+    except Exception as e:
+        print(f"  (no se pudo copiar la lista, se leerá directo: {e})")
+
+    try:
+        filas = filas_xlsx(fuente, HOJA_PRECIOS)
+        encab = next(filas)
+    except Exception as e:
+        print(f"  AVISO: no se pudo leer la lista de precios ({e}).")
+        if "denied" in str(e).lower() or "permission" in str(e).lower():
+            print("         Parece estar abierta en Excel. Ciérrala y vuelve a correr.")
+        return {}
+
+    col = {str(v).strip(): i for i, v in enumerate(encab) if v is not None}
+    faltan = [c for c in ("Producto", "Precio") if c not in col]
+    if faltan:
+        print(f"  AVISO: a la lista de precios le faltan columnas: {faltan}")
+        return {}
+    iP, iPr = col["Producto"], col["Precio"]
+    iC, iG, iS = col.get("Costo"), col.get("Glosa"), col.get("Stock")
+
+    def val(row, i):
+        return row[i] if i is not None and i < len(row) else None
+
+    def num(row, i):
+        v = val(row, i)
+        return int(round(v)) if isinstance(v, (int, float)) and v else None
+
+    descripciones = descripciones or {}
+    # los códigos largos también se buscan como variante (104406-AG, MOBIL100050)
+    buscables = {k for k in usados if len(k) >= 6}
+
+    def registro(row):
+        g = val(row, iG)
+        return {
+            "precio": num(row, iPr),
+            "costo": num(row, iC),
+            "glosa": str(g).strip() if g else None,
+            "stock": num(row, iS) or 0,
+            "producto": str(val(row, iP)).strip(),
+        }
+
+    out, variantes, n = {}, {}, 0
+    for row in filas:
+        n += 1
+        crudo = val(row, iP)
+        k = norm_producto(crudo)
+        if not k:
+            continue
+        if k in usados:
+            if k not in out:
+                out[k] = registro(row)
+            continue
+        # ¿es una variante de algún código de pauta que aún no calzó?
+        for base in buscables:
+            if base in k:
+                motivo = variante_de(base, k, crudo)
+                if motivo:
+                    r = registro(row)
+                    if r["precio"] and coherente(descripciones.get(base, ""), r["glosa"]):
+                        r["motivo"] = motivo
+                        variantes.setdefault(base, []).append(r)
+                break
+
+    # para los que no calzaron exacto, tomar la mejor variante:
+    # primero la que tenga stock, después la de mayor precio (presentación mayor)
+    n_var = 0
+    for base, cands in variantes.items():
+        if base in out:
+            continue
+        mejor = sorted(cands, key=lambda x: (-(x["stock"] or 0), -(x["precio"] or 0)))[0]
+        mejor["variante"] = True
+        out[base] = mejor
+        n_var += 1
+
+    print(f"Lista de precios: {n} productos leídos; {len(out)} calzan con las pautas"
+          + (f" ({n_var} por variante del código)" if n_var else ""))
+    if n_var:
+        for base, r in sorted(out.items(), key=lambda kv: -(kv[1].get("stock") or 0)):
+            if r.get("variante"):
+                print(f"    {base:22} -> {r['producto']:24} {str(r['glosa'])[:38]:40} "
+                      f"${r['precio']:,} [{r['motivo']}]")
+    return out
+
+
+def descargar_de_sharepoint():
+    """Baja las 2 tablas desde SharePoint al folder stock_fuente/. Reusa subir_sharepoint."""
+    import urllib.request
+    from urllib.parse import quote
+
+    sys.path.insert(0, AUTOM)
+    cwd = os.getcwd()
+    os.chdir(AUTOM)
+    try:
+        from subir_sharepoint import _cookies, SITE, FOLDER, _SSL_CTX
+        ck = _cookies()
+        os.makedirs(FUENTE, exist_ok=True)
+        for nombre in (ARCHIVO_CURIFOR, ARCHIVO_FRONTERA):
+            url = f"{SITE}/_api/web/GetFileByServerRelativeUrl('{quote(FOLDER + '/' + nombre)}')/$value"
+            req = urllib.request.Request(url, headers={"Cookie": ck, "Accept": "application/octet-stream"})
+            with urllib.request.urlopen(req, timeout=300, context=_SSL_CTX) as r:
+                data = r.read()
+            with open(os.path.join(FUENTE, nombre), "wb") as f:
+                f.write(data)
+            print(f"  descargado {nombre}: {len(data)/1024/1024:.2f} MB")
+        return True
+    except Exception as e:
+        print(f"  AVISO: no se pudo descargar de SharePoint ({e}).")
+        print("  Se usará el último snapshot en stock_fuente/. Para refrescar la sesión: "
+              "python subir_sharepoint.py login (en el proyecto Data BI).")
+        return False
+    finally:
+        os.chdir(cwd)
+
+
+def leer_stock(ruta, con_rubro):
+    """Lee una tabla de stock. Devuelve (idx, crudo):
+      idx  = {codigoNorm: {stock, desc, precio, bodegas:set}}  (por código limpio)
+      crudo = [ (codigoNorm, descNorm, stock, desc, precio, bodega) ]  (para cruce secundario)
+    """
+    import openpyxl
+    idx = {}
+    crudo = []
+    if not os.path.exists(ruta):
+        return idx, crudo
+    wb = openpyxl.load_workbook(ruta, read_only=True, data_only=True)
+    ws = wb.worksheets[0]
+    filas = ws.iter_rows(min_row=1, values_only=True)
+    encab = next(filas)
+    col = {str(v).strip().lower(): i for i, v in enumerate(encab) if v is not None}
+
+    def gi(row, *nombres, default=None):
+        for n in nombres:
+            if n in col and col[n] < len(row):
+                return row[col[n]]
+        return default
+
+    for row in filas:
+        prod = gi(row, "producto")
+        if prod is None:
+            continue
+        prod = str(prod).strip()
+        # código limpio: quitar rubro (primer token) en el stock Curifor
+        if con_rubro and " " in prod:
+            codigo = prod.split(" ", 1)[1].strip()
+        else:
+            codigo = prod
+        nc = norm(codigo)
+        if not nc:
+            continue
+        stock = gi(row, "stock", default=0) or 0
+        if not isinstance(stock, (int, float)):
+            stock = 0
+        desc = gi(row, "descripción", "descripcion")
+        precio = gi(row, "precio venta")   # NETO (sin IVA)
+        costo = gi(row, "costo")           # NETO (sin IVA)
+        bodega = gi(row, "bodega")
+        precio = int(round(precio)) if isinstance(precio, (int, float)) and precio else None
+        costo = int(round(costo)) if isinstance(costo, (int, float)) and costo else None
+        descs = str(desc).strip() if desc else None
+        bod = str(bodega).strip() if bodega and str(bodega).strip() else None
+
+        def acumular(clave):
+            e = idx.setdefault(clave, {"stock": 0, "desc": None, "precio": None, "costo": None, "porBodega": {}})
+            e["stock"] += stock
+            if descs and not e["desc"]:
+                e["desc"] = descs
+            if precio and not e["precio"]:
+                e["precio"] = precio
+            if costo and not e["costo"]:
+                e["costo"] = costo
+            if bod and stock:
+                e["porBodega"][bod] = e["porBodega"].get(bod, 0) + stock
+
+        acumular(nc)
+        # el mismo stock también queda indexado por su código de REEMPLAZO (supersesión):
+        # si la pauta usa el SKU antiguo y el stock lo tiene bajo el nuevo (o viceversa),
+        # así igual cruza. Solo el stock Curifor tiene esta columna.
+        reempl = gi(row, "reemplazo")
+        nr = norm(reempl)
+        if nr and nr != nc:
+            acumular(nr)
+        # tokens de la descripción (separados por no-alfanuméricos) para cruce por código
+        tokens = frozenset(t for t in re.split(r"[^A-Z0-9]+", descs.upper()) if t) if descs else frozenset()
+        crudo.append((nc, tokens, stock, descs, precio, costo, bod))
+    wb.close()
+    return idx, crudo
+
+
+def _acumular_matches(filas, es_match):
+    """Agrega stock/bodega de las filas de crudo que cumplen es_match(fila).
+    Devuelve (acc, alt) donde alt = código del SKU con más stock. (None, None) si nada."""
+    acc = {"stock": 0, "desc": None, "precio": None, "costo": None, "porBodega": {}}
+    por_codigo = {}
+    encontrado = False
+    for codigoNorm, tokens, stock, desc, precio, costo, bod in filas:
+        if not es_match(codigoNorm, tokens, desc):
+            continue
+        encontrado = True
+        acc["stock"] += stock or 0
+        por_codigo[codigoNorm] = por_codigo.get(codigoNorm, 0) + (stock or 0)
+        if desc and not acc["desc"]:
+            acc["desc"] = desc
+        if precio and not acc["precio"]:
+            acc["precio"] = precio
+        if costo and not acc["costo"]:
+            acc["costo"] = costo
+        if bod and stock:
+            acc["porBodega"][bod] = acc["porBodega"].get(bod, 0) + stock
+    if not encontrado:
+        return None, None
+    alt = max(por_codigo, key=por_codigo.get) if por_codigo else None
+    return acc, alt
+
+
+def buscar_secundario(nc, crudo):
+    """Cruce difuso: el código como prefijo con sufijo de letras (104406 -> 104406-AG)
+    o como token COMPLETO de la descripción. Devuelve (acc, alt) o (None, None)."""
+    if len(nc) < 6:
+        return None, None
+    def es_match(codigoNorm, tokens, desc):
+        if codigoNorm.startswith(nc) and (len(codigoNorm) == len(nc) or codigoNorm[len(nc)].isalpha()):
+            return True
+        return nc in tokens
+    return _acumular_matches(crudo, es_match)
+
+
+def buscar_por_tokens(tokens, crudo):
+    """Cruce por NOMBRE: la descripción del producto en stock contiene TODAS las palabras.
+    Usado para lubricantes cuyo SKU en bodega difiere del código de tambor de la pauta
+    (mapeo curado en equivalencias.json). Devuelve (acc, alt) o (None, None)."""
+    toks = [t.upper() for t in tokens]
+    def es_match(codigoNorm, tks, desc):
+        return bool(desc) and all(t in desc.upper() for t in toks)
+    return _acumular_matches(crudo, es_match)
+
+
+ARCHIVO_COMPLETO = "StockCurifor_completo.xlsx"
+
+
+def leer_catalogo_completo():
+    """Lee StockCurifor_completo.xlsx (catálogo enriquecido Ford, snapshot estable).
+    Devuelve (equiv, aplic):
+      equiv = {codNorm: set(codigos equivalentes norm)}  (Reemplazo + Equivalente Scrap + Supersesión)
+      aplic = {codNorm: 'MODELOS...'}                     (Aplicabilidad por modelo)
+    Si el archivo no está, devuelve mapas vacíos (la plataforma funciona igual)."""
+    import openpyxl
+    ruta = os.path.join(FUENTE, ARCHIVO_COMPLETO)
+    equiv, aplic = {}, {}
+    if not os.path.exists(ruta):
+        print(f"  (aviso: {ARCHIVO_COMPLETO} no está; sin equivalencias/aplicabilidad Ford)")
+        return equiv, aplic
+    wb = openpyxl.load_workbook(ruta, read_only=True, data_only=True)
+    ws = wb.worksheets[0]
+    filas = ws.iter_rows(min_row=1, values_only=True)
+    encab = next(filas)
+    col = {str(v).strip().lower(): i for i, v in enumerate(encab) if v is not None}
+
+    def gi(row, nombre):
+        i = col.get(nombre)
+        return row[i] if i is not None and i < len(row) else None
+
+    def limpio_normal(prod):
+        p = str(prod).strip()
+        return norm(p.split(" ", 1)[1] if " " in p else p)
+
+    def enlazar(a, b):
+        a, b = norm(a), norm(b)
+        if a and b and a != b:
+            equiv.setdefault(a, set()).add(b)
+            equiv.setdefault(b, set()).add(a)
+
+    for row in filas:
+        prod = gi(row, "producto")
+        if prod is None:
+            continue
+        limpio = gi(row, "código limpio") or gi(row, "codigo limpio")
+        base = norm(limpio) if limpio else limpio_normal(prod)
+        for campo in ("reemplazo", "código equivalente (scrap)", "supersesión (scrap)", "supersesion (scrap)"):
+            v = gi(row, campo)
+            if v and str(v).strip() not in ("", "-", "0", "#N/A"):
+                enlazar(base, v)
+        ap = gi(row, "aplicabilidad (modelos)")
+        if ap and str(ap).strip() not in ("", "-", "0", "#N/A") and base not in aplic:
+            aplic[base] = re.sub(r"\s*\|\s*", " · ", str(ap).strip())[:180]
+    wb.close()
+    print(f"Catálogo completo: {len(equiv)} códigos con equivalencia, {len(aplic)} con aplicabilidad")
+    return equiv, aplic
+
+
+def cargar_mapeo_manual():
+    """equivalencias.json: {codNorm: {'tokens': [...] | 'codigo': 'XXX', 'nota': ...}}."""
+    ruta = os.path.join(AQUI, "equivalencias.json")
+    if not os.path.exists(ruta):
+        return {}
+    data = json.load(open(ruta, encoding="utf-8")).get("mapeo", {})
+    return {norm(k): v for k, v in data.items()}
+
+
+def contexto_de_pautas():
+    """Para el reporte: {codNorm: {nombres, marcas, pautas, usos}}. Sirve para
+    decirle a Repuestos QUÉ es cada SKU que no calza con la lista de precios."""
+    ctx = {}
+    for f in glob.glob(os.path.join(DATA, "pautas", "*.json")):
+        d = json.load(open(f, encoding="utf-8"))
+        etiqueta = f"{d['marcaNombre']} {d['modelo']} · {d['version']}"
+        for pl in d["planes"]:
+            for itv in pl["intervalos"]:
+                for it in (itv.get("items") or []):
+                    if not it.get("codigo"):
+                        continue
+                    e = ctx.setdefault(norm(it["codigo"]),
+                                       {"nombres": set(), "marcas": set(), "pautas": set(), "usos": 0})
+                    if it.get("nombre"):
+                        e["nombres"].add(str(it["nombre"]).strip())
+                    e["marcas"].add(d["marcaNombre"])
+                    e["pautas"].add(etiqueta)
+                    e["usos"] += 1
+    return ctx
+
+
+def reporte_sin_precio(usados, precios, items, ctx):
+    """Excel + consola con los SKU de las pautas que NO están en la lista de
+    precios. Es la lista de gestión para Repuestos: o se crea el producto, o
+    hay que corregir el código en la pauta del fabricante."""
+    import openpyxl
+    faltan = [nc for nc in usados if nc not in precios]
+    if not faltan:
+        print("Todos los SKU de las pautas están en la lista de precios.")
+        return []
+
+    filas = []
+    for nc in faltan:
+        c = ctx.get(nc, {})
+        it = items.get(nc)          # puede tener precio del stock aunque no esté en la lista
+        hay_stock = bool(it) and ((it.get("c") or 0) > 0 or (it.get("f") or 0) > 0)
+        filas.append({
+            "codigo": usados[nc],
+            "desc": " / ".join(sorted(c.get("nombres", []))) [:110],
+            "marcas": ", ".join(sorted(c.get("marcas", []))),
+            "usos": c.get("usos", 0),
+            "npautas": len(c.get("pautas", [])),
+            "precio_hoy": (it or {}).get("pv"),
+            "de_donde": ("stock de bodega" if it and it.get("pv") else "precio de la pauta (viejo)"),
+            "stock": "sí" if hay_stock else "no",
+            "pauta": sorted(c.get("pautas", ["—"]))[0],
+        })
+    filas.sort(key=lambda f: -f["usos"])
+
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "SKU sin precio"
+    ws.append(["SKU de la pauta que NO está en la lista de precios — "
+               "crear el producto o corregir el código en la pauta"])
+    ws.append([])
+    cols = [("Código en la pauta", "codigo"), ("Qué es (según la pauta)", "desc"),
+            ("Marca(s)", "marcas"), ("Veces usado", "usos"), ("N° de pautas", "npautas"),
+            ("Precio que muestra hoy", "precio_hoy"), ("De dónde sale ese precio", "de_donde"),
+            ("¿Tiene stock?", "stock"), ("Ejemplo de pauta", "pauta")]
+    ws.append([c[0] for c in cols])
+    for f in filas:
+        ws.append([f[c[1]] for c in cols])
+    for col in ws.columns:
+        ws.column_dimensions[col[0].column_letter].width = min(
+            44, max(12, max(len(str(c.value or "")) for c in col[:200]) + 2))
+    ws.freeze_panes = "A4"
+    destino = os.path.join(AQUI, "sku_sin_precio.xlsx")
+    wb.save(destino)
+
+    con_stock = sum(1 for f in filas if f["stock"] == "sí")
+    print(f"\n⚠ {len(filas)} SKU de las pautas NO están en la lista de precios "
+          f"({con_stock} igual tienen stock, {len(filas)-con_stock} no).")
+    print(f"  Detalle para Repuestos: {destino}")
+    for f in filas[:8]:
+        print(f"    {f['codigo']:22} {f['marcas'][:18]:20} usos={f['usos']:4}  {f['desc'][:34]}")
+    if len(filas) > 8:
+        print(f"    … y {len(filas)-8} más en el Excel")
+    return filas
+
+
+def codigos_de_pautas():
+    """Set de códigos normalizados usados en las pautas + su forma original."""
+    usados = {}
+    for f in glob.glob(os.path.join(DATA, "pautas", "*.json")):
+        d = json.load(open(f, encoding="utf-8"))
+        for pl in d["planes"]:
+            for itv in pl["intervalos"]:
+                for it in (itv.get("items") or []):
+                    cod = it.get("codigo")
+                    if cod:
+                        nc = norm(cod)
+                        # placeholders que no son códigos reales
+                        if nc and not any(x in str(cod).upper() for x in
+                                          ("COMPRA EN PLAZA", "PENDIENTE", "INGRESAR", "MAT-",
+                                           "N/A", "MATERIALES", "INSUMOS", "VARIOS")):
+                            usados[nc] = str(cod).strip()
+    return usados
+
+
+def main(descargar=False):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if descargar:
+        print("Descargando tablas de stock desde SharePoint...")
+        descargar_de_sharepoint()
+
+    ruta_cur, ruta_fro, origen = fuentes_de_stock()
+    cur, cur_crudo = leer_stock(ruta_cur, con_rubro=True)
+    fro, fro_crudo = leer_stock(ruta_fro, con_rubro=False)
+    print(f"Stock Curifor:  {len(cur)} códigos  ({os.path.basename(ruta_cur)}, {origen})")
+    print(f"Stock Frontera: {len(fro)} códigos  ({os.path.basename(ruta_fro)})")
+    equiv_map, aplic_map = leer_catalogo_completo()
+    mapeo = cargar_mapeo_manual()
+
+    usados = codigos_de_pautas()
+    print(f"Códigos de repuestos en pautas (reales): {len(usados)}")
+    ctx_pautas = contexto_de_pautas()
+    # qué dice la pauta de cada código, para descartar variantes que no calzan
+    # (BIL104406 "SOPORTE" no es el aceite 104406)
+    desc_pautas = {k: " / ".join(sorted(v["nombres"])) for k, v in ctx_pautas.items()}
+    precios = leer_lista_precios(set(usados), desc_pautas)
+
+    def resolver_curifor(nc):
+        """Resuelve el stock Curifor de un código con precedencia:
+        directo -> mapeo manual por nombre -> difuso -> equivalencia (catálogo).
+        Devuelve (entry, alt, via) o (None, None, None)."""
+        e = cur.get(nc)
+        if e:
+            return e, None, "directo"
+        if nc in mapeo:
+            m = mapeo[nc]
+            if m.get("codigo"):
+                e = cur.get(norm(m["codigo"]))
+                if e:
+                    return e, m["codigo"], "producto"
+            if m.get("tokens"):
+                e, alt = buscar_por_tokens(m["tokens"], cur_crudo)
+                if e:
+                    return e, alt, "producto"
+        e, alt = buscar_secundario(nc, cur_crudo)
+        if e:
+            return e, (alt if alt != nc else None), "difuso"
+        for eq in equiv_map.get(nc, ()):          # equivalencia/supersesión (catálogo Ford)
+            if eq in cur:
+                return cur[eq], eq, "equivalente"
+        return None, None, None
+
+    def bodegas_de(entry):
+        pb = (entry or {}).get("porBodega", {})
+        return [{"n": b, "q": int(q)} for b, q in sorted(pb.items(), key=lambda kv: -kv[1]) if q > 0][:5]
+
+    def precio_de(nc, entry, alt=None):
+        """Precio y costo netos. Manda la lista de precios oficial (por el código
+        de la pauta o por su equivalente); el stock es solo el respaldo."""
+        p = precios.get(nc) or (precios.get(norm(alt)) if alt else None)
+        if p and p.get("precio"):
+            return p["precio"], (p.get("costo") or (entry or {}).get("costo")), "lista"
+        e = entry or {}
+        return e.get("precio"), e.get("costo"), ("stock" if e.get("precio") else None)
+
+    def opcion(cod, entry):
+        """Formatea un SKU pickeable con su precio (pv/co netos) y bodegas."""
+        pv, co, src = precio_de(norm(cod), entry)
+        return {
+            "cod": cod,
+            "desc": entry.get("desc"),
+            "c": int(entry["stock"]),
+            "pv": pv,   # Precio Venta neto
+            "co": co,   # Costo neto
+            "src": src,
+            "bodegas": bodegas_de(entry),
+            "aplica": aplic_map.get(norm(cod)),
+        }
+
+    items = {}
+    n_cur = n_fro = n_aprox = 0
+    via_cnt = {}
+    n_con_opciones = 0
+    n_precio_lista = n_solo_lista = 0
+    for nc, original in usados.items():
+        ec, alt, via = resolver_curifor(nc)
+        ef, _ = (fro.get(nc), None)
+        if not ef:
+            ef, _ = buscar_secundario(nc, fro_crudo)
+        if not ec and not ef:
+            # sin stock en ninguna bodega, pero la lista de precios sí lo tiene:
+            # igual entra, para que el cotizador muestre el precio oficial
+            p = precios.get(nc)
+            if p and p.get("precio"):
+                n_solo_lista += 1
+                n_precio_lista += 1
+                items[nc] = {
+                    "c": None, "f": None, "desc": p.get("glosa"),
+                    "pv": p["precio"], "co": p.get("costo"),
+                    "src": "lista", "bodegas": [], "aprox": False,
+                    "sinStock": True,
+                }
+            continue
+        aprox = bool(via and via != "directo")
+        sc = int(ec["stock"]) if ec else None
+        sf = int(ef["stock"]) if ef else None
+        if ec:
+            n_cur += 1
+            via_cnt[via] = via_cnt.get(via, 0) + 1
+        if ef:
+            n_fro += 1
+        if aprox:
+            n_aprox += 1
+        desc = (ec or ef or {}).get("desc")
+        pv, co, src = precio_de(nc, ec or ef, alt)
+        if src == "lista":
+            n_precio_lista += 1
+        item = {
+            "c": sc, "f": sf, "desc": desc,
+            "pv": pv,          # Precio Venta neto (particular)
+            "co": co,          # Costo neto (interno = co/0.8)
+            "src": src,        # de dónde salió el precio: lista | stock
+            "bodegas": bodegas_de(ec) or bodegas_de(ef),
+            "aprox": aprox,
+        }
+        cod_primario = alt or original
+        if alt:
+            item["alt"] = alt
+            item["via"] = via
+        ap = aplic_map.get(nc) or (aplic_map.get(norm(alt)) if alt else None)
+        if ap:
+            item["aplica"] = ap
+        # opciones de reemplazo (solo equivalencias/supersesión en stock, precisas).
+        # sorted() porque equiv_map guarda sets: sin esto el orden cambia entre
+        # corridas y el JSON sale distinto aunque los datos sean los mismos.
+        opciones, vistos = [], {norm(cod_primario)}
+        for eq in sorted(equiv_map.get(nc, ())):
+            neq = norm(eq)
+            if neq in cur and neq not in vistos:
+                vistos.add(neq)
+                opciones.append(opcion(eq, cur[neq]))
+        if opciones:
+            item["opciones"] = opciones
+            n_con_opciones += 1
+        items[nc] = item
+
+    # fecha del stock (mtime del archivo Curifor que se usó)
+    try:
+        import datetime
+        fecha = datetime.datetime.fromtimestamp(
+            os.path.getmtime(ruta_cur)).strftime("%d-%m-%Y %H:%M")
+    except Exception:
+        fecha = "desconocida"
+
+    try:
+        import datetime
+        fecha_precios = datetime.datetime.fromtimestamp(
+            os.path.getmtime(LISTA_PRECIOS)).strftime("%d-%m-%Y %H:%M") if precios else None
+    except Exception:
+        fecha_precios = None
+
+    salida = {
+        "actualizado": fecha,
+        "preciosActualizado": fecha_precios,
+        "fuentes": {"curifor": os.path.basename(ruta_cur),
+                    "frontera": os.path.basename(ruta_fro),
+                    "origen": origen,
+                    "precios": os.path.basename(LISTA_PRECIOS) if precios else None},
+        "items": items,
+    }
+    os.makedirs(DATA, exist_ok=True)
+    with open(os.path.join(DATA, "stock.json"), "w", encoding="utf-8") as f:
+        json.dump(salida, f, ensure_ascii=False, separators=(",", ":"))
+
+    con_stock = sum(1 for v in items.values() if (v["c"] or 0) > 0 or (v["f"] or 0) > 0)
+    rep = [
+        "# Reporte de stock", "",
+        f"- Snapshot: **{fecha}**",
+        f"- Códigos de repuestos en pautas (reales): **{len(usados)}**",
+        f"- Con registro en stock: **{len(items)}** (Curifor {n_cur}, Frontera {n_fro})",
+        f"- Cruce: directo **{via_cnt.get('directo', 0)}**, por nombre/producto **{via_cnt.get('producto', 0)}**, "
+        f"difuso **{via_cnt.get('difuso', 0)}**, equivalente/supersesión **{via_cnt.get('equivalente', 0)}**",
+        f"- Con stock disponible (>0): **{con_stock}**",
+        f"- Sin catalogar en stock: **{len(usados) - len(items)}**",
+        "",
+        f"- **Precio desde la lista oficial**: {n_precio_lista} de {len(items)} "
+        f"(lista del {fecha_precios or 's/d'})",
+        f"- Entraron solo por la lista (sin stock en bodega): **{n_solo_lista}**",
+        "",
+        "La plataforma marca cada repuesto con su disponibilidad y bodega. Cuando el SKU de la "
+        "pauta difiere del de bodega (lubricantes, presentaciones, supersesión), se muestra el "
+        "código alternativo bajo el que está el stock. El mapeo manual de lubricantes vive en "
+        "`herramientas/equivalencias.json` (editable por Servicio).",
+    ]
+    with open(os.path.join(AQUI, "stock_reporte.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(rep))
+
+    print(f"OK: stock.json con {len(items)} códigos ({con_stock} con stock >0). "
+          f"Sin catalogar: {len(usados) - len(items)}.")
+    print(f"    cruce -> directo {via_cnt.get('directo',0)}, nombre {via_cnt.get('producto',0)}, "
+          f"difuso {via_cnt.get('difuso',0)}, equivalente {via_cnt.get('equivalente',0)}")
+    print(f"    con opciones de reemplazo (equivalencias en stock): {n_con_opciones}")
+    print(f"    precio desde la LISTA DE PRECIOS: {n_precio_lista} de {len(items)} "
+          f"({n_solo_lista} entraron solo por la lista, sin stock en bodega)")
+
+    if precios:
+        reporte_sin_precio(usados, precios, items, ctx_pautas)
+
+
+if __name__ == "__main__":
+    main(descargar="--descargar" in sys.argv)

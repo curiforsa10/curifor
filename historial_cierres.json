@@ -1,0 +1,5205 @@
+{
+  "registros": [
+    {
+      "fecha": "19/05/2026 10:44",
+      "total_cerradas": 33,
+      "total_nuevas": 124,
+      "total_activas": 2167,
+      "ots_cerradas": [
+        {
+          "FOLIO OT": "1183846",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177305",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182813",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183750",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184840",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183345",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184829",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1139799",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "266",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1170819",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "62",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176620",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1167869",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "21",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179162",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "11",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184421",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184318",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184042",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183501",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184720",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "CESAR VALENZUELA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184660",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184595",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184364",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183198",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184638",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1154076",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "173",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1155800",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "ANDRES MUÑOZ",
+          "DIAS APERTURA": "161",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1184619",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179293",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "10",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184304",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183865",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184476",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180250",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "CRISTOBAL LOPEZ",
+          "DIAS APERTURA": "5",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173413",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "47",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174897",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "39",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179944",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        }
+      ]
+    },
+    {
+      "fecha": "19/05/2026 10:48",
+      "total_cerradas": 33,
+      "total_nuevas": 124,
+      "total_activas": 2167,
+      "ots_cerradas": [
+        {
+          "FOLIO OT": "1184318",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1154076",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "173",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1170819",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "62",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182813",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174897",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "39",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179293",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "10",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184042",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173413",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "47",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184829",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184619",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184660",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184421",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179162",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "11",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183846",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180250",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "CRISTOBAL LOPEZ",
+          "DIAS APERTURA": "5",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184638",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184720",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "CESAR VALENZUELA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176620",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183198",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184595",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1139799",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "266",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1183501",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184476",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184364",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183865",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177305",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179944",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183750",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183345",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184840",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1167869",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "21",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184304",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1155800",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "ANDRES MUÑOZ",
+          "DIAS APERTURA": "161",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "REVISAR"
+        }
+      ]
+    },
+    {
+      "fecha": "19/05/2026 10:51",
+      "total_cerradas": 0,
+      "total_nuevas": 0,
+      "total_activas": 2167,
+      "ots_cerradas": []
+    },
+    {
+      "fecha": "20/05/2026 10:40",
+      "total_cerradas": 65,
+      "total_nuevas": 95,
+      "total_activas": 2197,
+      "ots_cerradas": [
+        {
+          "FOLIO OT": "1181920",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183920",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183209",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185134",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182629",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182169",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1169954",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "ANDRES MUÑOZ",
+          "DIAS APERTURA": "67",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1184341",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1167471",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "83",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1183752",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180080",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180908",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179617",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "5",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1172729",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "IGNACIO CASTRO",
+          "DIAS APERTURA": "49",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185020",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184958",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183535",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1157784",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "150",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "REALIZAR"
+        },
+        {
+          "FOLIO OT": "1184923",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184845",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184664",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182772",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1169276",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "73",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1184789",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184864",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184886",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182123",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183294",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185032",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183094",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168258",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "CRISTIAN SILVA R",
+          "DIAS APERTURA": "80",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "COBRAR"
+        },
+        {
+          "FOLIO OT": "1184718",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183894",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184653",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184795",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184317",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "LUIS FUENTEALBA G",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180246",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "3",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177087",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179199",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "3",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1166001",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "IGNACIO CASTRO",
+          "DIAS APERTURA": "91",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1184846",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184359",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184767",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184129",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182417",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184761",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183840",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182068",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185052",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184614",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180433",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184334",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1175026",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "35",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184138",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184797",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183227",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183997",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181167",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184130",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184325",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1166059",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "IGNACIO CASTRO",
+          "DIAS APERTURA": "90",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1179501",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180221",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183555",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "LUIS FUENTEALBA G",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180554",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "3",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        }
+      ]
+    },
+    {
+      "fecha": "25/05/2026 09:15",
+      "total_cerradas": 144,
+      "total_nuevas": 99,
+      "total_activas": 2152,
+      "ots_cerradas": [
+        {
+          "FOLIO OT": "1183891",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181804",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1167023",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "20",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184830",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183010",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182308",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184489",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183192",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183878",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179951",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181311",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185282",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176437",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "28",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185216",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184124",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184828",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184715",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184135",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1166884",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "91 o más",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "69",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181927",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183987",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184556",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184566",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178088",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184139",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185197",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179393",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184166",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184567",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185012",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183906",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185019",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185054",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185283",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183220",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174712",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "61-90",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "39",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185209",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184237",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184477",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178284",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "14",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184132",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184332",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184041",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184017",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185329",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184945",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185050",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183370",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182810",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "Miguel Martinez",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173690",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "61-90",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "45",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184468",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184959",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177626",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "14",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1167488",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1172960",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "IGNACIO CASTRO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168752",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "91 o más",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "62",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174725",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "IGNACIO CASTRO",
+          "DIAS APERTURA": "27",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185041",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184419",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183962",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184331",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183704",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "STEEPHANY LANDAETA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184165",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185326",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179359",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "10",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177134",
+          "SUCURSAL": "CURICO",
+          "RANGO": "31-60",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "25",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184584",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183816",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1153971",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "91 o más",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "174",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1182365",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184505",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180639",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184126",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176681",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "27",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184143",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184887",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185102",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "ERICK CIFUENTES",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182477",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180918",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1116597",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184179",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1170972",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "91 o más",
+          "ASESOR": "Miguel Martinez",
+          "DIAS APERTURA": "62",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184725",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1163509",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "CRISTIAN SILVA R",
+          "DIAS APERTURA": "104",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1183407",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177196",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "20",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178332",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184585",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180845",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "Miguel Martinez",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182369",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185218",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1171434",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "59",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183973",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168393",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184711",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184144",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183692",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "0-30",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184925",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184816",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178666",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "13",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176581",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "27",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185210",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179437",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "31-60",
+          "ASESOR": "Miguel Martinez",
+          "DIAS APERTURA": "10",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178124",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184515",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181612",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1172639",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "61-90",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "52",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176168",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "28",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184490",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1167736",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "91 o más",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "81",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168438",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "91 o más",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "75",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185101",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183100",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185237",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184164",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1170572",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185308",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "0-30",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182554",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184832",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184440",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184254",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184583",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183385",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185194",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183129",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185151",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185018",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184018",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184528",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184156",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185009",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184523",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185211",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184162",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183118",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174132",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "41",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173049",
+          "SUCURSAL": "CURICO",
+          "RANGO": "61-90",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "42",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1184906",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182479",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184564",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184227",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177104",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "25",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184930",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182083",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        }
+      ]
+    },
+    {
+      "fecha": "26/05/2026 18:01",
+      "total_cerradas": 160,
+      "total_nuevas": 119,
+      "total_activas": 2111,
+      "ots_cerradas": [
+        {
+          "FOLIO OT": "1183058",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183221",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184097",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185099",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176945",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "26",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180481",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180751",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184573",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185413",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183364",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183095",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "830896",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "Felipe Cortes",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180802",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184924",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176248",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "31",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185704",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1162838",
+          "SUCURSAL": "CURICO",
+          "RANGO": "91 o más",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "110",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1183388",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182842",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185273",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185660",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180563",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "IGNACIO CASTRO",
+          "DIAS APERTURA": "3",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184576",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185142",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184571",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180477",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184202",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185665",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184526",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180820",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185263",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184503",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183716",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180525",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173597",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168251",
+          "SUCURSAL": "CURICO",
+          "RANGO": "91 o más",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "80",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1181814",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180596",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "3",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182637",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184195",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1171745",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "56",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1184128",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168246",
+          "SUCURSAL": "CURICO",
+          "RANGO": "91 o más",
+          "ASESOR": "FELIPE ESPINOZA",
+          "DIAS APERTURA": "80",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1179782",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184340",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "ERICK CIFUENTES",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185693",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177868",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182545",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "856555",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177866",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185661",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185192",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181579",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185235",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184002",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181154",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "31-60",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178834",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "31-60",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177308",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "24",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183869",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184574",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184774",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185655",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180522",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185598",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184032",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184383",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180520",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185051",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178068",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "31-60",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183027",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184813",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185264",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180844",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180921",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184557",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182215",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1175633",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "33",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": "SUBIR"
+        },
+        {
+          "FOLIO OT": "1184071",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184981",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184596",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180559",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "3",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184577",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185063",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180485",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183174",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183915",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168467",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1175063",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "38",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183708",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173532",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "46",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184849",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "856313",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "907661",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "91 o más",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182845",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174645",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177141",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "25",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185062",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183116",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183948",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183769",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185039",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184562",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1123752",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "JUAN ARMIJO V",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174644",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182738",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184693",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "901386",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "91 o más",
+          "ASESOR": "Matias Lopez",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173222",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "47",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184555",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183870",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177144",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "25",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180670",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "3",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185483",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "0-30",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173533",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "46",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181300",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184793",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182989",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179389",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181913",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180521",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183881",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185663",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176690",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "27",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177918",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "31-60",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180523",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174912",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "38",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": "COBRAR"
+        },
+        {
+          "FOLIO OT": "1180954",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184589",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1168245",
+          "SUCURSAL": "CURICO",
+          "RANGO": "91 o más",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "80",
+          "TIPO VENTA": "VTA INTERNA-DYP",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1185156",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185537",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "LUIS FUENTEALBA G",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1161768",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "117",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1160630",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "126",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "REALIZAR"
+        },
+        {
+          "FOLIO OT": "1181811",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185004",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173221",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "48",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184729",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184547",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185578",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185110",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185173",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1175048",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "38",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184768",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181661",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183670",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184558",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185038",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180823",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183872",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183768",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "MATIAS FIGUEROA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184999",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1178564",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "13",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180524",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184734",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "859774",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183371",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "Eduardo Ortiz",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184239",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180935",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "31-60",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1166530",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "ANDRES MUÑOZ",
+          "DIAS APERTURA": "89",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": "COBRAR"
+        },
+        {
+          "FOLIO OT": "1163957",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "103",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": "REVISAR"
+        }
+      ]
+    },
+    {
+      "fecha": "26/05/2026 18:08",
+      "total_cerradas": 0,
+      "total_nuevas": 0,
+      "total_activas": 2111,
+      "ots_cerradas": []
+    },
+    {
+      "fecha": "27/05/2026 10:30",
+      "total_cerradas": 66,
+      "total_nuevas": 93,
+      "total_activas": 2138,
+      "ots_cerradas": [
+        {
+          "FOLIO OT": "1182081",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "28",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185069",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181756",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "Christopher Carrasco",
+          "DIAS APERTURA": "32",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180170",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "31-60",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "41",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180667",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "39",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185943",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184997",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "CESAR VALENZUELA",
+          "DIAS APERTURA": "8",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "902987",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "91 o más",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "526",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1183443",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182743",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "21",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183591",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184006",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185468",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185624",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1142579",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "Andres Muñoz",
+          "DIAS APERTURA": "286",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "CG"
+        },
+        {
+          "FOLIO OT": "1160069",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "49",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179490",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "39",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183702",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "12",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177998",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180374",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "Christopher Carrasco",
+          "DIAS APERTURA": "40",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184502",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "12",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1160329",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "166",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1183546",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185443",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185076",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "8",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183432",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174064",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "77",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183712",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "18",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185240",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185885",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1164815",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "56",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179587",
+          "SUCURSAL": "CURICO",
+          "RANGO": "31-60",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "43",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184140",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "14",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184316",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "13",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177786",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "Christopher Carrasco",
+          "DIAS APERTURA": "56",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185949",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1146457",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1176494",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1161697",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "139",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": "ST"
+        },
+        {
+          "FOLIO OT": "1184083",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "14",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184909",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185448",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183159",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "18",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183486",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "15",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185230",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185320",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185462",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181554",
+          "SUCURSAL": "TALCA",
+          "RANGO": "31-60",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "33",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184772",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1163740",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "137",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1184665",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Felipe Espinoza",
+          "DIAS APERTURA": "11",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1172688",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "CRISTIAN SILVA R",
+          "DIAS APERTURA": "85",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1170025",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "Andres Muñoz",
+          "DIAS APERTURA": "104",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1183566",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "13",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183862",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "EDUARDO ORTIZ",
+          "DIAS APERTURA": "12",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183317",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "20",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185977",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183456",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173577",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "82",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184408",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "LUIS FUENTEALBA G",
+          "DIAS APERTURA": "8",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183146",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "21",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1169625",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "105",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1182526",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "22",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177210",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "28",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185703",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "143822",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        }
+      ]
+    },
+    {
+      "fecha": "27/05/2026 10:34",
+      "total_cerradas": 66,
+      "total_nuevas": 93,
+      "total_activas": 2138,
+      "ots_cerradas": [
+        {
+          "FOLIO OT": "1184083",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "14",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185949",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "BORIS POBLETE S",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184140",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "14",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177998",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177786",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "Christopher Carrasco",
+          "DIAS APERTURA": "56",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183702",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "12",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182081",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "28",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1142579",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "Andres Muñoz",
+          "DIAS APERTURA": "286",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "CG"
+        },
+        {
+          "FOLIO OT": "1185320",
+          "SUCURSAL": "CD REPUESTOS",
+          "RANGO": "0-30",
+          "ASESOR": "MARGARITA PARADA",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MOVIL",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183591",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "GONZALO ALIAGA",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179587",
+          "SUCURSAL": "CURICO",
+          "RANGO": "31-60",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "43",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183546",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183486",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "15",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1164815",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "56",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185462",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "CHRISTOPHER CARRASCO",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185240",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1170025",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "Andres Muñoz",
+          "DIAS APERTURA": "104",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1184772",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183712",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "18",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1146457",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180170",
+          "SUCURSAL": "PLACILLA",
+          "RANGO": "31-60",
+          "ASESOR": "JOCELYN HERRERA",
+          "DIAS APERTURA": "41",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183159",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "18",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185069",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183317",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "20",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183432",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185076",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "8",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184006",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "6",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183566",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "13",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180374",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "Christopher Carrasco",
+          "DIAS APERTURA": "40",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181756",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "31-60",
+          "ASESOR": "Christopher Carrasco",
+          "DIAS APERTURA": "32",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1177210",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "0-30",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "28",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183862",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "EDUARDO ORTIZ",
+          "DIAS APERTURA": "12",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185703",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1173577",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "82",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "902987",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "91 o más",
+          "ASESOR": "OSCAR ESCOBAR",
+          "DIAS APERTURA": "526",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1169625",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "105",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": "GARANTIA"
+        },
+        {
+          "FOLIO OT": "1183443",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184408",
+          "SUCURSAL": "TALCA (2)",
+          "RANGO": "0-30",
+          "ASESOR": "LUIS FUENTEALBA G",
+          "DIAS APERTURA": "8",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182526",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "22",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1161697",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "91 o más",
+          "ASESOR": "VANESSA PIZARRO",
+          "DIAS APERTURA": "139",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": "ST"
+        },
+        {
+          "FOLIO OT": "1176494",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185885",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1160069",
+          "SUCURSAL": "LO BLANCO",
+          "RANGO": "31-60",
+          "ASESOR": "FELIPE AGURTO",
+          "DIAS APERTURA": "49",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185624",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "0-30",
+          "ASESOR": "RODRIGO MUNOZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185443",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183146",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "21",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1180667",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "31-60",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "39",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185448",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "CRISTIAN ALIAGA",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184316",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Gonzalo Aliaga",
+          "DIAS APERTURA": "13",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184909",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ANA MARIA SANDOVAL",
+          "DIAS APERTURA": "4",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1172688",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "61-90",
+          "ASESOR": "CRISTIAN SILVA R",
+          "DIAS APERTURA": "85",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": "REVISAR"
+        },
+        {
+          "FOLIO OT": "1185230",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "JUAN ORTEGA",
+          "DIAS APERTURA": "7",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1183456",
+          "SUCURSAL": "TALCA",
+          "RANGO": "0-30",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "19",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1179490",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "31-60",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "39",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1181554",
+          "SUCURSAL": "TALCA",
+          "RANGO": "31-60",
+          "ASESOR": "VICENTE CACERES",
+          "DIAS APERTURA": "33",
+          "TIPO VENTA": "VTA MANT PREPAGADAS",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "143822",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "ALEXANDER RIQUELME",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185977",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184997",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "CESAR VALENZUELA",
+          "DIAS APERTURA": "8",
+          "TIPO VENTA": "VTA GARANTIA",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184502",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "0-30",
+          "ASESOR": "DANIEL MARTINEZ",
+          "DIAS APERTURA": "12",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1184665",
+          "SUCURSAL": "CURICO",
+          "RANGO": "0-30",
+          "ASESOR": "Felipe Espinoza",
+          "DIAS APERTURA": "11",
+          "TIPO VENTA": "VTA MANTENCIONES",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1185468",
+          "SUCURSAL": "CHILLAN VIEJO",
+          "RANGO": "0-30",
+          "ASESOR": "GENESIS CARRASCO C",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1163740",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "137",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        },
+        {
+          "FOLIO OT": "1185943",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "1",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1174064",
+          "SUCURSAL": "RANCAGUA",
+          "RANGO": "61-90",
+          "ASESOR": "JUAN ARMIJO",
+          "DIAS APERTURA": "77",
+          "TIPO VENTA": "VTA MEC",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1182743",
+          "SUCURSAL": "CHILLAN",
+          "RANGO": "0-30",
+          "ASESOR": "ALEX GUTIERREZ",
+          "DIAS APERTURA": "21",
+          "TIPO VENTA": "VTA INTERNA-CURI",
+          "CATEGORIA": ""
+        },
+        {
+          "FOLIO OT": "1160329",
+          "SUCURSAL": "LINDEROS",
+          "RANGO": "91 o más",
+          "ASESOR": "FRANCISCO GONZALEZ",
+          "DIAS APERTURA": "166",
+          "TIPO VENTA": "VTA DYP",
+          "CATEGORIA": "DYP"
+        }
+      ]
+    },
+    {
+      "fecha": "27/05/2026 10:57",
+      "total_cerradas": 0,
+      "total_nuevas": 0,
+      "total_activas": 2138,
+      "ots_cerradas": []
+    },
+    {
+      "fecha": "28/05/2026 09:14",
+      "total_cerradas": 0,
+      "total_nuevas": 0,
+      "total_activas": 2138,
+      "ots_cerradas": []
+    },
+    {
+      "fecha": "28/05/2026 09:26",
+      "total_cerradas": 0,
+      "total_nuevas": 0,
+      "total_activas": 2138,
+      "ots_cerradas": []
+    },
+    {
+      "fecha": "28/05/2026 09:39",
+      "total_cerradas": 0,
+      "total_nuevas": 0,
+      "total_activas": 2138,
+      "ots_cerradas": []
+    }
+  ]
+}

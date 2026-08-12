@@ -1,0 +1,74 @@
+{
+  "TALCA": {
+    "14/07/2026": {
+      "1193165": "pendiente"
+    },
+    "15/07/2026": {
+      "1193432": "pendiente"
+    },
+    "23/07/2026": {
+      "1194211": "pendiente"
+    }
+  },
+  "CURICO": {
+    "22/07/2026": {
+      "1193775": "pendiente"
+    },
+    "__overrides": {}
+  },
+  "LINDEROS": {
+    "23/07/2026": {
+      "1192786": "realizado",
+      "1193683": "realizado",
+      "1194518": "realizado"
+    },
+    "22/07/2026": {
+      "1194172": "realizado",
+      "1194309": "realizado",
+      "1194373": "realizado",
+      "1194402": "realizado",
+      "1194487": "realizado"
+    },
+    "24/07/2026": {
+      "1193390": "realizado",
+      "1194429": "realizado"
+    },
+    "__overrides": {
+      "23/07/2026__1193683": {
+        "marca": "Ford",
+        "modelo": "Territory",
+        "versionId": "ford__territory--trend-1-5l-gtdi"
+      },
+      "27/07/2026__1194530": {
+        "marca": "Ford",
+        "modelo": "Ranger",
+        "anio": "2024",
+        "versionId": "ford__ranger--xlt-4x4-automatica-lion-3-0l"
+      },
+      "27/07/2026__1194263": {
+        "marca": "Ford",
+        "modelo": "Transit",
+        "anio": "2024",
+        "versionId": "ford__transit--chasis-bev-4x2-rwd-battery-electric-motor"
+      },
+      "27/07/2026__1194381": {
+        "marca": "JAC",
+        "modelo": "JS8",
+        "anio": "",
+        "versionId": "jac__js8-6mt"
+      },
+      "27/07/2026__1194356": {
+        "marca": "Ford",
+        "modelo": "Territory",
+        "anio": "2024",
+        "versionId": "ford__territory--titanium-plus-7dct-4x2-fwd-1-5l-ecoboost"
+      }
+    },
+    "03/08/2026": {
+      "1195794": "pendiente"
+    },
+    "11/08/2026": {
+      "1197213": "pendiente"
+    }
+  }
+}

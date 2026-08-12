@@ -1,0 +1,20 @@
+# Credenciales locales — NUNCA subir al repo
+supabase_pwd.txt
+github_token.txt
+sql_credenciales.txt
+.env
+.env.*
+
+# Secretos de Streamlit (en la nube se cargan desde Settings > Secrets).
+# El archivo .example SI se versiona: sirve de plantilla.
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# Respaldos y temporales del consolidador
+*.bak
+*.tmp
+~$*
+Backups/

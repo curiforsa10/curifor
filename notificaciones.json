@@ -1,0 +1,1093 @@
+{
+  "notificaciones": [
+    {
+      "id": "d955e5a9-8ef1-4c79-810e-d81ab5278efc",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1160743",
+      "extracto": "Flavio, como van con el avance de esta OT",
+      "fecha": "12/06/2026 12:13",
+      "leida": false
+    },
+    {
+      "id": "93f1f44d-6331-4457-a92c-052f38733536",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1160743",
+      "extracto": "Flavio, como van con el avance de esta OT",
+      "fecha": "12/06/2026 12:13",
+      "leida": false
+    },
+    {
+      "id": "5d8c5d4a-d6e8-4e05-a212-8345d686300a",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1160743",
+      "extracto": "Flavio, como van con el avance de esta OT",
+      "fecha": "12/06/2026 12:14",
+      "leida": false
+    },
+    {
+      "id": "0458bb61-ec0b-4cd3-ad51-22a7d0863581",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1160743",
+      "extracto": "Flavio, como van con el avance",
+      "fecha": "12/06/2026 12:15",
+      "leida": false
+    },
+    {
+      "id": "836a6ef9-a3ce-4cda-8e26-dc61432aae47",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1160743",
+      "extracto": "hacete cargo",
+      "fecha": "12/06/2026 12:26",
+      "leida": false
+    },
+    {
+      "id": "6d19369f-cff9-4180-9d00-7f1200cb079d",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1111925",
+      "extracto": "Favor actualización de este caso",
+      "fecha": "12/06/2026 15:18",
+      "leida": false
+    },
+    {
+      "id": "f2c9c51e-dfb0-45ca-ace5-570de79a57c6",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1111925",
+      "extracto": "Favor actualización de este caso",
+      "fecha": "12/06/2026 15:19",
+      "leida": false
+    },
+    {
+      "id": "b609e885-ab21-4051-9e5f-ac9ccf602596",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "mlopez@curifor.com",
+      "folio_ot": "5130",
+      "extracto": "ver con ERP",
+      "fecha": "12/06/2026 15:42",
+      "leida": false
+    },
+    {
+      "id": "ff997691-c289-48c9-89a4-78138910521d",
+      "remitente": "fordonez@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1170248",
+      "extracto": "como le fue con esta\n",
+      "fecha": "15/06/2026 11:23",
+      "leida": false
+    },
+    {
+      "id": "5c3bf1f8-3fde-4767-80be-b5156f43dc1b",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1176054",
+      "extracto": "Flavio favor de su ayuda con cierre de esta ot ya que  no me corresponde    ",
+      "fecha": "15/06/2026 17:28",
+      "leida": false
+    },
+    {
+      "id": "f7cbb9e2-90d7-4b2a-aa29-3ed2dd5ddd75",
+      "remitente": "rmunoz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1158702",
+      "extracto": "carito, alguna novedad con las mpp de omoda?",
+      "fecha": "16/06/2026 12:06",
+      "leida": false
+    },
+    {
+      "id": "b65236d0-667b-475b-8ec6-3b58fa3151b5",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1182443",
+      "extracto": "priorizar garantía para que sea facturada este mes - repuestos en bodega Linderos desde 09 de Junio (5 milones estancados)",
+      "fecha": "18/06/2026 22:29",
+      "leida": false
+    },
+    {
+      "id": "33cf1973-14e1-4c08-b3f1-bbcf6bd125dc",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1182443",
+      "extracto": "priorizar garantía para que sea facturada este mes - repuestos en bodega Linderos desde 09 de Junio (5 milones estancados)",
+      "fecha": "18/06/2026 22:29",
+      "leida": false
+    },
+    {
+      "id": "dcba39c8-175d-4bee-9946-8bb74f19eff3",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1169218",
+      "extracto": "que pasa con este caso? repuesto pendiente en bodega desde marzo",
+      "fecha": "18/06/2026 23:23",
+      "leida": true
+    },
+    {
+      "id": "50b816dc-2b71-40e0-bd6a-f42856c85b55",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1182641",
+      "extracto": "que le falta a esta servicio? tienen repuestos esperando en bodega desde el 28 de mayo",
+      "fecha": "18/06/2026 23:27",
+      "leida": false
+    },
+    {
+      "id": "742d9d98-c58f-456f-9163-44bf5b79fe2f",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1182641",
+      "extracto": "que le falta a esta servicio? tienen repuestos esperando en bodega desde el 28 de mayo",
+      "fecha": "18/06/2026 23:27",
+      "leida": false
+    },
+    {
+      "id": "f9fe7ac7-4f22-4ee7-ad44-b9e8b9d37b4b",
+      "remitente": "jherrera@curifor.com",
+      "destinatario": "jploreto@curifor.com",
+      "folio_ot": "1161428",
+      "extracto": "REVISAR EN CONJUNTO CON JPLORETO",
+      "fecha": "19/06/2026 14:07",
+      "leida": false
+    },
+    {
+      "id": "991f3d20-ceea-446b-8f72-b656b4dac3f5",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1008175",
+      "extracto": "Hubo forma de recuperar este caso? Si no fue así debemos proceder con el cierre",
+      "fecha": "22/06/2026 15:20",
+      "leida": true
+    },
+    {
+      "id": "b317dd2b-7f2c-436e-bf59-0b362af5b9d5",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1008175",
+      "extracto": "Hubo forma de recuperar este caso? Si no fue así debemos proceder con el cierre",
+      "fecha": "22/06/2026 15:20",
+      "leida": false
+    },
+    {
+      "id": "9a457cf7-e52d-4468-a3b4-219fa2cbf51f",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "nmorales@curifor.com",
+      "folio_ot": "1181295",
+      "extracto": "Hola Nico, favor cuando tengan actualización de este caso nos avisan",
+      "fecha": "22/06/2026 15:47",
+      "leida": true
+    },
+    {
+      "id": "9de43277-c7c5-4597-889b-9aaf5be4597f",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "amarin@curifor.com",
+      "folio_ot": "1181295",
+      "extracto": "Hola Nico, favor cuando tengan actualización de este caso nos avisan",
+      "fecha": "22/06/2026 15:47",
+      "leida": false
+    },
+    {
+      "id": "3482ec88-7c80-4f09-85f2-384437b585d4",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "amarin@curifor.com",
+      "folio_ot": "1188791",
+      "extracto": "Hola Nico, favor cuando tengan actualización de este caso nos avisan",
+      "fecha": "22/06/2026 15:47",
+      "leida": false
+    },
+    {
+      "id": "30fa6a93-e98c-4583-80ae-87f3939ecbb0",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "833183",
+      "extracto": "OT SOLO COMO MO CORTESIA, REPUESTOS CARGADOS EN 6360, SE DEBE CERRAR COMO GERENCIA PERO SE ENCUENTRA CRUZADAS LAS OT, CRISTOBAL SU AYUDA PARA PODER DAR CIERRE",
+      "fecha": "22/06/2026 18:25",
+      "leida": true
+    },
+    {
+      "id": "c413bcc1-5016-4eeb-822d-7d267999ee6d",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "828326",
+      "extracto": "MANTENCION FLUJO ANTIGUO QUE NO TENGO RESPALDOS PARA PODER DAR CIERRE, CRISTOBAL EN QUE QUEDO CON ERP SOBRE ESTOS CASOS",
+      "fecha": "22/06/2026 18:26",
+      "leida": true
+    },
+    {
+      "id": "c9328f52-817d-43a4-a67c-aba705ad92b0",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "820918",
+      "extracto": "CAMIONETA YA REPARADA, ESTA OT ES DEL FLUJO ANTIGUO Y REPUESTOS NO SE ENCONTRARON CRITSOBAL ESTABA CON ERP PARA VER COMO DAR CIERRE",
+      "fecha": "22/06/2026 18:27",
+      "leida": true
+    },
+    {
+      "id": "a3d32fd7-f1c1-44d4-8a0f-9dfe514e1128",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "788701",
+      "extracto": "OT FLUJO ANTIGUO, V/C MEC 184476 RECHAZADO, REPUESTO NO SE ENTREGO, SE DEBE ELIMINAR VALE DE CONSUMO PARA CERRAR, CRISTOBAL COMO VA CON ERP SOBRE ESTA OT",
+      "fecha": "22/06/2026 18:28",
+      "leida": true
+    },
+    {
+      "id": "5f77870f-7137-4c34-b74d-055b3836fc3b",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "dmartinez@curifor.com",
+      "folio_ot": "1180729",
+      "extracto": "Anular liquidación  85792 y cambiar cargo de ventas y tipo de ventas, volver a realizar CI con cierre por $1",
+      "fecha": "22/06/2026 22:01",
+      "leida": false
+    },
+    {
+      "id": "64b33022-135b-45eb-92ac-0cb6bf4e302a",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "ariquelme@curifor.com",
+      "folio_ot": "1180663",
+      "extracto": "REVISAR REPUESTO QUE SALE PENDIENTE Y VER SI DEBEMSO INSTALAR",
+      "fecha": "22/06/2026 22:05",
+      "leida": false
+    },
+    {
+      "id": "b4c24589-4a2d-43f2-becc-25c0f4e34229",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "jfuentes@curifor.com",
+      "folio_ot": "1180663",
+      "extracto": "REVISAR REPUESTO QUE SALE PENDIENTE Y VER SI DEBEMSO INSTALAR",
+      "fecha": "22/06/2026 22:05",
+      "leida": false
+    },
+    {
+      "id": "43b54319-cbd7-40c2-8461-ba1d85a3b482",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1179415",
+      "extracto": "REVISAR SI SE REALIZARON CAMPAÑAS PENDIENTES PARA COBRAR",
+      "fecha": "22/06/2026 22:35",
+      "leida": false
+    },
+    {
+      "id": "7291eaac-6d60-4ef0-b23b-40fdb1d44624",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1179411",
+      "extracto": "REVISAR SI CAMPAÑAS SE REALIZARON PARA COBRAR",
+      "fecha": "22/06/2026 22:36",
+      "leida": false
+    },
+    {
+      "id": "c2e82737-82e5-45a9-9c6a-194a6c77a01b",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1179388",
+      "extracto": "REVISAR SI LAS CAMPAÑAS SE REALIZARON PARA COBRAR",
+      "fecha": "22/06/2026 22:39",
+      "leida": false
+    },
+    {
+      "id": "0eea843c-6b9d-4e2f-93ec-f9fad8a8d90b",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1179384",
+      "extracto": "REVISAR SI CAMPAÑAS FUERON REALIZADAS PARA COBRAR",
+      "fecha": "22/06/2026 22:41",
+      "leida": false
+    },
+    {
+      "id": "1c23e5d0-044e-4bcb-87fd-6c625d3a54f6",
+      "remitente": "jarmijo@curifor.com",
+      "destinatario": "dmartinez@curifor.com",
+      "folio_ot": "1177033",
+      "extracto": "DANIEL MARTINEZ CUENTA CON DOCUMENTACION PARA COBRAR GARANTIA ",
+      "fecha": "23/06/2026 14:15",
+      "leida": false
+    },
+    {
+      "id": "fafa9ee2-5c51-475f-8c74-623481487b9f",
+      "remitente": "jarmijo@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1177033",
+      "extracto": "DANIEL MARTINEZ CUENTA CON DOCUMENTACION PARA COBRAR GARANTIA ",
+      "fecha": "23/06/2026 14:16",
+      "leida": false
+    },
+    {
+      "id": "8df5e51d-a2a5-40f4-834c-37d30e53340b",
+      "remitente": "jarmijo@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1178799",
+      "extracto": "UNIDAD POR REVISION 30 DIAS  SE DEBE COBRAR EN PORTAL",
+      "fecha": "23/06/2026 15:19",
+      "leida": false
+    },
+    {
+      "id": "dcccc6ee-efdf-4c45-8de8-e4c40b21203c",
+      "remitente": "jarmijo@curifor.com",
+      "destinatario": "dmartinez@curifor.com",
+      "folio_ot": "1181583",
+      "extracto": "COBRAR A USADOS ",
+      "fecha": "23/06/2026 15:22",
+      "leida": false
+    },
+    {
+      "id": "3569ae50-c249-420e-9165-7bd2141a1efc",
+      "remitente": "jarmijo@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1181772",
+      "extracto": "CARGO INTERNO SIN APROBAR ",
+      "fecha": "23/06/2026 15:23",
+      "leida": true
+    },
+    {
+      "id": "e178aeb7-ea14-459b-8b01-119d32ddaf9b",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "jploreto@curifor.com",
+      "folio_ot": "1181772",
+      "extracto": "favor de aprobar CG 2017 para que se salga de listado de OT vigente",
+      "fecha": "23/06/2026 15:29",
+      "leida": false
+    },
+    {
+      "id": "b672b836-be1d-4119-ac0e-9e3fe8d1368b",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1181772",
+      "extracto": "favor de aprobar CG 2017 para que se salga de listado de OT vigente",
+      "fecha": "23/06/2026 15:29",
+      "leida": true
+    },
+    {
+      "id": "f2c569ba-52ef-4c68-9b51-74699530beaa",
+      "remitente": "jfuentes@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1001186",
+      "extracto": "Se entregan respaldos de falla. Favor cobrar.",
+      "fecha": "23/06/2026 17:41",
+      "leida": false
+    },
+    {
+      "id": "89c41588-f25a-4195-aa0d-1a9c7c1bd78b",
+      "remitente": "jfuentes@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1115238",
+      "extracto": "Realizar devolución de repuesto y cargar en OT 1187772. Vale consumo que debes devolver 31950.\nEsta OT se debe cerrar a 1$",
+      "fecha": "23/06/2026 18:16",
+      "leida": false
+    },
+    {
+      "id": "b70085f7-8d42-42dd-ad83-1d7acdc1dc31",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1182025",
+      "extracto": "don Luis que pasa con este caso? Favor confirmar los repuestos que están pendientes en bodega desde Mayo",
+      "fecha": "23/06/2026 20:50",
+      "leida": false
+    },
+    {
+      "id": "be1345c5-c18a-482f-9f0d-848aaf4626f5",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "jploreto@curifor.com",
+      "folio_ot": "1182025",
+      "extracto": "don Luis que pasa con este caso? Favor confirmar los repuestos que están pendientes en bodega desde Mayo",
+      "fecha": "23/06/2026 20:50",
+      "leida": false
+    },
+    {
+      "id": "97ebd435-9303-482b-95ea-db450dc8881a",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1189431",
+      "extracto": "será cobrada por Caro 24-06",
+      "fecha": "24/06/2026 16:19",
+      "leida": false
+    },
+    {
+      "id": "121807f5-daaa-4c52-8ba1-4c95046580fd",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1189431",
+      "extracto": "será cobrada por Caro 24-06",
+      "fecha": "24/06/2026 16:19",
+      "leida": false
+    },
+    {
+      "id": "0ec16ebd-1572-4131-9bdd-f51f0237b03b",
+      "remitente": "gmaldonado@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1115238",
+      "extracto": "se realiza cierre de ot a $1. Pero repuesto se carga en ot 1187772 y se cobra en reclamo de garantía n° 204239",
+      "fecha": "24/06/2026 16:25",
+      "leida": true
+    },
+    {
+      "id": "3686bd62-83c9-420f-92e7-11fcd25a1777",
+      "remitente": "gmaldonado@curifor.com",
+      "destinatario": "jploreto@curifor.com",
+      "folio_ot": "1115238",
+      "extracto": "se realiza cierre de ot a $1. Pero repuesto se carga en ot 1187772 y se cobra en reclamo de garantía n° 204239",
+      "fecha": "24/06/2026 16:25",
+      "leida": false
+    },
+    {
+      "id": "7fe0f697-5674-4664-a47a-963ca5f7b884",
+      "remitente": "gmaldonado@curifor.com",
+      "destinatario": "amarin@curifor.com",
+      "folio_ot": "1115238",
+      "extracto": "se realiza cierre de ot a $1. Pero repuesto se carga en ot 1187772 y se cobra en reclamo de garantía n° 204239",
+      "fecha": "24/06/2026 16:26",
+      "leida": false
+    },
+    {
+      "id": "9d498d6d-cc1c-4fa1-9969-a4efdcb510b1",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "jarmijo@curifor.com",
+      "folio_ot": "1186630",
+      "extracto": "Favor notificar cierre",
+      "fecha": "24/06/2026 16:33",
+      "leida": false
+    },
+    {
+      "id": "2c3f654b-d8e4-44b2-9a8e-357fcaabf64a",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "jfuentes@curifor.com",
+      "folio_ot": "1186630",
+      "extracto": "Favor notificar cierre",
+      "fecha": "24/06/2026 16:33",
+      "leida": false
+    },
+    {
+      "id": "282d1062-549f-4df8-8ab7-1498e25ae5a0",
+      "remitente": "jfuentes@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1186630",
+      "extracto": "OT CERRADA CON FACTURA EN CAJA N° 856637",
+      "fecha": "25/06/2026 09:44",
+      "leida": true
+    },
+    {
+      "id": "ab9ad265-137c-4b06-9146-03970b734f80",
+      "remitente": "jfuentes@curifor.com",
+      "destinatario": "ariquelme@curifor.com",
+      "folio_ot": "1180663",
+      "extracto": "Hay que citar a cliente para cambio del módulo. Mecánico Nico Medina.",
+      "fecha": "25/06/2026 09:56",
+      "leida": false
+    },
+    {
+      "id": "7f22cc0b-9fa5-4871-a6ca-b141833721ae",
+      "remitente": "jfuentes@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1180663",
+      "extracto": "Hay que citar a cliente para cambio del módulo. Mecánico Nico Medina.",
+      "fecha": "25/06/2026 09:56",
+      "leida": true
+    },
+    {
+      "id": "9604266c-2f1e-4d9e-81ee-a5f351b58090",
+      "remitente": "jfuentes@curifor.com",
+      "destinatario": "gmaldonado@curifor.com",
+      "folio_ot": "1067988",
+      "extracto": "COBRAR CON EVIDENCIA DE PARASOL TECHO DE FORD ESCAPE.",
+      "fecha": "25/06/2026 10:09",
+      "leida": false
+    },
+    {
+      "id": "cdab0329-ce1b-4a15-a76f-6a3772b10078",
+      "remitente": "gmaldonado@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1008175",
+      "extracto": "se cobró por garantía en reclamo 204241 ",
+      "fecha": "25/06/2026 10:25",
+      "leida": true
+    },
+    {
+      "id": "333bdba8-e9f8-4e6f-867f-db05d6021937",
+      "remitente": "gmaldonado@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1173722",
+      "extracto": "se realiza cobro en portal de garantía con numero de reclamo 204243",
+      "fecha": "25/06/2026 11:27",
+      "leida": true
+    },
+    {
+      "id": "f3c0befa-4cfd-4815-b256-13638b686e5b",
+      "remitente": "gmaldonado@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1179415",
+      "extracto": "campaña cobrada en reclamo 204242",
+      "fecha": "25/06/2026 11:35",
+      "leida": true
+    },
+    {
+      "id": "b7328a74-38c0-414c-a1a8-0df346fadbe3",
+      "remitente": "gmaldonado@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1179411",
+      "extracto": "se realiza cobro en reclamo 204244",
+      "fecha": "25/06/2026 13:33",
+      "leida": true
+    },
+    {
+      "id": "0765088b-ba60-4cd0-bb15-87f3c3232e6c",
+      "remitente": "gcarrasco@curifor.com",
+      "destinatario": "nmorales@curifor.com",
+      "folio_ot": "1165889",
+      "extracto": "?????????????????????????",
+      "fecha": "26/06/2026 13:09",
+      "leida": true
+    },
+    {
+      "id": "84cf6c73-fd84-4d63-8692-3f9285cf6128",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "gcarrasco@curifor.com",
+      "folio_ot": "1165889",
+      "extracto": "hacete cargo",
+      "fecha": "26/06/2026 13:10",
+      "leida": true
+    },
+    {
+      "id": "d57c7f85-709d-46cd-9eb9-5a5eb4f2851f",
+      "remitente": "nmorales@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1172610",
+      "extracto": "VOR ENVIADO EL 25-06 PARA FINIQUITAR SU CIERRE.",
+      "fecha": "03/07/2026 10:08",
+      "leida": true
+    },
+    {
+      "id": "24da4193-1e81-4b92-b4d1-5b4d2b24bb4f",
+      "remitente": "rmunoz@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1181936",
+      "extracto": "Caso de caja transmision, por garantia\nclienta bloqueada para cerrar",
+      "fecha": "06/07/2026 14:34",
+      "leida": false
+    },
+    {
+      "id": "b094e658-a4ab-451c-adb5-556912badcf5",
+      "remitente": "rmunoz@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1181936",
+      "extracto": "Caso de caja transmision, por garantia\nclienta bloqueada para cerrar",
+      "fecha": "06/07/2026 14:34",
+      "leida": false
+    },
+    {
+      "id": "435533b7-1411-4bd8-9bea-271b0ee3d8a9",
+      "remitente": "rmunoz@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1181936",
+      "extracto": "Caso de caja transmision, por garantia\nclienta bloqueada para cerrar",
+      "fecha": "06/07/2026 14:34",
+      "leida": true
+    },
+    {
+      "id": "36b21109-76dc-4c72-8663-378e8ed791b4",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "cpasten@curifor.com",
+      "folio_ot": "1187938",
+      "extracto": "Señores, en qué estado se encuentra este servicio?",
+      "fecha": "07/07/2026 15:07",
+      "leida": false
+    },
+    {
+      "id": "f3b01a11-7ce6-431d-aabd-d540422160e8",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "mmunoz@curifor.com",
+      "folio_ot": "1187938",
+      "extracto": "Señores, en qué estado se encuentra este servicio?",
+      "fecha": "07/07/2026 15:07",
+      "leida": true
+    },
+    {
+      "id": "04f1a083-afaf-46cc-a195-bc08bb082e83",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1177348",
+      "extracto": "que pasa con este caso?",
+      "fecha": "07/07/2026 16:54",
+      "leida": false
+    },
+    {
+      "id": "12a1beed-53e8-419a-b57b-7c759130194c",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "eortiz@curifor.com",
+      "folio_ot": "1177348",
+      "extracto": "que pasa con este caso?",
+      "fecha": "07/07/2026 16:54",
+      "leida": false
+    },
+    {
+      "id": "0f33ca15-a434-4182-90c5-ae829a66b108",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1178461",
+      "extracto": "Que pasa con este caso? Matías no tiene usuario en la App, ya han pasado meses",
+      "fecha": "07/07/2026 16:56",
+      "leida": false
+    },
+    {
+      "id": "66406ad8-99ed-449b-bdb3-f0e1bc345179",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1176054",
+      "extracto": "cerrar $1",
+      "fecha": "07/07/2026 17:10",
+      "leida": false
+    },
+    {
+      "id": "a26b4f37-56b0-4294-9f51-ff1a59c1d285",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1178461",
+      "extracto": "Cerrada a $1 - trabajo realizado en otra OT",
+      "fecha": "07/07/2026 18:28",
+      "leida": false
+    },
+    {
+      "id": "380e4836-f2d7-405d-a110-bf01daa5eb83",
+      "remitente": "mmunoz@curifor.com",
+      "destinatario": "cpasten@curifor.com",
+      "folio_ot": "1170049",
+      "extracto": "CASO DE DYP, FAVOR COMENTAR QUE SE HARA CON ESTE CASO, CLIENTE NO QUIERE PAGAR DEDUSIBLE ",
+      "fecha": "13/07/2026 13:31",
+      "leida": false
+    },
+    {
+      "id": "02802081-cd94-4eef-8d22-9637a614683a",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fespinoza@curifor.com",
+      "folio_ot": "1175045",
+      "extracto": "hola Felipe",
+      "fecha": "15/07/2026 13:18",
+      "leida": false
+    },
+    {
+      "id": "04b3be96-5262-4ea7-9e19-36b599d39b07",
+      "remitente": "caliaga@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1181451",
+      "extracto": "Premio entregado a técnico Jonathan Neira por cumplir con estándares de la marca Ford",
+      "fecha": "15/07/2026 13:49",
+      "leida": true
+    },
+    {
+      "id": "614b4c41-e353-4d15-989a-0a570f881aff",
+      "remitente": "caliaga@curifor.com",
+      "destinatario": "cflores@curifor.com",
+      "folio_ot": "1181451",
+      "extracto": "Premio entregado a técnico Jonathan Neira por cumplir con estándares de la marca Ford",
+      "fecha": "15/07/2026 13:49",
+      "leida": false
+    },
+    {
+      "id": "5d48cc62-06d5-4766-80d3-1e91e1e25807",
+      "remitente": "caliaga@curifor.com",
+      "destinatario": "rsoto@curifor.com",
+      "folio_ot": "1181451",
+      "extracto": "Premio entregado a técnico Jonathan Neira por cumplir con estándares de la marca Ford",
+      "fecha": "15/07/2026 13:49",
+      "leida": false
+    },
+    {
+      "id": "91b78ac2-a0d2-419b-9864-7cb68c8c056e",
+      "remitente": "caliaga@curifor.com",
+      "destinatario": "rsoto@curifor.com",
+      "folio_ot": "1180260",
+      "extracto": "Embrague de ford focus costo cliente y en proceso de cambio técnico daña repuesto, este se debe asumir, pero don Ricardo Soto quedo como responsable de esta acción",
+      "fecha": "15/07/2026 13:54",
+      "leida": false
+    },
+    {
+      "id": "99ce27ec-26f0-4c90-8b02-e09d4ed42bcd",
+      "remitente": "caliaga@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1180260",
+      "extracto": "Embrague de ford focus costo cliente y en proceso de cambio técnico daña repuesto, este se debe asumir, pero don Ricardo Soto quedo como responsable de esta acción",
+      "fecha": "15/07/2026 13:54",
+      "leida": true
+    },
+    {
+      "id": "e5d8a596-12dc-4b99-953a-26914f7cdccf",
+      "remitente": "caliaga@curifor.com",
+      "destinatario": "cflores@curifor.com",
+      "folio_ot": "1180260",
+      "extracto": "Embrague de ford focus costo cliente y en proceso de cambio técnico daña repuesto, este se debe asumir, pero don Ricardo Soto quedo como responsable de esta acción",
+      "fecha": "15/07/2026 13:54",
+      "leida": false
+    },
+    {
+      "id": "39e94258-f72a-487a-92b3-228ec0976849",
+      "remitente": "fordonez@curifor.com",
+      "destinatario": "rmunoz@curifor.com",
+      "folio_ot": "1179632",
+      "extracto": "deben de retirar unidad, cuando la retira cliente",
+      "fecha": "24/07/2026 12:02",
+      "leida": false
+    },
+    {
+      "id": "c78889ae-cf06-42cd-a980-3f3547459b78",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "900733",
+      "extracto": "OT con Factura X a $1 - favor corregir",
+      "fecha": "27/07/2026 15:50",
+      "leida": true
+    },
+    {
+      "id": "713648b8-7942-4dcc-a3e0-9d616530f47a",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "jploreto@curifor.com",
+      "folio_ot": "900733",
+      "extracto": "OT con Factura X a $1 - favor corregir",
+      "fecha": "27/07/2026 15:50",
+      "leida": false
+    },
+    {
+      "id": "9b44aa02-44ef-48e3-882a-5b5cad3688d3",
+      "remitente": "fordonez@curifor.com",
+      "destinatario": "mparada@curifor.com",
+      "folio_ot": "1178496",
+      "extracto": "consultando a taller movil",
+      "fecha": "27/07/2026 16:46",
+      "leida": false
+    },
+    {
+      "id": "c863a4f5-6de9-48a6-9aa4-e1009ef7c4bf",
+      "remitente": "fordonez@curifor.com",
+      "destinatario": "mparada@curifor.com",
+      "folio_ot": "1169015",
+      "extracto": "se consulta a margarita parada por cierre de orden\n",
+      "fecha": "27/07/2026 17:12",
+      "leida": false
+    },
+    {
+      "id": "2f93231a-2374-411a-a34f-cb2f4a70d038",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1185561",
+      "extracto": "OT Abierta por campañas, está camino a 90 días",
+      "fecha": "29/07/2026 16:17",
+      "leida": false
+    },
+    {
+      "id": "c4cc683c-0470-4363-adfc-264e8380fc95",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1185561",
+      "extracto": "OT Abierta por campañas, está camino a 90 días",
+      "fecha": "29/07/2026 16:17",
+      "leida": false
+    },
+    {
+      "id": "bf5e30f1-254e-4a69-b544-08105fb65db6",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1185561",
+      "extracto": "OT Abierta por campañas, está camino a 90 días",
+      "fecha": "29/07/2026 16:17",
+      "leida": false
+    },
+    {
+      "id": "5b3c4e9a-9894-4d26-b7bb-b82fcd0efc22",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "eortiz@curifor.com",
+      "folio_ot": "1185561",
+      "extracto": "OT Abierta por campañas, está camino a 90 días",
+      "fecha": "29/07/2026 16:17",
+      "leida": false
+    },
+    {
+      "id": "abf8bea3-f9ce-409f-8a7b-6958554ba522",
+      "remitente": "oescobar@curifor.com",
+      "destinatario": "ssarmiento@curifor.com",
+      "folio_ot": "1182683",
+      "extracto": "SE CERRÓ OT PORQUE AL CLIENTE LO INDEMNIZARON DESDE CIA ",
+      "fecha": "04/08/2026 09:02",
+      "leida": false
+    },
+    {
+      "id": "28c98254-a070-47b6-8b51-44bec3243474",
+      "remitente": "mmatta@curifor.com",
+      "destinatario": "mvillanueva@curifor.com",
+      "folio_ot": "1177634",
+      "extracto": "revisar falta vale de consumo para cerra ot",
+      "fecha": "04/08/2026 11:38",
+      "leida": false
+    },
+    {
+      "id": "c041450d-7c87-4922-b0eb-52dae561aa95",
+      "remitente": "oescobar@curifor.com",
+      "destinatario": "ssarmiento@curifor.com",
+      "folio_ot": "1160572",
+      "extracto": "se cierra ot vor, se envió por correo conformidad. ",
+      "fecha": "05/08/2026 12:47",
+      "leida": false
+    },
+    {
+      "id": "eb5020f1-d2a5-4483-b811-088713889b10",
+      "remitente": "ctroncoso@curifor.com",
+      "destinatario": "oescobar@curifor.com",
+      "folio_ot": "1160572",
+      "extracto": "favor cerrar vor",
+      "fecha": "05/08/2026 17:00",
+      "leida": true
+    },
+    {
+      "id": "0b506d47-470d-4fc2-8188-87d80160fd4a",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "rmunoz@curifor.com",
+      "folio_ot": "1179632",
+      "extracto": "favor de su ayuda para el cierre de OT ",
+      "fecha": "06/08/2026 11:11",
+      "leida": false
+    },
+    {
+      "id": "74429c7f-54bb-4a39-a598-dff1dae1ae88",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1179632",
+      "extracto": "favor de su ayuda para el cierre de OT ",
+      "fecha": "06/08/2026 11:11",
+      "leida": false
+    },
+    {
+      "id": "54671de3-ccda-44e7-ac52-7f3726d263ed",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cjerez@curifor.com",
+      "folio_ot": "1193318",
+      "extracto": "unidad se realizo la mantención de los 100.000km.\nahora se encuentra en d&p aun no factura el caso ",
+      "fecha": "06/08/2026 11:56",
+      "leida": true
+    },
+    {
+      "id": "7df08c8b-66fe-4b38-939b-61e92cf895f9",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "jgomez@curifor.com",
+      "folio_ot": "1158213",
+      "extracto": "Comentario de prueba",
+      "fecha": "06/08/2026 16:16",
+      "leida": false
+    },
+    {
+      "id": "d3d2355b-f4c4-41b3-8f0a-88955824ec34",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1186363",
+      "extracto": "caro de su ayuda cobro de ot  ",
+      "fecha": "07/08/2026 13:23",
+      "leida": false
+    },
+    {
+      "id": "add5f69c-0117-4fe8-8eeb-8caf9f7e7b14",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1188011",
+      "extracto": "favor de su ayuda en cobro de OT CAMPAÑA ",
+      "fecha": "07/08/2026 13:30",
+      "leida": false
+    },
+    {
+      "id": "db6bb980-d9e2-4286-aa11-a5096f1fbdc6",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1183972",
+      "extracto": "cambio de batería por garantía.   ",
+      "fecha": "07/08/2026 17:47",
+      "leida": false
+    },
+    {
+      "id": "2f70baa5-81bc-4815-922b-d8a8a18e144b",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1183302",
+      "extracto": "FAVOR DE SU AYUDA EN COBRO DE OT ",
+      "fecha": "10/08/2026 13:15",
+      "leida": false
+    },
+    {
+      "id": "67306b38-8ff2-4c9c-ac38-487a8f7d972f",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1183879",
+      "extracto": "FAVOR DE SU AYUDA EN COBRO DE CAMAPAÑA ",
+      "fecha": "10/08/2026 13:19",
+      "leida": false
+    },
+    {
+      "id": "43023042-bace-4762-8d3d-954ed3ff8c08",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "rmunoz@curifor.com",
+      "folio_ot": "1179632",
+      "extracto": "FAVOR DE SU AYUDA EN CIERRE DE OT ",
+      "fecha": "10/08/2026 13:21",
+      "leida": false
+    },
+    {
+      "id": "62069539-dd60-4ed9-b7b9-7c1e6f177456",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1179632",
+      "extracto": "FAVOR DE SU AYUDA EN CIERRE DE OT ",
+      "fecha": "10/08/2026 13:21",
+      "leida": false
+    },
+    {
+      "id": "76476bdf-e5d6-4e5d-8686-c735afbde824",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1183576",
+      "extracto": "FAVOR DE SU AYUDA EN COBRO DE OT ",
+      "fecha": "10/08/2026 13:28",
+      "leida": false
+    },
+    {
+      "id": "8e42bab0-96b9-4588-85af-b4dfca4aa06a",
+      "remitente": "eortiz@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1183571",
+      "extracto": "FAVOR DE SU AYUDA EN COBRO DE CAMPAÑA ",
+      "fecha": "10/08/2026 13:30",
+      "leida": false
+    },
+    {
+      "id": "f430ca33-4c0f-41fc-b84d-56456bb992ad",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "mvillanueva@curifor.com",
+      "folio_ot": "1167472",
+      "extracto": "¡GESTIONAR CIERRE DE ORDEN",
+      "fecha": "10/08/2026 16:50",
+      "leida": false
+    },
+    {
+      "id": "fa94414a-4432-4571-a3bb-55e169bb7daf",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "jploreto@curifor.com",
+      "folio_ot": "1166317",
+      "extracto": "REVISAR CASO CON JUAN PABLO POR COBRO A FORD CON FELIPE FERRADA",
+      "fecha": "11/08/2026 15:12",
+      "leida": false
+    },
+    {
+      "id": "1c022f21-dc92-4b43-ab4c-b4039f45d30c",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "ariquelme@curifor.com",
+      "folio_ot": "1172025",
+      "extracto": "se solicita anular liquidación 75915 y posterior se debe facturar, dinero en cuenta ficha empresa",
+      "fecha": "11/08/2026 15:28",
+      "leida": false
+    },
+    {
+      "id": "d879d2d7-bc88-40ea-b794-64e593bd1d10",
+      "remitente": "dfigueroa@curifor.com",
+      "destinatario": "ariquelme@curifor.com",
+      "folio_ot": "1172175",
+      "extracto": "se pide anular liquidación 76199, posterior realizar CI con OC 33250",
+      "fecha": "11/08/2026 15:33",
+      "leida": false
+    },
+    {
+      "id": "37a45d63-2304-4879-ad18-ee68896f9396",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "fordonez@curifor.com",
+      "folio_ot": "1154744",
+      "extracto": "Favor confirmar caso, figuran repuestos pendientes en bodega",
+      "fecha": "11/08/2026 16:23",
+      "leida": false
+    },
+    {
+      "id": "6bd887c9-ee94-4e9d-977b-ddb626ee4ad4",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1154744",
+      "extracto": "Favor confirmar caso, figuran repuestos pendientes en bodega",
+      "fecha": "11/08/2026 16:23",
+      "leida": false
+    },
+    {
+      "id": "c60c2bef-81cb-4499-9f27-880c6caa118a",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "eortiz@curifor.com",
+      "folio_ot": "1190272",
+      "extracto": "gestionar caso, repuesto en bodega",
+      "fecha": "11/08/2026 16:26",
+      "leida": false
+    },
+    {
+      "id": "4a812116-a279-45f8-8d01-46b493f8f824",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1190272",
+      "extracto": "gestionar caso, repuesto en bodega",
+      "fecha": "11/08/2026 16:26",
+      "leida": false
+    },
+    {
+      "id": "2a049bbc-861d-4207-b3d2-570e13e4450b",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "rmunoz@curifor.com",
+      "folio_ot": "1181469",
+      "extracto": "favor gestionar esta garantía con urgencia. lleva muchos de apertura\n",
+      "fecha": "11/08/2026 16:36",
+      "leida": false
+    },
+    {
+      "id": "4d4eb708-1707-4f2f-a050-2fd70638b6cd",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "cromero@curifor.com",
+      "folio_ot": "1181469",
+      "extracto": "favor gestionar esta garantía con urgencia. lleva muchos de apertura\n",
+      "fecha": "11/08/2026 16:36",
+      "leida": false
+    },
+    {
+      "id": "c2fe7cd0-9966-49a0-8075-c47a32a4fb25",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1181469",
+      "extracto": "favor gestionar esta garantía con urgencia. lleva muchos de apertura\n",
+      "fecha": "11/08/2026 16:36",
+      "leida": false
+    },
+    {
+      "id": "1b536078-0b53-44e3-b9b4-263c2fbca294",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "rmunoz@curifor.com",
+      "folio_ot": "1191990",
+      "extracto": "vehiculo pendiente de ingreso para instalacion de repuesto en bodega",
+      "fecha": "11/08/2026 16:40",
+      "leida": false
+    },
+    {
+      "id": "1f44f556-558c-486f-b019-53bf8faf41c0",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "lmartinez@curifor.com",
+      "folio_ot": "1191990",
+      "extracto": "vehiculo pendiente de ingreso para instalacion de repuesto en bodega",
+      "fecha": "11/08/2026 16:40",
+      "leida": false
+    },
+    {
+      "id": "0e7d7e25-1ecc-4b7e-b3a1-e68e1384b8e1",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "dfigueroa@curifor.com",
+      "folio_ot": "1180165",
+      "extracto": "en que está este caso? tiene un repuesto en bodega asoiado a esta patente",
+      "fecha": "11/08/2026 16:43",
+      "leida": false
+    },
+    {
+      "id": "cc7e6459-b5fb-4ce5-9210-73cae5427478",
+      "remitente": "cjerez@curifor.com",
+      "destinatario": "jploreto@curifor.com",
+      "folio_ot": "1180165",
+      "extracto": "en que está este caso? tiene un repuesto en bodega asoiado a esta patente",
+      "fecha": "11/08/2026 16:43",
+      "leida": false
+    }
+  ]
+}
