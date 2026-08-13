@@ -23,6 +23,7 @@ historial de la shell). Se leen, en este orden:
     2. .streamlit/secrets.toml (está en .gitignore)
 """
 import os
+import re
 import sys
 import json
 import base64
@@ -35,8 +36,8 @@ _RAIZ = os.path.abspath(os.path.join(_AQUI, "..", ".."))   # carpeta del repo
 _SECRETS = os.path.join(_RAIZ, ".streamlit", "secrets.toml")
 
 # Misma lista blanca que app.py (SUPABASE_DOCS). Si se amplía allá, ampliar acá.
-# Quedan afuera control_taller*.json y prepicking_estados.json: los escribe el JS
-# del Planificador contra la Contents API, con el sha del archivo.
+# Los control_taller_<SUCURSAL>.json se agregan solos: se detectan en la carpeta,
+# porque dependen de qué sucursales existan (ver _ctrl_slug en app.py).
 GRUPO_A = [
     "usuarios_curifor.json",
     "notificaciones.json",
@@ -58,7 +59,15 @@ GRUPO_A = [
     "tempario.json",
     "tecnicos_sucursal_manual.json",
     "taller_data.json",
+    "control_taller.json",
+    "prepicking_estados.json",
 ]
+
+# Los tableros por sucursal, tal como estén en la carpeta.
+GRUPO_A += sorted(
+    n for n in os.listdir(_RAIZ)
+    if re.match(r"^control_taller_[A-Z0-9_]+\.json$", n)
+)
 
 GITHUB_USUARIO = os.environ.get("GITHUB_USUARIO", "curiforsa10")
 GITHUB_REPO    = os.environ.get("GITHUB_REPO", "curifor")

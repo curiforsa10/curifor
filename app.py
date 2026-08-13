@@ -5458,14 +5458,11 @@ def _github_headers():
 # sube entero) y de la lentitud por reintentos cuando dos usuarios escriben a la
 # vez.
 #
-# Entran todos los documentos que el servidor lee o escribe. Quedan afuera SOLO
-# los dos que escribe el JS del Planificador desde el navegador, contra la
-# Contents API y con el sha del archivo: si se migran sin reescribir ese JS, el
-# guardado del tablero se rompe.
-#   - control_taller*.json    (tablero por sucursal; el JS manda el sha)
-#   - prepicking_estados.json (idem, mismo circuito)
-# Migrarlos requiere que el Planificador escriba a Supabase — pendiente, y es lo
-# que ademas sacaria el GITHUB_TOKEN del HTML del navegador (ver app.py:523).
+# Estan TODOS los documentos de la app. Los del tablero (control_taller*.json y
+# prepicking_estados.json) entraron cuando el Planificador paso a escribir por
+# las funciones tablero_* con un vale, en vez de la Contents API con el token.
+# Los control_taller_<SUCURSAL>.json no se listan aca porque se generan por
+# sucursal: los reconoce _sb_doc() por patron.
 #
 # Nota sobre frescura: los documentos que genera consolidar_OTs.py (dashboard,
 # stock, cotizador, produccion, cuenta_ficha, agenda, historial, ranking) quedan
@@ -5494,6 +5491,9 @@ SUPABASE_DOCS = {
     "tempario.json",
     "tecnicos_sucursal_manual.json",
     "taller_data.json",
+    # Tablero del Planificador (escritos por el JS via tablero_guardar + vale)
+    "control_taller.json",
+    "prepicking_estados.json",
 }
 
 
@@ -5511,7 +5511,12 @@ def _sb_cfg():
 
 
 def _sb_doc(nombre_archivo):
-    return nombre_archivo in SUPABASE_DOCS
+    if nombre_archivo in SUPABASE_DOCS:
+        return True
+    # Los control_taller_<SUCURSAL>.json los genera _ctrl_slug() por sucursal, asi
+    # que no se pueden enumerar de antemano. El patron es el MISMO que valida
+    # tablero_documento_permitido() en Postgres: si se cambia uno, cambiar el otro.
+    return bool(re.match(r"^control_taller_[A-Z0-9_]+\.json$", nombre_archivo or ""))
 
 
 def _sb_leer(nombre_archivo):
@@ -5568,6 +5573,25 @@ def _sb_anon():
     protege los datos es RLS + las funciones tablero_*, no el secreto de esta
     clave. Nunca confundir con la service_role, que saltea RLS."""
     return _secreto("SUPABASE_ANON_KEY")
+
+
+def _sello_sb(ts_iso):
+    """Convierte el 'actualizado' que devuelve PostgREST al formato EXACTO con el
+    que tablero_guardar compara el sello.
+
+    La comparacion en Postgres es TEXTUAL contra
+    to_char(actualizado, 'YYYY-MM-DD"T"HH24:MI:SS.US+00'), que termina en '+00',
+    mientras PostgREST entrega ISO terminado en '+00:00'. Sin esta conversion el
+    sello nunca calza: el primer guardado de cada accion responderia 'conflicto'
+    y se gastaria un reintento de mas, siempre.
+    """
+    if not ts_iso:
+        return ""
+    try:
+        d = datetime.fromisoformat(ts_iso)
+        return d.strftime("%Y-%m-%dT%H:%M:%S.") + f"{d.microsecond:06d}+00"
+    except Exception:
+        return ts_iso
 
 
 def _emitir_vale(usuario, sucursal, horas=8):
@@ -9982,15 +10006,28 @@ def _ctrl_slug(sucursal):
 def _cargar_ctrl_taller_archivo(nombre):
     """Lee un JSON de tablero de GitHub. Devuelve (dict, sha) — ver la nota
     del incidente del 05/08/2026 en _cargar_ctrl_taller()."""
-    # --- Capa Supabase. OJO: hoy los control_taller*.json NO estan en
-    #     SUPABASE_DOCS a proposito — el sha que devuelve esta funcion viaja al
-    #     JS del Planificador, que escribe el archivo por su cuenta contra la
-    #     Contents API. Un sha "supabase" ahi haria fallar ese guardado. El
-    #     intercepto queda puesto para cuando el Planificador escriba a Supabase.
+    # --- Capa Supabase. El "sha" que devuelve esta funcion viaja al JS del
+    #     Planificador; con Supabase ese lugar lo ocupa el sello (timestamp) que
+    #     usa tablero_guardar como bloqueo optimista. Se devuelve el sello real
+    #     —no la cadena "supabase"— para que el primer guardado no choque.
     if _sb_doc(nombre):
-        datos = _sb_leer(nombre)
-        if datos is not None:
-            return datos, "supabase"
+        url, key = _sb_cfg()
+        if url:
+            try:
+                r = requests.get(
+                    f"{url}/rest/v1/documentos",
+                    params={"nombre": f"eq.{nombre}", "select": "data,actualizado"},
+                    headers={"apikey": key, "Authorization": f"Bearer {key}"},
+                    timeout=20, verify=False,
+                )
+                r.raise_for_status()
+                filas = r.json()
+                if filas:
+                    return (filas[0].get("data") or {},
+                            _sello_sb(filas[0].get("actualizado")))
+                return {}, ""      # aun no existe: el primer guardado lo crea
+            except Exception:
+                pass               # cae a GitHub
     _base = f"https://api.github.com/repos/{GITHUB_USUARIO}/{GITHUB_REPO}"
     try:
         r = requests.get(f"{_base}/contents/{nombre}",

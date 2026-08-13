@@ -86,29 +86,52 @@ tabla `documentos` (JSONB, una fila por archivo) reemplaza a los `.json` del rep
 - `plataforma/` ya opera nativo contra Supabase (`reservas_web`, auth por dominio
   `@curifor.com`, RLS).
 
-**Para encenderla** (grupo A: `usuarios_curifor`, `notificaciones`, `audit_log`,
-`cuenta_ficha_revisados`):
+**Los 22 documentos están migrados**, incluido el tablero del Planificador. La
+app ya no guarda su estado haciendo commits.
 
-1. Crear la tabla — SQL Editor de Supabase →
-   `plataforma/herramientas/setup_supabase_documentos.sql`.
-2. Cargar los datos:
-   ```bash
-   python plataforma/herramientas/migrar_documentos_supabase.py --dry-run
-   ```
-   y luego sin `--dry-run`. Lee la versión **viva** desde GitHub (la copia local
-   está atrasada: la app auto-commitea todo el día).
-3. Cargar `SUPABASE_URL` y `SUPABASE_SERVICE_KEY` en los secrets del deploy.
+Para levantarla contra Supabase alcanza con estos tres secrets:
 
-Mientras un documento no esté en la tabla, `app.py` lo sigue leyendo de GitHub.
-La migración se enciende archivo por archivo y es reversible: basta con sacar el
-secret.
+```toml
+SUPABASE_URL = "https://ordgsglujssgzmnlmcus.supabase.co"
+SUPABASE_SERVICE_KEY = "..."   # servidor; saltea RLS, nunca al navegador
+SUPABASE_ANON_KEY = "..."      # pública por diseño; la usa el Planificador
+```
 
-Los que **no** están en la lista blanca los genera `consolidar_OTs.py`
-(`datos_dashboard`, `control_taller*`, `stock_repuestos`, `cotizador_data`…);
-migrarlos antes de mover el consolidador dejaría a la app leyendo datos que nadie
-actualiza.
+Sin `SUPABASE_SERVICE_KEY` la capa queda inerte y todo vuelve a GitHub, así que
+la migración es reversible sacando un secret.
 
-Sobre las claves: la `anonKey` de `plataforma/js/agenda-config.js` es pública por
-diseño (la protege RLS). La `service_role` **saltea RLS** y nunca va al repo ni al
-navegador — solo a los secrets del servidor. Por eso `documentos` tiene RLS
-encendido y cero policies: contiene los hashes de las cuentas.
+Scripts (SQL Editor de Supabase, todos idempotentes):
+
+| Archivo | Qué crea |
+|---|---|
+| `setup_supabase_documentos.sql` | Tabla `documentos` (RLS on, cero policies) |
+| `setup_supabase_tablero.sql` | `taller_vales` + funciones `tablero_*` |
+| `migrar_documentos_supabase.py` | Carga inicial de los datos |
+
+### El Planificador y los vales
+
+El JS del Planificador **ya no recibe el `GITHUB_TOKEN`**. Antes se le inyectaba
+en el HTML (`const GITHUB_TOKEN = "..."`), donde cualquiera podía leerlo con Ver
+código fuente — y con scope `repo` eso es control total de los repos privados de
+la cuenta emisora.
+
+Ahora el servidor emite un **vale** (`_emitir_vale` → tabla `taller_vales`) y el
+navegador guarda con la clave anon + ese vale, vía `tablero_guardar`. El vale
+sirve para un usuario, una sucursal, y expira. Quien valida es Postgres:
+
+- documento fuera de la lista → `documento_no_permitido`
+- vale vencido o falso → `vale_invalido`
+- otro guardado entró primero → `conflicto`, con el sello nuevo para reintentar
+
+El **sello** (timestamp) reemplaza al `sha` como bloqueo optimista. Cuidado al
+tocarlo: `tablero_guardar` lo compara **como texto** contra un formato que
+termina en `+00`, mientras PostgREST devuelve `+00:00`. Ver `_sello_sb` en
+`app.py`; sin esa conversión el sello no calza nunca.
+
+### Qué falta
+
+`GITHUB_TOKEN` ya no es necesario para el Planificador. Sigue habiendo lecturas
+sueltas contra GitHub como respaldo, y los documentos que genera
+`consolidar_OTs.py` (`datos_dashboard`, `stock_repuestos`, `cotizador_data`…)
+quedan congelados hasta que ese script corra apuntando a esta plataforma — tiene
+el dual-write puesto, así que al correr actualiza GitHub y Supabase a la vez.
