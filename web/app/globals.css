@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+/*
+  Sistema de diseño — Curifor Plataforma
+  --------------------------------------
+  Herramienta de trabajo interna: 64 personas, 8 sucursales, uso diario y
+  prolongado, tablas densas. Estilo Data-Dense + Minimalismo. Nada decorativo:
+  cada pixel de alto de fila es una orden menos visible sin hacer scroll.
+
+  Color: azul Curifor para el chrome (barras, encabezados, acciones) y grises
+  neutros para el texto. La paleta de referencia proponia azul tambien para el
+  cuerpo de texto; en tablas densas eso baja la legibilidad, asi que el texto va
+  en slate. Ambar queda reservado para lo que exige atencion — si se usa de
+  adorno, deja de avisar.
+
+  Contraste verificado sobre --fondo (#F8FAFC):
+    --texto        #0F172A  ~16.9:1   (AAA)
+    --texto-suave  #475569   ~7.5:1   (AAA)
+    --azul-700     #1E40AF   ~8.6:1   (AAA)
+    --ambar-700    #B45309   ~4.8:1   (AA)
+*/
+
+@theme {
+  /* Marca */
+  --color-azul-900: #172554;
+  --color-azul-800: #1e3a8a;
+  --color-azul-700: #1e40af;
+  --color-azul-500: #3b82f6;
+  --color-azul-100: #dbeafe;
+
+  /* Superficies */
+  --color-fondo: #f8fafc;
+  --color-panel: #ffffff;
+  --color-panel-alt: #f1f5f9;
+
+  /* Texto */
+  --color-texto: #0f172a;
+  --color-texto-suave: #475569;
+  --color-texto-tenue: #64748b;
+
+  /* Bordes */
+  --color-borde: #e2e8f0;
+  --color-borde-fuerte: #cbd5e1;
+
+  /* Estados */
+  --color-ambar: #d97706;
+  --color-ambar-700: #b45309;
+  --color-exito: #15803d;
+  --color-peligro: #dc2626;
+
+  /* Tipografia: Fira Sans para UI, Fira Code para datos tabulares
+     (folios, patentes, montos) — el ancho fijo alinea las columnas. */
+  --font-sans: 'Fira Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, monospace;
+
+  /* Escala densa (8-32px). Un dashboard no es una landing. */
+  --spacing-densa-1: 0.25rem;
+  --spacing-densa-2: 0.5rem;
+  --spacing-densa-3: 0.75rem;
+  --spacing-densa-4: 1rem;
+  --spacing-densa-6: 1.5rem;
+  --spacing-densa-8: 2rem;
+}
+
+html,
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--font-sans);
+  /* 14px de base: en tablas densas 16px desperdicia ancho de columna, pero no
+     se baja de 14 para no romper la legibilidad sostenida. */
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Foco siempre visible: se navega mucho con teclado (Tab entre celdas). */
+:focus-visible {
+  outline: 2px solid var(--color-azul-700);
+  outline-offset: 2px;
+}
+
+/* Cifras alineadas en columnas aunque la fuente sea proporcional. */
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

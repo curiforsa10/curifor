@@ -13,6 +13,14 @@ sql_credenciales.txt
 __pycache__/
 *.pyc
 
+# Front-end (web/) — Next.js
+node_modules/
+.next/
+out/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
 # Respaldos y temporales del consolidador
 *.bak
 *.tmp
