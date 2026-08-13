@@ -35,11 +35,29 @@ _RAIZ = os.path.abspath(os.path.join(_AQUI, "..", ".."))   # carpeta del repo
 _SECRETS = os.path.join(_RAIZ, ".streamlit", "secrets.toml")
 
 # Misma lista blanca que app.py (SUPABASE_DOCS). Si se amplía allá, ampliar acá.
+# Quedan afuera control_taller*.json y prepicking_estados.json: los escribe el JS
+# del Planificador contra la Contents API, con el sha del archivo.
 GRUPO_A = [
     "usuarios_curifor.json",
     "notificaciones.json",
     "audit_log.json",
     "cuenta_ficha_revisados.json",
+    "online_users.json",
+    "comentarios_log.json",
+    "loaners.json",
+    "informes_gestion.json",
+    "datos_dashboard.json",
+    "stock_repuestos.json",
+    "cotizador_data.json",
+    "produccion_tecnicos.json",
+    "cuenta_ficha.json",
+    "agenda_hoy.json",
+    "campanas_curifor.json",
+    "historial_cierres.json",
+    "ranking_cierres.json",
+    "tempario.json",
+    "tecnicos_sucursal_manual.json",
+    "taller_data.json",
 ]
 
 GITHUB_USUARIO = os.environ.get("GITHUB_USUARIO", "curiforsa10")
@@ -102,10 +120,14 @@ def _upsert(url, key, nombre, datos, mensaje):
             "apikey": key,
             "Authorization": f"Bearer {key}",
             "Content-Type": "application/json",
-            "Prefer": "resolution=merge-duplicates",
+            # return=minimal: sin esto PostgREST devuelve la fila recien escrita,
+            # y serializar de vuelta un documento grande (stock_repuestos, ~9.4 MB)
+            # supera el statement_timeout de Postgres -> 57014. Con esto, el mismo
+            # upsert pasa de fallar por timeout a resolverse en ~6 s.
+            "Prefer": "resolution=merge-duplicates,return=minimal",
         },
         json={"nombre": nombre, "data": datos, "mensaje": mensaje},
-        timeout=60, verify=False,
+        timeout=300, verify=False,
     )
     if r.status_code not in (200, 201, 204):
         raise RuntimeError(f"HTTP {r.status_code}: {r.text[:300]}")

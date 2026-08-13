@@ -5357,24 +5357,48 @@ def _github_headers():
 # ============================================================
 #   CAPA SUPABASE (migración progresiva del backend)
 # ============================================================
-# Documentos migrados a la tabla 'documentos' (JSONB) de Supabase. El resto de
-# los JSON siguen leyéndose/escribiéndose en GitHub EXACTAMENTE como antes.
-# Solo entran aquí archivos que escribe EXCLUSIVAMENTE esta app: consolidar_OTs.py
-# (que corre en el PC de Cristian y sube JSON a GitHub) NO los genera ni los lee,
-# así que no hay riesgo de que una fuente pise a la otra.
-#   - usuarios_curifor.json         (login/gestión de usuarios)
-#   - notificaciones.json           (bandeja de notificaciones)
-#   - audit_log.json                (log de auditoría)
-#   - cuenta_ficha_revisados.json   (marcas "Revisado"; consolidar solo lo nombra en un comentario)
-# NO migrar aún (los genera/sube consolidar_OTs.py -> serían datos desactualizados):
-#   control_taller, datos_dashboard, tecnicos_sucursal_manual, stock_repuestos,
-#   cotizador_data, cuenta_ficha, produccion_tecnicos, agenda_hoy, campanas_curifor,
-#   tempario, historial_cierres, ranking_cierres.
+# Documentos que viven en la tabla 'documentos' (JSONB) de Supabase en vez del
+# repo. Objetivo: que la app deje de guardar su estado haciendo commits. Esos
+# auto-commits son la causa de que la app se pise el propio codigo (app.py se
+# sube entero) y de la lentitud por reintentos cuando dos usuarios escriben a la
+# vez.
+#
+# Entran todos los documentos que el servidor lee o escribe. Quedan afuera SOLO
+# los dos que escribe el JS del Planificador desde el navegador, contra la
+# Contents API y con el sha del archivo: si se migran sin reescribir ese JS, el
+# guardado del tablero se rompe.
+#   - control_taller*.json    (tablero por sucursal; el JS manda el sha)
+#   - prepicking_estados.json (idem, mismo circuito)
+# Migrarlos requiere que el Planificador escriba a Supabase — pendiente, y es lo
+# que ademas sacaria el GITHUB_TOKEN del HTML del navegador (ver app.py:523).
+#
+# Nota sobre frescura: los documentos que genera consolidar_OTs.py (dashboard,
+# stock, cotizador, produccion, cuenta_ficha, agenda, historial, ranking) quedan
+# congelados hasta que ese script corra apuntando a esta plataforma. Tiene el
+# dual-write puesto, asi que al correr actualiza GitHub y Supabase a la vez.
 SUPABASE_DOCS = {
+    # Escritos por la app
     "usuarios_curifor.json",
     "notificaciones.json",
     "audit_log.json",
     "cuenta_ficha_revisados.json",
+    "online_users.json",
+    "comentarios_log.json",
+    "loaners.json",
+    "informes_gestion.json",
+    # Generados por consolidar_OTs.py / herramientas, la app solo los lee
+    "datos_dashboard.json",
+    "stock_repuestos.json",
+    "cotizador_data.json",
+    "produccion_tecnicos.json",
+    "cuenta_ficha.json",
+    "agenda_hoy.json",
+    "campanas_curifor.json",
+    "historial_cierres.json",
+    "ranking_cierres.json",
+    "tempario.json",
+    "tecnicos_sucursal_manual.json",
+    "taller_data.json",
 }
 
 
@@ -5429,10 +5453,15 @@ def _sb_guardar(nombre_archivo, datos_dict, mensaje_commit):
                 "apikey": key,
                 "Authorization": f"Bearer {key}",
                 "Content-Type": "application/json",
-                "Prefer": "resolution=merge-duplicates",
+                # return=minimal NO es cosmetico: sin el, PostgREST devuelve la
+                # fila recien escrita, y serializar de vuelta un documento grande
+                # (stock_repuestos son ~9.4 MB) supera el statement_timeout de
+                # Postgres y el guardado falla con 57014. Con el, el mismo upsert
+                # baja de "timeout" a ~6 s.
+                "Prefer": "resolution=merge-duplicates,return=minimal",
             },
             json={"nombre": nombre_archivo, "data": datos_dict, "mensaje": mensaje_commit},
-            timeout=30, verify=False,
+            timeout=120, verify=False,
         )
         return r.status_code in (200, 201, 204)
     except Exception:
@@ -6066,6 +6095,16 @@ def _leer_audit_github():
     el download_url de la Contents API: si el archivo supera 1 MB, baja el
     contenido por la Git Data API (blob), que no tiene ese límite ni caché.
     """
+    # --- Capa Supabase. Esta funcion no pasa por _leer_json_github_raw porque
+    #     necesita distinguir "no pude leer" (ok=False) de "esta vacio", asi que
+    #     el intercepto va replicado aca. Sin esto, audit_log se escribia en
+    #     Supabase pero se leia de GitHub, y cada registro nuevo se calculaba
+    #     sobre un historial desactualizado.
+    if _sb_doc(GITHUB_AUDIT):
+        datos = _sb_leer(GITHUB_AUDIT)
+        if datos is not None:
+            return "supabase", datos, True
+        # None -> aun no esta en Supabase o fallo: cae a GitHub (bootstrap / fallback).
     url = f"https://api.github.com/repos/{GITHUB_USUARIO}/{GITHUB_REPO}/contents/{GITHUB_AUDIT}"
     try:
         r = requests.get(url, headers=_github_headers(), params={"ref": "main"},
@@ -6130,11 +6169,19 @@ def _registrar_audit(usuario, accion, detalle, folio_ot=""):
                     for _k in sorted(_u)[:len(_u) - AUDIT_ASISTENCIA_DIAS]:
                         _u.pop(_k, None)
 
+        _datos_audit = {"registros": registros, "asistencia": asist}
+        _msg_audit = f"Audit: {accion} — {usuario}"
+
+        # --- Capa Supabase: si el doc esta migrado, se guarda ahi y listo. Esto
+        #     es lo que corta los auto-commits por cada accion del usuario.
+        if _sb_doc(GITHUB_AUDIT) and _sb_guardar(GITHUB_AUDIT, _datos_audit, _msg_audit):
+            return
+
         contenido_b64 = base64.b64encode(
-            json.dumps({"registros": registros, "asistencia": asist},
+            json.dumps(_datos_audit,
                        ensure_ascii=False, separators=(",", ":")).encode("utf-8")
         ).decode()
-        payload = {"message": f"Audit: {accion} — {usuario}", "content": contenido_b64}
+        payload = {"message": _msg_audit, "content": contenido_b64}
         if sha:
             payload["sha"] = sha
         requests.put(
@@ -6190,15 +6237,22 @@ def _actualizar_heartbeat(email: str):
     try:
         url = f"https://api.github.com/repos/{GITHUB_USUARIO}/{GITHUB_REPO}/contents/{GITHUB_ONLINE}"
         hdrs = _github_headers()
-        r = requests.get(url, headers=hdrs, timeout=6, verify=False)
         sha = None
         datos = {}
-        if r.status_code == 200:
-            info = r.json()
-            sha = info.get("sha")
-            raw = (info.get("content") or "").replace("\n", "").strip()
-            if raw:
-                datos = json.loads(base64.b64decode(raw).decode("utf-8"))
+        # --- Capa Supabase: una sola llamada y sin sha que arrastrar. El motivo
+        #     de todo el debounce de arriba era el costo de estas llamadas a
+        #     GitHub; contra Supabase el heartbeat deja de ser caro.
+        _en_sb = _sb_doc(GITHUB_ONLINE)
+        if _en_sb:
+            datos = _sb_leer(GITHUB_ONLINE) or {}
+        else:
+            r = requests.get(url, headers=hdrs, timeout=6, verify=False)
+            if r.status_code == 200:
+                info = r.json()
+                sha = info.get("sha")
+                raw = (info.get("content") or "").replace("\n", "").strip()
+                if raw:
+                    datos = json.loads(base64.b64decode(raw).decode("utf-8"))
         usuarios = datos.get("usuarios", {})
         usuarios[email] = {
             "last_seen":    ahora_chile(),
@@ -6209,13 +6263,16 @@ def _actualizar_heartbeat(email: str):
             k: v for k, v in usuarios.items()
             if ahora_ts - v.get("last_seen_ts", 0) < 86400
         }
-        contenido_b64 = base64.b64encode(
-            json.dumps({"usuarios": usuarios}, ensure_ascii=False, indent=2).encode("utf-8")
-        ).decode()
-        payload = {"message": f"heartbeat {email}", "content": contenido_b64}
-        if sha:
-            payload["sha"] = sha
-        requests.put(url, headers=hdrs, json=payload, timeout=6, verify=False)
+        if _en_sb:
+            _sb_guardar(GITHUB_ONLINE, {"usuarios": usuarios}, f"heartbeat {email}")
+        else:
+            contenido_b64 = base64.b64encode(
+                json.dumps({"usuarios": usuarios}, ensure_ascii=False, indent=2).encode("utf-8")
+            ).decode()
+            payload = {"message": f"heartbeat {email}", "content": contenido_b64}
+            if sha:
+                payload["sha"] = sha
+            requests.put(url, headers=hdrs, json=payload, timeout=6, verify=False)
         st.session_state["_last_heartbeat_ts"] = ahora_ts
     except Exception:
         pass  # Nunca bloquear la app por esto
@@ -9785,6 +9842,15 @@ def _ctrl_slug(sucursal):
 def _cargar_ctrl_taller_archivo(nombre):
     """Lee un JSON de tablero de GitHub. Devuelve (dict, sha) — ver la nota
     del incidente del 05/08/2026 en _cargar_ctrl_taller()."""
+    # --- Capa Supabase. OJO: hoy los control_taller*.json NO estan en
+    #     SUPABASE_DOCS a proposito — el sha que devuelve esta funcion viaja al
+    #     JS del Planificador, que escribe el archivo por su cuenta contra la
+    #     Contents API. Un sha "supabase" ahi haria fallar ese guardado. El
+    #     intercepto queda puesto para cuando el Planificador escriba a Supabase.
+    if _sb_doc(nombre):
+        datos = _sb_leer(nombre)
+        if datos is not None:
+            return datos, "supabase"
     _base = f"https://api.github.com/repos/{GITHUB_USUARIO}/{GITHUB_REPO}"
     try:
         r = requests.get(f"{_base}/contents/{nombre}",
