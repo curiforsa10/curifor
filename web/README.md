@@ -38,13 +38,12 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=... # navegador; pública por diseño
 SESSION_SECRET=...                # firma la cookie de sesión
 ```
 
-> **`node_modules` va fuera de OneDrive.** La carpeta del repo está sincronizada,
-> y OneDrive bloquea archivos mientras indexa: `npm install` falla con
-> `ENOTEMPTY`. Acá `web/node_modules` es un *junction* a `C:\dev\curifor-web-nm`.
-> Si hay que recrearlo:
-> ```
-> mklink /J "...\web\node_modules" "C:\dev\curifor-web-nm"
-> ```
+> **El repo vive en `C:\dev\curifor`, fuera de OneDrive** — y ahí tiene que
+> quedarse. Estando dentro de OneDrive, `npm install` moría con `ENOTEMPTY`
+> (OneDrive bloquea archivos mientras sincroniza los ~40.000 de `node_modules`),
+> un junction a otra unidad no sobrevivió porque npm lo reemplaza, y git llegó a
+> dejar un `index.lock` colgado. GitHub ya es el respaldo del proyecto; OneDrive
+> solo agregaba latencia y bloqueos.
 
 ## Autenticación
 
