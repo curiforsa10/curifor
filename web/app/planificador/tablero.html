@@ -1,0 +1,178 @@
+<div id="cita-modal-overlay" onclick="if(event.target===this)cerrarDetalleCita()">
+  <div id="cita-modal">
+    <button class="cm-close" onclick="cerrarDetalleCita()">✕</button>
+    <h3 id="cm-title">Detalle de cita</h3>
+    <div id="cm-body"></div>
+  </div>
+</div>
+<div id="loading">⏳ Cargando agenda y tablero de taller...</div>
+<div id="main" style="display:none">
+
+  <div class="subnav">
+    <button class="sntab active" onclick="switchView('jpcb',this)">📋 JPCB — Avance del trabajo</button>
+    <button class="sntab" onclick="switchView('plan',this)">📅 Planificador (Tecnico x Hora)</button>
+    <button class="sntab" onclick="switchView('ct',this)">🗂️ Control de Taller</button>
+    <button class="sntab" onclick="switchView('vt',this)">🅿️ Vehiculos en Taller</button>
+    <button class="sntab" onclick="switchView('hist',this)">📜 Historial de Taller</button>
+    <button class="sntab" onclick="switchView('prod',this)">📊 Producción Técnicos</button>
+    
+    <span class="save-st" id="saveStatus"></span>
+  </div>
+
+  <div class="area-bar">
+    <span class="area-lbl">🗂️ Área de trabajo:</span>
+    <button class="area-tab active" data-area="st" onclick="setArea('st',this)">🔧 Servicio Técnico</button>
+    <button class="area-tab" data-area="dyp" onclick="setArea('dyp',this)">🎨 Desabolladura y Pintura</button>
+    <span class="area-hint">Se detecta sola desde el Servicio/Comentario de la Agenda — afecta JPCB, Planificador, Control de Taller, Vehículos en Taller e Historial.</span>
+  </div>
+
+  <!-- JPCB VIEW -->
+  <div id="v-jpcb">
+    <div class="kanban-groups" id="jpcbGroups"></div>
+    <div class="kanban" id="jpcbBoard"></div>
+    <div class="stopzone">
+      <div class="sz-head">⛔ Detencion del trabajo — arrastra aqui si hay una irregularidad</div>
+      <div class="kanban" id="stopBoard" style="padding:8px"></div>
+    </div>
+    <div class="stopzone" style="border-color:#1b7f3a;margin-top:10px">
+      <div class="sz-head" style="background:#1b7f3a">✅ Finalizados de esta semana — se limpian solos del JPCB la semana siguiente (quedan siempre en el Historial de Taller)</div>
+      <div id="finBoard" style="padding:8px;display:flex;flex-wrap:wrap;gap:8px"></div>
+    </div>
+  </div>
+
+  <!-- PLANIFICADOR VIEW -->
+  <div id="v-plan" style="display:none">
+    <div class="dtabs" id="dateTabs"></div>
+    <div class="plan-board">
+      <div class="prog-panel">
+        <div class="prog-head-bar">📋 Programacion — </div>
+        <div id="progList" style="flex:1;overflow-y:auto;"></div>
+      </div>
+      <div class="plan-panel">
+        <div class="plan-head-bar">🔧 Planificador — </div>
+        <div class="plan-scroll">
+          <table class="pgrid" id="planGrid"></table>
+        </div>
+      </div>
+    </div>
+    <div class="legend" id="planLegend"></div>
+  </div>
+
+  <!-- CONTROL DE TALLER VIEW -->
+  <div id="v-ct" style="display:none">
+    <div class="ct-toolbar">
+      <div class="ct-head-bar">🗂️ Control de Taller — </div>
+      <button class="mbtn" onclick="agregarPatenteManual()">➕ Agregar patente manual</button>
+      <button class="mbtn" onclick="agregarAsesorManual()" title="Agrega un asesor a la lista aunque todavia no tenga citas en la Agenda">➕ Agregar asesor</button>
+      <span style="font-size:11px;color:#778;">Las patentes con cita marcada 🎟️ Ingresado en la Agenda de hoy se agregan solas. La lista de Asesor se arma sola desde la Agenda — usa "➕ Agregar asesor" si falta alguno.</span>
+    </div>
+    <div class="legend" id="ctLegend"></div>
+    <div class="ct-scroll">
+      <table class="ctgrid" id="ctGrid"></table>
+    </div>
+  </div>
+
+  <!-- VEHICULOS EN TALLER VIEW (detenidos, aun no retirados) -->
+  <div id="v-vt" style="display:none">
+    <div class="ct-toolbar">
+      <div class="ct-head-bar">🅿️ Vehiculos en Taller — </div>
+      <span style="font-size:11px;color:#778;">
+        🎟️ En taller (ingresado, sin marcar salida) · 🧍 Retirado · Ventana: ingresos de los ultimos 60 dias.
+        Se excluyen patentes de prueba tipo SP0000.
+      </span>
+    </div>
+    <div class="legend" id="vtLegend"></div>
+    <div class="ct-scroll">
+      <table class="ctgrid" id="vtGrid"></table>
+    </div>
+  </div>
+
+  <!-- HISTORIAL DE TALLER VIEW (citas cerradas) -->
+  <div id="v-hist" style="display:none">
+    <div class="ct-toolbar">
+      <div class="ct-head-bar">📜 Historial de Taller — </div>
+      <span style="font-size:11px;color:#778;">
+        Ordenes con "🔒 Cerrar" presionado — ya no ocupan espacio en JPCB, Control de Taller,
+        Vehiculos en Taller ni Tecnico x Hora. Se pueden reabrir si fue un error.
+      </span>
+    </div>
+    <div class="ct-scroll">
+      <table class="ctgrid" id="histGrid"></table>
+    </div>
+  </div>
+
+  <!-- PRODUCCION TECNICOS VIEW (horas facturadas por tecnico, BDFlexline) -->
+  <div id="v-prod" style="display:none">
+    <div class="ct-toolbar">
+      <div class="ct-head-bar">📊 Producción Técnicos — </div>
+      <label style="font-size:12px;font-weight:700;color:#0b2e63;">Mes:
+        <select id="prodMes" class="prod-select"></select>
+      </label>
+      <input id="prodBuscarTec" type="text" placeholder="Buscar técnico..." class="prod-input" oninput="renderProdTabla()">
+      <span style="font-size:11px;color:#778;">
+        Solo cuenta como hora la Mano de Obra (código "MO_..."). Haz clic en un técnico para ver su detalle.
+        <b>% Productividad = horas vendidas ÷ horas disponibles acumuladas</b> (horas del día × días hábiles
+        transcurridos, el día de hoy incluido). Jornada Lun-Mar 08:30-18:15 (9,0 h) · Mié-Vie 08:30-17:15
+        (8,0 h), ya descontados 45 min de colación, sobre días hábiles del calendario chileno (aproximado,
+        no incluye feriados extraordinarios como elecciones). Los días marcados como
+        <b>no disponible</b> (vacaciones, licencia, permiso, capacitación) no suman horas disponibles.
+      </span>
+    </div>
+    <div id="prodStats" class="prod-stats"></div>
+    <div id="prodDiagNombres"></div>
+    <div class="ct-scroll">
+      <table class="ctgrid" id="prodGrid">
+        <thead><tr><th>Técnico</th><th style="text-align:right">Horas Vendidas</th><th style="text-align:right"># OT</th><th style="text-align:right">% Productividad<div class="prod-frac" style="font-weight:400">vendidas / disponibles</div></th><th style="text-align:center">Disponibilidad</th></tr></thead>
+        <tbody id="prodTbody"></tbody>
+      </table>
+    </div>
+    <div class="prod-total">Total horas del mes: <span id="prodTotalHoras">0.0</span> h</div>
+    <div id="prodDetalle" class="prod-detalle" style="display:none"></div>
+  </div>
+
+  <!-- Modal de Disponibilidad de un tecnico (solo con permiso PUEDE_DISPONIBILIDAD) -->
+  <div class="overlay" id="nodisp-modal-overlay" onclick="if(event.target===this)cerrarNoDisponible()">
+    <div class="modal" style="max-width:560px">
+      <div id="nodispBody"></div>
+    </div>
+  </div>
+
+  <!-- PRE-PICKING VIEW (una tarjeta por cita, detalle + repuestos + PDF + estado) -->
+  <div id="v-pp" style="display:none">
+    <div class="dtabs" id="ppDateTabs"></div>
+    <div class="pp-toolbar">
+      <span style="font-size:11px;color:#778;">
+        🧩 Preparación anticipada de mantenciones — clic en una tarjeta para ver el detalle completo,
+        el listado de repuestos sugeridos (marca/modelo/kilometraje según Agenda) y exportar el presupuesto.
+      </span>
+      <button class="pp-btn-xls" onclick="exportarListadoPrepickingExcel()">📊 Exportar listado a Excel</button>
+    </div>
+    <div id="ppCards" class="pp-cards"></div>
+  </div>
+
+</div>
+
+<div class="overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <h3 id="modal-title">Detalle</h3>
+    <div class="mbody" id="modal-body"></div>
+    <div class="mfoot">
+      <button class="mbtn danger" id="modal-del-btn" style="display:none" onclick="deleteBloque(modalBloqueId)">🗑 Quitar</button>
+      <button class="mbtn" onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="vcu-modal-overlay" onclick="if(event.target===this)cerrarVCU()">
+  <div class="modal vcu-modal">
+    <h3 id="vcu-modal-title">VCU</h3>
+    <div id="vcu-modal-estado" style="padding:0 16px 8px;font-size:11.5px;font-weight:700"></div>
+    <div class="mbody" id="vcu-modal-body"></div>
+    <div class="mfoot" style="flex-wrap:wrap">
+      <button class="mbtn" style="background:#667" onclick="vcuGuardar(false)">💾 Guardar borrador</button>
+      <button class="mbtn" style="background:#147a3d" onclick="vcuGuardar(true)">✅ Marcar completo y guardar</button>
+      <button class="mbtn" style="background:#0b2e63" onclick="vcuDescargarPDF()">📄 Descargar PDF</button>
+      <button class="mbtn" onclick="cerrarVCU()">Cerrar</button>
+    </div>
+  </div>
+</div>
+<div id="toast"></div>
