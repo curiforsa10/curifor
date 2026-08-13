@@ -737,7 +737,7 @@ function saveCtrl(){
   return _ctrlSaveChain;
 }
 async function _saveCtrlInterno(_reintento){
-  if(!USA_SB && !GITHUB_TOKEN){setSaveStatus('Sin token');return;}
+  if(!USA_SB){setSaveStatus('Sin permiso para guardar');return;}   // sin vale = sin permiso de edicion
   setSaveStatus('💾 Guardando...');
   const _okLectura=await _refrescarCtrlSha();
   if(!_okLectura){
@@ -941,7 +941,7 @@ async function ppCambiarModeloSel(fecha,oc,campo,valor){
   await setPpOverride(fecha,oc,{marca,modelo,anio,versionId});
 }
 async function savePrepicking(_reintento){
-  if(!USA_SB && !GITHUB_TOKEN){setSaveStatus('Sin token');return;}
+  if(!USA_SB){setSaveStatus('Sin permiso para guardar');return;}   // sin vale = sin permiso de edicion
   setSaveStatus('💾 Guardando...');
   if(USA_SB){
     // Releer primero para no pisar lo que hayan guardado otras sucursales:
@@ -4404,33 +4404,18 @@ function _generarPdfVCU(o,est){
 }
 
 /* ------------------------------------------------------------------
-   KEEP-ALIVE de la sesion (10/08/2026)
-   -----------------------------------
-   Torre de Control trabaja horas DENTRO de este iframe: arrastran tarjetas,
-   escriben, guardan... pero la pagina de Streamlit que lo contiene no ve
-   ninguna actividad, asi que la conexion puede quedar ociosa y cortarse —
-   y al reconectar, Streamlit abre una sesion nueva y los devuelve al login.
+   KEEP-ALIVE de la sesion — ELIMINADO al portar a Next (13/08/2026)
+   ----------------------------------------------------------------
+   Existia porque el tablero vivia dentro de un iframe de Streamlit: Torre de
+   Control trabajaba horas ahi adentro y la pagina contenedora no veia ninguna
+   actividad, asi que la conexion quedaba ociosa, se cortaba, y al reconectar
+   Streamlit abria sesion nueva y los devolvia al login. El ping cada 4 minutos
+   a /_stcore/health mantenia viva esa conexion.
 
-   Esto manda un ping liviano al propio servidor de la App cada 4 minutos
-   para que la conexion nunca quede ociosa. Es un GET al endpoint de salud
-   de Streamlit: no toca GitHub, no gasta cuota de la API, no dispara ningun
-   rerun y no escribe nada. Si falla, se ignora en silencio.
-   IMPORTANTE: no usar recargas de pagina como "keep-alive" — ya se probo el
-   22/07/2026 con <meta http-equiv="refresh"> y botaba la sesion (un reload
-   completo hace que Streamlit trate la pestaña como sesion nueva).
+   Aca no aplica y ademas molestaba: ese endpoint es de Streamlit, no existe en
+   Next, y cada ping devolvia un 404 en la consola. La sesion ahora es una
+   cookie firmada de 12 horas que no depende de que haya trafico.
 ------------------------------------------------------------------- */
-(function(){
-  var FALLOS = 0;
-  function ping(){
-    try{
-      fetch('/_stcore/health', {cache:'no-store', credentials:'same-origin'})
-        .then(function(r){ if(r && r.ok){ FALLOS = 0; } })
-        .catch(function(){ FALLOS++; });
-    }catch(e){ FALLOS++; }
-  }
-  setInterval(ping, 240000);   // cada 4 minutos
-  ping();
-})();
 
 /* ------------------------------------------------------------------
    REFRESCO SILENCIOSO DEL TABLERO (10/08/2026)
