@@ -10,8 +10,112 @@ type Cambios = Record<string, Partial<Record<ColumnaEditable, string>>>
 
 const POR_PAGINA = 50
 
+type Grupo = ReturnType<typeof agrupar>[number]
+
+/** Tabla de agrupación, compartida por Por sucursal, Por asesor y Análisis. */
+function TablaGrupos({
+  filas,
+  etiqueta,
+  compacta = false,
+}: {
+  filas: Grupo[]
+  etiqueta: string
+  compacta?: boolean
+}) {
+  const totalCriticas = filas.reduce((s, f) => s + f.criticas, 0)
+  return (
+    <div className="overflow-x-auto rounded-lg border border-borde bg-panel">
+      <table className="w-full border-collapse">
+        <thead>
+          <tr className="bg-azul-800 text-left text-white">
+            <th className="px-3 py-2 font-semibold">{etiqueta}</th>
+            <th className="px-3 py-2 text-right font-semibold">OT</th>
+            <th className="px-3 py-2 text-right font-semibold">+90d</th>
+            {!compacta && (
+              <>
+                <th className="px-3 py-2 text-right font-semibold">Días prom.</th>
+                <th className="px-3 py-2 text-right font-semibold">Sin gestión</th>
+                <th className="px-3 py-2 text-right font-semibold">Neto</th>
+              </>
+            )}
+          </tr>
+        </thead>
+        <tbody>
+          {filas.map((f) => (
+            <tr key={f.nombre} className="border-t border-borde hover:bg-panel-alt">
+              <td className="px-3 py-1.5">{f.nombre}</td>
+              <td className="tabular px-3 py-1.5 text-right">{f.total.toLocaleString('es-CL')}</td>
+              <td className="tabular px-3 py-1.5 text-right">
+                {/* Las críticas son el motivo de mirar esta tabla: se destacan
+                    solo cuando existen, para que el color signifique algo. */}
+                <span className={f.criticas > 0 ? 'font-semibold text-peligro' : 'text-texto-tenue'}>
+                  {f.criticas.toLocaleString('es-CL')}
+                </span>
+              </td>
+              {!compacta && (
+                <>
+                  <td className="tabular px-3 py-1.5 text-right">{f.diasProm}</td>
+                  <td className="tabular px-3 py-1.5 text-right">{f.sinGestion.toLocaleString('es-CL')}</td>
+                  <td className="tabular px-3 py-1.5 text-right">{pesos(f.neto)}</td>
+                </>
+              )}
+            </tr>
+          ))}
+        </tbody>
+        <tfoot>
+          <tr className="border-t-2 border-borde-fuerte bg-panel-alt font-semibold">
+            <td className="px-3 py-1.5">{filas.length} {filas.length === 1 ? 'grupo' : 'grupos'}</td>
+            <td className="tabular px-3 py-1.5 text-right">
+              {filas.reduce((s, f) => s + f.total, 0).toLocaleString('es-CL')}
+            </td>
+            <td className="tabular px-3 py-1.5 text-right">{totalCriticas.toLocaleString('es-CL')}</td>
+            {!compacta && (
+              <>
+                <td />
+                <td className="tabular px-3 py-1.5 text-right">
+                  {filas.reduce((s, f) => s + f.sinGestion, 0).toLocaleString('es-CL')}
+                </td>
+                <td className="tabular px-3 py-1.5 text-right">
+                  {pesos(filas.reduce((s, f) => s + f.neto, 0))}
+                </td>
+              </>
+            )}
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  )
+}
+
+type Vista = 'resumen' | 'detalle' | 'sucursal' | 'asesor' | 'analisis'
+
+/** Agrupa las OT por un campo y arma las cifras que se miran por grupo. */
+function agrupar(ots: OT[], campo: keyof OT) {
+  const mapa = new Map<string, OT[]>()
+  for (const o of ots) {
+    const k = String(o[campo] ?? '').trim() || '(sin asignar)'
+    const l = mapa.get(k)
+    if (l) l.push(o)
+    else mapa.set(k, [o])
+  }
+  return [...mapa.entries()]
+    .map(([nombre, filas]) => {
+      const dias = filas.map((o) => aNumero(o['DIAS APERTURA']))
+      return {
+        nombre,
+        total: filas.length,
+        criticas: filas.filter((o) => o.RANGO === '91 o más').length,
+        neto: filas.reduce((s, o) => s + aNumero(o.NETO), 0),
+        diasProm: dias.length ? Math.round(dias.reduce((a, b) => a + b, 0) / dias.length) : 0,
+        sinGestion: filas.filter((o) => !String(o['AVANCE - GESTIÓN'] ?? '').trim()).length,
+      }
+    })
+    // Por criticas primero: es el orden en que conviene atacarlas.
+    .sort((a, b) => b.criticas - a.criticas || b.total - a.total)
+}
+
 export default function Panel({ ots, puedeEditar }: { ots: OT[]; puedeEditar: boolean }) {
-  const [vista, setVista] = useState<'resumen' | 'detalle'>('resumen')
+  const [vista, setVista] = useState<Vista>('resumen')
   const [sucursal, setSucursal] = useState('')
   const [rango, setRango] = useState('')
   const [marca, setMarca] = useState('')
@@ -156,8 +260,14 @@ export default function Panel({ ots, puedeEditar }: { ots: OT[]; puedeEditar: bo
       </div>
 
       <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex gap-1" role="tablist">
-          {([['resumen', 'Resumen'], ['detalle', 'Detalle y edición']] as const).map(([id, txt]) => (
+        <div className="flex flex-wrap gap-1" role="tablist">
+          {([
+            ['resumen', 'Resumen'],
+            ['detalle', 'Detalle y edición'],
+            ['sucursal', 'Por sucursal'],
+            ['asesor', 'Por asesor'],
+            ['analisis', 'Análisis'],
+          ] as const).map(([id, txt]) => (
             <button
               key={id}
               role="tab"
@@ -198,7 +308,18 @@ export default function Panel({ ots, puedeEditar }: { ots: OT[]; puedeEditar: bo
         </div>
       </div>
 
-      {vista === 'resumen' ? (
+      {vista === 'sucursal' || vista === 'asesor' ? (
+        <TablaGrupos
+          filas={agrupar(filtradas, vista === 'sucursal' ? 'SUCURSAL' : 'ASESOR')}
+          etiqueta={vista === 'sucursal' ? 'Sucursal' : 'Asesor'}
+        />
+      ) : vista === 'analisis' ? (
+        <div className="grid gap-3 lg:grid-cols-3">
+          <TablaGrupos filas={agrupar(filtradas, 'MARCA')} etiqueta="Marca" compacta />
+          <TablaGrupos filas={agrupar(filtradas, 'CATEGORIA')} etiqueta="Categoría" compacta />
+          <TablaGrupos filas={agrupar(filtradas, 'TIPO VENTA')} etiqueta="Tipo de venta" compacta />
+        </div>
+      ) : vista === 'resumen' ? (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {RANGOS.map((r) => (
             <div key={r} className="rounded-lg border border-borde bg-panel p-3">
