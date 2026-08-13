@@ -61,6 +61,41 @@ export function pesos(n: number): string {
   return n.toLocaleString('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 })
 }
 
+/**
+ * Campos que necesitan Resumen, los filtros y la tabla de Detalle.
+ *
+ * El documento completo pesa 4,3 MB para 2.043 OT, y el tope de respuesta de una
+ * funcion serverless en Vercel es 4,5 MB: sin recortar, el modulo principal deja
+ * de cargar en produccion apenas entren unas OT mas.
+ *
+ * Cuatro campos se llevan el 53% del peso y ninguno se muestra aca:
+ *   repuestos_historico  918 KB   repuestos_actual  670 KB
+ *   anticipo             514 KB   repuestos_compras 180 KB
+ * Alimentan las pestañas de Repuestos y Documentos, que los piden aparte cuando
+ * se abren.
+ */
+export const CAMPOS_LISTADO = [
+  'FOLIO OT', 'SUCURSAL', 'RANGO', 'DIAS APERTURA', 'FECHA OT',
+  'TIPO VENTA', 'TIPO CLIENTE', 'MARCA', 'MODELO', 'PATENTE', 'ASESOR',
+  'ESTADO', 'NETO', 'GLOSA TRABAJO', 'CATEGORIA', 'OBSERVACION OT',
+  'NOTAS', 'AVANCE - GESTIÓN', 'ULTIMA_EDICION',
+] as const
+
+/** Deja solo los campos del listado. Reduce el envio a menos de la mitad. */
+export function aligerar(ots: OT[]): OT[] {
+  return ots.map((o) => {
+    // Se arma como registro suelto y se tipa al final: copiar campo a campo
+    // sobre OT choca con los tipos concretos de cada columna.
+    const r: Record<string, unknown> = { 'FOLIO OT': String(o['FOLIO OT'] ?? '') }
+    for (const c of CAMPOS_LISTADO) {
+      const v = o[c]
+      // Se omiten los vacios: en 2.043 filas, las claves sueltas suman.
+      if (v !== undefined && v !== null && v !== '') r[c] = v
+    }
+    return r as OT
+  })
+}
+
 /** Valores distintos de un campo, ordenados y sin vacios. */
 export function opcionesDe(ots: OT[], campo: keyof OT): string[] {
   const s = new Set<string>()

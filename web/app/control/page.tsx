@@ -1,7 +1,7 @@
 import Marco from '@/components/Marco'
 import { exigirUsuario } from '@/lib/sesion'
 import { leerDocumento } from '@/lib/supabase'
-import type { OT } from '@/lib/ots'
+import { aligerar, type OT } from '@/lib/ots'
 import Panel from './Panel'
 
 export const dynamic = 'force-dynamic'
@@ -36,7 +36,9 @@ export default async function Control() {
           </p>
         </div>
       ) : (
-        <Panel ots={ots} puedeEditar />
+        // Se envía solo lo que el listado usa: el documento completo no cabe en
+        // una respuesta de función serverless (ver CAMPOS_LISTADO).
+        <Panel ots={aligerar(ots)} puedeEditar />
       )}
     </Marco>
   )
