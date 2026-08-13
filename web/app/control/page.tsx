@@ -2,13 +2,21 @@ import Marco from '@/components/Marco'
 import { exigirUsuario } from '@/lib/sesion'
 import { leerDocumento } from '@/lib/supabase'
 import { aligerar, type OT } from '@/lib/ots'
-import Panel from './Panel'
+import Panel, { type Comentario, type Notificacion, type Ranking } from './Panel'
 
 export const dynamic = 'force-dynamic'
 
 export default async function Control() {
   const usuario = await exigirUsuario('puede_control')
-  const doc = await leerDocumento<{ ots?: OT[]; fecha_actualizacion?: string }>('datos_dashboard.json')
+
+  // Los tres documentos de apoyo son livianos (24-59 KB) y se piden en paralelo
+  // con el listado, que es el que manda en el tiempo de carga.
+  const [doc, comentarios, notificaciones, ranking] = await Promise.all([
+    leerDocumento<{ ots?: OT[]; fecha_actualizacion?: string }>('datos_dashboard.json'),
+    leerDocumento<{ comentarios?: Comentario[] }>('comentarios_log.json'),
+    leerDocumento<{ notificaciones?: Notificacion[] }>('notificaciones.json'),
+    leerDocumento<Ranking>('ranking_cierres.json'),
+  ])
   const todas = doc?.ots ?? []
 
   // Mismo criterio que el resto de la app: con sucursales asignadas, solo esas.
@@ -38,7 +46,16 @@ export default async function Control() {
       ) : (
         // Se envía solo lo que el listado usa: el documento completo no cabe en
         // una respuesta de función serverless (ver CAMPOS_LISTADO).
-        <Panel ots={aligerar(ots)} puedeEditar />
+        <Panel
+          ots={aligerar(ots)}
+          puedeEditar
+          comentarios={comentarios?.comentarios ?? []}
+          notificaciones={(notificaciones?.notificaciones ?? []).filter(
+            (n) => (n.destinatario ?? '').toLowerCase() === usuario.email.toLowerCase(),
+          )}
+          ranking={ranking ?? null}
+          usuarioEmail={usuario.email}
+        />
       )}
     </Marco>
   )

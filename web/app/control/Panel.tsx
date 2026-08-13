@@ -10,6 +10,43 @@ type Cambios = Record<string, Partial<Record<ColumnaEditable, string>>>
 
 const POR_PAGINA = 50
 
+/** Lista de fichas, compartida por Comentarios, Notificaciones y Buscar cliente.
+ *  Son el mismo objeto visual: un título, una línea de contexto y un texto. */
+function Lista({
+  filas,
+  vacio,
+  pie,
+}: {
+  filas: Array<{ clave: string; titulo: string; meta: string; cuerpo: string; destacado?: boolean }>
+  vacio: string
+  pie?: string
+}) {
+  if (filas.length === 0) {
+    return <p className="rounded-lg border border-borde bg-panel p-6 text-texto-suave">{vacio}</p>
+  }
+  return (
+    <>
+      <ul className="grid gap-2">
+        {filas.map((f) => (
+          <li
+            key={f.clave}
+            className={`rounded-lg border bg-panel p-3 ${
+              f.destacado ? 'border-azul-500 bg-azul-100/30' : 'border-borde'
+            }`}
+          >
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <strong className="tabular">{f.titulo}</strong>
+              <span className="text-texto-tenue">{f.meta}</span>
+            </div>
+            {f.cuerpo && <p className="mt-1 whitespace-pre-wrap text-texto-suave">{f.cuerpo}</p>}
+          </li>
+        ))}
+      </ul>
+      {pie && <p className="mt-2 text-texto-tenue">{pie}</p>}
+    </>
+  )
+}
+
 type Grupo = ReturnType<typeof agrupar>[number]
 
 /** Tabla de agrupación, compartida por Por sucursal, Por asesor y Análisis. */
@@ -87,7 +124,26 @@ function TablaGrupos({
   )
 }
 
-type Vista = 'resumen' | 'detalle' | 'sucursal' | 'asesor' | 'analisis'
+export type Comentario = { folio_ot?: string; autor?: string; fecha?: string; comentario?: string }
+export type Notificacion = {
+  id?: string
+  remitente?: string
+  destinatario?: string
+  folio_ot?: string
+  extracto?: string
+  fecha?: string
+  leida?: boolean
+}
+export type Ranking = {
+  fecha_generacion?: string
+  periodo_desde?: string
+  total_ots_90mas?: number
+  por_asesor?: Array<{ ASESOR?: string; total?: number; dias_promedio?: number; dias_max?: number }>
+}
+
+type Vista =
+  | 'resumen' | 'detalle' | 'sucursal' | 'asesor' | 'analisis'
+  | 'comentarios' | 'notificaciones' | 'ranking' | 'cliente'
 
 /** Agrupa las OT por un campo y arma las cifras que se miran por grupo. */
 function agrupar(ots: OT[], campo: keyof OT) {
@@ -114,8 +170,25 @@ function agrupar(ots: OT[], campo: keyof OT) {
     .sort((a, b) => b.criticas - a.criticas || b.total - a.total)
 }
 
-export default function Panel({ ots, puedeEditar }: { ots: OT[]; puedeEditar: boolean }) {
+export default function Panel({
+  ots,
+  puedeEditar,
+  comentarios = [],
+  notificaciones = [],
+  ranking = null,
+  usuarioEmail = '',
+}: {
+  ots: OT[]
+  puedeEditar: boolean
+  comentarios?: Comentario[]
+  notificaciones?: Notificacion[]
+  ranking?: Ranking | null
+  usuarioEmail?: string
+}) {
   const [vista, setVista] = useState<Vista>('resumen')
+  const [notifs, setNotifs] = useState<Notificacion[]>(notificaciones)
+  const [clienteQ, setClienteQ] = useState('')
+  const sinLeer = notifs.filter((n) => !n.leida).length
   const [sucursal, setSucursal] = useState('')
   const [rango, setRango] = useState('')
   const [marca, setMarca] = useState('')
@@ -208,6 +281,30 @@ export default function Panel({ ots, puedeEditar }: { ots: OT[]; puedeEditar: bo
     }
   }
 
+  /** Marca como leídas las notificaciones propias. Optimista: si el servidor
+   *  falla se revierte, para no dejar el contador mintiendo. */
+  async function marcarLeidas() {
+    const previas = notifs
+    setNotifs((prev) => prev.map((n) => ({ ...n, leida: true })))
+    try {
+      const r = await fetch('/api/notificaciones', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ids: previas.filter((n) => !n.leida).map((n) => n.id) }),
+      })
+      const j = (await r.json()) as { ok: boolean; motivo?: string }
+      if (!j.ok) {
+        setNotifs(previas)
+        setError(true)
+        setAviso(j.motivo ?? 'No se pudo marcar como leídas.')
+      }
+    } catch {
+      setNotifs(previas)
+      setError(true)
+      setAviso('No se pudo conectar.')
+    }
+  }
+
   function limpiar() {
     setSucursal(''); setRango(''); setMarca(''); setAsesor(''); setCategoria(''); setBusqueda('')
     setPagina(0)
@@ -267,6 +364,10 @@ export default function Panel({ ots, puedeEditar }: { ots: OT[]; puedeEditar: bo
             ['sucursal', 'Por sucursal'],
             ['asesor', 'Por asesor'],
             ['analisis', 'Análisis'],
+            ['comentarios', 'Comentarios'],
+            ['notificaciones', sinLeer ? `Notificaciones (${sinLeer})` : 'Notificaciones'],
+            ['ranking', 'Ranking +90d'],
+            ['cliente', 'Buscar cliente'],
           ] as const).map(([id, txt]) => (
             <button
               key={id}
@@ -308,7 +409,132 @@ export default function Panel({ ots, puedeEditar }: { ots: OT[]; puedeEditar: bo
         </div>
       </div>
 
-      {vista === 'sucursal' || vista === 'asesor' ? (
+      {vista === 'comentarios' ? (
+        <Lista
+          vacio="Todavía no hay comentarios registrados."
+          filas={comentarios
+            .slice()
+            .reverse()
+            .filter((c) => {
+              const q = busqueda.trim().toLowerCase()
+              return !q || [c.folio_ot, c.autor, c.comentario].some((v) =>
+                String(v ?? '').toLowerCase().includes(q))
+            })
+            .slice(0, 300)
+            .map((c, i) => ({
+              clave: `${c.folio_ot}-${c.fecha}-${i}`,
+              titulo: `OT ${c.folio_ot ?? '—'}`,
+              meta: `${c.autor ?? ''} · ${c.fecha ?? ''}`,
+              cuerpo: c.comentario ?? '',
+            }))}
+          pie={`${comentarios.length} comentarios en total · se muestran los 300 más recientes`}
+        />
+      ) : vista === 'notificaciones' ? (
+        <>
+          <div className="mb-2 flex items-center gap-3">
+            <span className="text-texto-suave">
+              {notifs.length === 0
+                ? 'No tienes notificaciones'
+                : `${sinLeer} sin leer de ${notifs.length}`}
+            </span>
+            {sinLeer > 0 && (
+              <button
+                type="button"
+                onClick={marcarLeidas}
+                className="min-h-11 cursor-pointer rounded-md border border-borde-fuerte px-3
+                           transition-colors duration-150 hover:border-azul-700 hover:text-azul-700"
+              >
+                Marcar todas como leídas
+              </button>
+            )}
+          </div>
+          <Lista
+            vacio="No tienes notificaciones."
+            filas={notifs
+              .slice()
+              .reverse()
+              .map((n, i) => ({
+                clave: n.id ?? `${n.fecha}-${i}`,
+                titulo: `OT ${n.folio_ot ?? '—'}`,
+                meta: `${n.remitente ?? ''} · ${n.fecha ?? ''}`,
+                cuerpo: n.extracto ?? '',
+                destacado: !n.leida,
+              }))}
+          />
+        </>
+      ) : vista === 'ranking' ? (
+        !ranking?.por_asesor?.length ? (
+          <p className="rounded-lg border border-borde bg-panel p-6 text-texto-suave">
+            Todavía no hay ranking de cierres. Lo genera la consolidación diaria.
+          </p>
+        ) : (
+          <>
+            <p className="mb-2 text-texto-suave">
+              {ranking.total_ots_90mas ?? 0} OT de más de 90 días cerradas
+              {ranking.periodo_desde ? ` desde ${ranking.periodo_desde}` : ''}
+              {ranking.fecha_generacion ? ` · generado ${ranking.fecha_generacion}` : ''}
+            </p>
+            <div className="overflow-x-auto rounded-lg border border-borde bg-panel">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-azul-800 text-left text-white">
+                    {['#', 'Asesor', 'Cerradas', 'Días promedio', 'Día más antiguo'].map((h) => (
+                      <th key={h} className="px-3 py-2 font-semibold">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {ranking.por_asesor.map((a, i) => (
+                    <tr key={a.ASESOR ?? i} className="border-t border-borde hover:bg-panel-alt">
+                      <td className="tabular px-3 py-1.5 text-texto-tenue">{i + 1}</td>
+                      <td className="px-3 py-1.5">{a.ASESOR ?? '—'}</td>
+                      <td className="tabular px-3 py-1.5 text-right font-semibold">{a.total ?? 0}</td>
+                      <td className="tabular px-3 py-1.5 text-right">{a.dias_promedio ?? '—'}</td>
+                      <td className="tabular px-3 py-1.5 text-right">{a.dias_max ?? '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )
+      ) : vista === 'cliente' ? (
+        <>
+          <label className="mb-3 flex max-w-lg flex-col">
+            <span className="text-texto-suave">Patente, cliente o folio</span>
+            <input
+              type="search"
+              value={clienteQ}
+              onChange={(e) => setClienteQ(e.target.value)}
+              placeholder="Escribe al menos 3 caracteres…"
+              className={sel}
+              autoFocus
+            />
+          </label>
+          {clienteQ.trim().length < 3 ? (
+            <p className="text-texto-tenue">
+              La búsqueda recorre todas las OT visibles, no solo las filtradas.
+            </p>
+          ) : (
+            <Lista
+              vacio="Ninguna OT coincide."
+              filas={ots
+                .filter((o) => {
+                  const q = clienteQ.trim().toLowerCase()
+                  return [o.PATENTE, o['FOLIO OT'], o.MODELO, o.ASESOR, o['GLOSA TRABAJO']].some((v) =>
+                    String(v ?? '').toLowerCase().includes(q))
+                })
+                .slice(0, 100)
+                .map((o) => ({
+                  clave: o['FOLIO OT'],
+                  titulo: `${o.PATENTE || 's/patente'} · OT ${o['FOLIO OT']}`,
+                  meta: `${o.SUCURSAL ?? ''} · ${o.MARCA ?? ''} ${o.MODELO ?? ''} · ${o.ASESOR ?? ''} · ${o.RANGO ?? ''}`,
+                  cuerpo: String(o['GLOSA TRABAJO'] ?? ''),
+                }))}
+            />
+          )}
+        </>
+      ) : vista === 'sucursal' || vista === 'asesor' ? (
         <TablaGrupos
           filas={agrupar(filtradas, vista === 'sucursal' ? 'SUCURSAL' : 'ASESOR')}
           etiqueta={vista === 'sucursal' ? 'Sucursal' : 'Asesor'}
