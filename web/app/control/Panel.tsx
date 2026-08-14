@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import {
-  COLUMNAS_EDITABLES, COLOR_RANGO, RANGOS, aNumero, opcionesDe, pesos,
+  COLUMNAS_EDITABLES, COLOR_RANGO, RANGOS, aDecimal, aNumero, opcionesDe, pesos,
   type ColumnaEditable, type OT,
 } from '@/lib/ots'
 
@@ -144,6 +144,35 @@ export type Ranking = {
 type Vista =
   | 'resumen' | 'detalle' | 'sucursal' | 'asesor' | 'analisis'
   | 'comentarios' | 'notificaciones' | 'ranking' | 'cliente'
+  | 'repuestos' | 'facturas'
+
+type Repuesto = {
+  vale?: string
+  producto?: string
+  descripcion?: string
+  cantidad?: string | number
+  costo_unitario?: string | number
+  costo_total?: string | number
+}
+type FilaRepuestos = {
+  folio: string
+  sucursal: string
+  patente: string
+  asesor: string
+  rango: string
+  repuestos: Repuesto[]
+}
+type FilaFactura = {
+  folio: string
+  sucursal: string
+  patente: string
+  asesor: string
+  neto: number | string
+  factura: string
+  fechaFactura: string
+  anticipo: number
+  tieneSaldo: boolean
+}
 
 /** Agrupa las OT por un campo y arma las cifras que se miran por grupo. */
 function agrupar(ots: OT[], campo: keyof OT) {
@@ -189,6 +218,35 @@ export default function Panel({
   const [notifs, setNotifs] = useState<Notificacion[]>(notificaciones)
   const [clienteQ, setClienteQ] = useState('')
   const sinLeer = notifs.filter((n) => !n.leida).length
+
+  // Repuestos y Facturas X no viajan con el listado (son 678 KB y 13 KB extra).
+  // Se piden la primera vez que se abre la pestaña y quedan en memoria.
+  const [repuestos, setRepuestos] = useState<FilaRepuestos[] | null>(null)
+  const [facturas, setFacturas] = useState<FilaFactura[] | null>(null)
+  const [cargandoExtra, setCargandoExtra] = useState(false)
+
+  async function abrirVista(v: Vista) {
+    setVista(v)
+    const yaEsta = (v === 'repuestos' && repuestos) || (v === 'facturas' && facturas)
+    if ((v !== 'repuestos' && v !== 'facturas') || yaEsta) return
+    setCargandoExtra(true)
+    try {
+      const r = await fetch(`/api/ots/extra?vista=${v}`)
+      const j = (await r.json()) as { ok: boolean; filas?: unknown[]; motivo?: string }
+      if (j.ok) {
+        if (v === 'repuestos') setRepuestos(j.filas as FilaRepuestos[])
+        else setFacturas(j.filas as FilaFactura[])
+      } else {
+        setError(true)
+        setAviso(j.motivo ?? 'No se pudo cargar.')
+      }
+    } catch {
+      setError(true)
+      setAviso('No se pudo conectar.')
+    } finally {
+      setCargandoExtra(false)
+    }
+  }
   const [sucursal, setSucursal] = useState('')
   const [rango, setRango] = useState('')
   const [marca, setMarca] = useState('')
@@ -368,12 +426,14 @@ export default function Panel({
             ['notificaciones', sinLeer ? `Notificaciones (${sinLeer})` : 'Notificaciones'],
             ['ranking', 'Ranking +90d'],
             ['cliente', 'Buscar cliente'],
+            ['repuestos', 'Repuestos'],
+            ['facturas', 'Facturas X'],
           ] as const).map(([id, txt]) => (
             <button
               key={id}
               role="tab"
               aria-selected={vista === id}
-              onClick={() => setVista(id)}
+              onClick={() => abrirVista(id)}
               className={`min-h-11 cursor-pointer rounded-md px-4 font-medium transition-colors duration-150 ${
                 vista === id
                   ? 'bg-azul-700 text-white'
@@ -409,7 +469,107 @@ export default function Panel({
         </div>
       </div>
 
-      {vista === 'comentarios' ? (
+      {vista === 'repuestos' ? (
+        cargandoExtra ? (
+          <p className="text-texto-suave">Cargando repuestos…</p>
+        ) : !repuestos?.length ? (
+          <p className="rounded-lg border border-borde bg-panel p-6 text-texto-suave">
+            No hay OT con repuestos pendientes.
+          </p>
+        ) : (
+          <>
+            <p className="mb-2 text-texto-suave">
+              {repuestos.length} OT con repuestos ·{' '}
+              {pesos(repuestos.reduce((s, f) =>
+                s + f.repuestos.reduce((t, r) => t + aDecimal(r.costo_total), 0), 0))} en vales
+            </p>
+            <div className="overflow-x-auto rounded-lg border border-borde bg-panel">
+              <table className="w-max min-w-full border-collapse">
+                <thead>
+                  <tr className="bg-azul-800 text-left text-white">
+                    {['Folio', 'Sucursal', 'Patente', 'Asesor', 'Vale', 'Producto',
+                      'Descripción', 'Cant.', 'Costo total'].map((h) => (
+                      <th key={h} className="whitespace-nowrap px-3 py-2 font-semibold">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {repuestos.flatMap((f) =>
+                    f.repuestos.map((r, i) => (
+                      <tr key={`${f.folio}-${r.vale}-${i}`} className="border-t border-borde hover:bg-panel-alt">
+                        {/* El folio solo se repite en la primera línea de cada OT:
+                            una OT con 6 repuestos no son 6 OT distintas. */}
+                        <td className="tabular whitespace-nowrap px-3 py-1.5 font-semibold">
+                          {i === 0 ? f.folio : ''}
+                        </td>
+                        <td className="whitespace-nowrap px-3 py-1.5">{i === 0 ? f.sucursal : ''}</td>
+                        <td className="tabular whitespace-nowrap px-3 py-1.5">{i === 0 ? f.patente : ''}</td>
+                        <td className="whitespace-nowrap px-3 py-1.5">{i === 0 ? f.asesor : ''}</td>
+                        <td className="tabular whitespace-nowrap px-3 py-1.5">{r.vale}</td>
+                        <td className="tabular whitespace-nowrap px-3 py-1.5">{r.producto}</td>
+                        <td className="px-3 py-1.5">{r.descripcion}</td>
+                        <td className="tabular px-3 py-1.5 text-right">{r.cantidad}</td>
+                        <td className="tabular whitespace-nowrap px-3 py-1.5 text-right">
+                          {pesos(aDecimal(r.costo_total))}
+                        </td>
+                      </tr>
+                    )),
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )
+      ) : vista === 'facturas' ? (
+        cargandoExtra ? (
+          <p className="text-texto-suave">Cargando facturas…</p>
+        ) : !facturas?.length ? (
+          <p className="rounded-lg border border-borde bg-panel p-6 text-texto-suave">
+            No hay OT con factura de cliente emitida.
+          </p>
+        ) : (
+          <>
+            <p className="mb-2 text-texto-suave">
+              {facturas.length} OT facturadas ·{' '}
+              {facturas.filter((f) => f.tieneSaldo).length} con anticipo disponible
+            </p>
+            <div className="overflow-x-auto rounded-lg border border-borde bg-panel">
+              <table className="w-max min-w-full border-collapse">
+                <thead>
+                  <tr className="bg-azul-800 text-left text-white">
+                    {['Folio', 'Sucursal', 'Patente', 'Asesor', 'Factura', 'Fecha factura',
+                      'Neto', 'Anticipo'].map((h) => (
+                      <th key={h} className="whitespace-nowrap px-3 py-2 font-semibold">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {facturas.map((f) => (
+                    <tr key={f.folio} className="border-t border-borde hover:bg-panel-alt">
+                      <td className="tabular whitespace-nowrap px-3 py-1.5 font-semibold">{f.folio}</td>
+                      <td className="whitespace-nowrap px-3 py-1.5">{f.sucursal}</td>
+                      <td className="tabular whitespace-nowrap px-3 py-1.5">{f.patente}</td>
+                      <td className="whitespace-nowrap px-3 py-1.5">{f.asesor}</td>
+                      <td className="tabular whitespace-nowrap px-3 py-1.5">{f.factura}</td>
+                      <td className="tabular whitespace-nowrap px-3 py-1.5">{f.fechaFactura || '—'}</td>
+                      <td className="tabular whitespace-nowrap px-3 py-1.5 text-right">
+                        {pesos(aNumero(f.neto))}
+                      </td>
+                      <td className="tabular whitespace-nowrap px-3 py-1.5 text-right">
+                        {/* El anticipo se destaca solo si queda saldo: es lo que
+                            se puede aplicar a la factura. */}
+                        <span className={f.tieneSaldo ? 'font-semibold text-exito' : 'text-texto-tenue'}>
+                          {pesos(f.anticipo)}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )
+      ) : vista === 'comentarios' ? (
         <Lista
           vacio="Todavía no hay comentarios registrados."
           filas={comentarios

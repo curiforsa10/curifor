@@ -49,11 +49,29 @@ export const COLOR_RANGO: Record<string, string> = {
   '0-30': 'bg-green-700',
 }
 
-/** Numero desde un campo que puede venir como texto con separadores. */
+/**
+ * OJO: el documento trae DOS formatos numericos distintos y hay que usar la
+ * funcion que corresponde a cada campo.
+ *
+ *   NETO         '172.316'          el punto separa miles  -> 172.316
+ *   costo_total  '108464.14967009'  el punto es decimal    -> 108.464
+ *
+ * Aplicar el criterio chileno a los costos de repuestos los multiplica por
+ * 10^8: los vales de 881 OT sumaban 3.782 billones de pesos.
+ */
+
+/** Campos de la planilla (NETO, montos): el punto separa miles. */
 export function aNumero(v: unknown): number {
   if (typeof v === 'number') return Number.isFinite(v) ? v : 0
   const s = String(v ?? '').replace(/\./g, '').replace(/,/g, '.').replace(/[^\d.-]/g, '')
   const n = Number.parseFloat(s)
+  return Number.isFinite(n) ? n : 0
+}
+
+/** Costos de repuestos: vienen con punto decimal, tal como los da el sistema. */
+export function aDecimal(v: unknown): number {
+  if (typeof v === 'number') return Number.isFinite(v) ? v : 0
+  const n = Number.parseFloat(String(v ?? '').replace(/[^\d.-]/g, ''))
   return Number.isFinite(n) ? n : 0
 }
 
