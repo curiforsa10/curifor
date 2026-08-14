@@ -17,11 +17,24 @@ import { leerDocumento } from './supabase'
 export const COOKIE_SESION = 'curifor_sesion'
 const HORAS_SESION = 12
 
+/**
+ * Quién entra a Administración. En app.py estaba escrito a mano en el código;
+ * acá sale de una variable para poder cambiarlo sin tocar el fuente (y para
+ * poder probarlo). El default es el mismo de siempre.
+ */
+export const ADMIN_EMAIL = (process.env.ADMIN_EMAIL ?? 'cjerez@curifor.com').toLowerCase()
+
+export function esAdmin(u: Usuario | null | undefined): boolean {
+  return Boolean(u && (u.email ?? '').toLowerCase() === ADMIN_EMAIL)
+}
+
 export type Usuario = {
   email: string
   nombre: string
   activo: boolean
   temp_pwd?: boolean
+  creado?: string
+  ultimo_login?: string
   sucursal_home?: string
   sucursales_permitidas?: string[]
   password_hash?: string

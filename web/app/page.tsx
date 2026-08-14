@@ -1,6 +1,6 @@
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
-import { leerSesion, buscarUsuario, COOKIE_SESION, type Usuario } from '@/lib/auth'
+import { leerSesion, buscarUsuario, esAdmin, COOKIE_SESION, type Usuario } from '@/lib/auth'
 
 /**
  * Módulos de la app, con el permiso que los habilita (mismos flags que app.py).
@@ -36,6 +36,7 @@ export default async function Inicio() {
   if (!usuario || usuario.activo === false) redirect('/login')
 
   const visibles = MODULOS.filter((m) => usuario[m.permiso] === true)
+  const admin = esAdmin(usuario)
 
   return (
     <div className="min-h-dvh">
@@ -95,6 +96,20 @@ export default async function Inicio() {
                   </a>
                 </li>
               ),
+            )}
+            {admin && (
+              <li>
+                <a
+                  href="/admin"
+                  className="block rounded-lg border border-azul-500 bg-panel p-4
+                             transition-colors duration-150 hover:border-azul-700"
+                >
+                  <span className="font-semibold text-azul-800">Administración</span>
+                  <span className="mt-0.5 block text-texto-suave">
+                    Usuarios, permisos y auditoría
+                  </span>
+                </a>
+              </li>
             )}
           </ul>
         )}
