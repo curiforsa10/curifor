@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import crypto from 'node:crypto'
 import { cookies } from 'next/headers'
-import { leerSesion, buscarUsuario, hashPassword, esAdmin, ADMIN_EMAIL, COOKIE_SESION, type Usuario } from '@/lib/auth'
+import { leerSesion, buscarUsuario, hashPassword, esAdmin, ADMIN_EMAILS, COOKIE_SESION, type Usuario } from '@/lib/auth'
 import { leerDocumento, guardarDocumento } from '@/lib/supabase'
 
 const DOC = 'usuarios_curifor.json'
@@ -58,9 +58,9 @@ export async function POST(req: Request) {
     case 'activo':
       // El admin no puede desactivarse a sí mismo: quedaría nadie con acceso
       // a esta pantalla y habría que arreglarlo a mano en la base.
-      if (correo === ADMIN_EMAIL && accion.valor === false) {
+      if (ADMIN_EMAILS.includes(correo) && accion.valor === false) {
         return NextResponse.json(
-          { ok: false, motivo: 'No puedes desactivar tu propia cuenta de administrador.' },
+          { ok: false, motivo: 'No se puede desactivar una cuenta de administrador.' },
           { status: 400 },
         )
       }

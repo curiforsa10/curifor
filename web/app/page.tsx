@@ -1,6 +1,6 @@
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
-import { leerSesion, buscarUsuario, esAdmin, COOKIE_SESION, type Usuario } from '@/lib/auth'
+import { leerSesion, buscarUsuario, esAdmin, ADMIN_EMAIL, COOKIE_SESION, type Usuario } from '@/lib/auth'
 import {
   IconoPlanificador, IconoControl, IconoCuentaFicha, IconoInformes, IconoCampanas,
   IconoLoaners, IconoIndicadores, IconoAsistente, IconoAdmin, IconoAnalisis,
@@ -102,7 +102,7 @@ export default async function Inicio() {
             <h2 className="mt-8 mb-1 font-semibold text-texto-suave">Sin acceso</h2>
             <p className="mb-3 text-texto-tenue">
               Existen en la plataforma pero tu cuenta no los tiene habilitados. Pedíselos a
-              {' '}<a href="mailto:cjerez@curifor.com" className="text-azul-700 hover:underline">cjerez@curifor.com</a>.
+              {' '}<a href={`mailto:${ADMIN_EMAIL}`} className="text-azul-700 hover:underline">{ADMIN_EMAIL}</a>.
             </p>
             <Grilla modulos={sinAcceso} apagado />
           </>

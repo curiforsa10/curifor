@@ -18,14 +18,27 @@ export const COOKIE_SESION = 'curifor_sesion'
 const HORAS_SESION = 12
 
 /**
- * Quién entra a Administración. En app.py estaba escrito a mano en el código;
- * acá sale de una variable para poder cambiarlo sin tocar el fuente (y para
- * poder probarlo). El default es el mismo de siempre.
+ * Quiénes entran a Administración.
+ *
+ * En app.py era un solo correo escrito a mano. Acá admite varios separados por
+ * coma y sale de ADMIN_EMAIL, con default a los dos que corresponden: Ignacio,
+ * que es de quien es esta plataforma, y Cristóbal, que era el administrador en
+ * la app anterior. Con una lista, sumar o quitar a alguien no le quita el
+ * acceso a otro.
+ *
+ * Ser admin no es solo ver Administración: tambien abre todos los módulos sin
+ * depender de los flags de permiso (ver exigirUsuario).
  */
-export const ADMIN_EMAIL = (process.env.ADMIN_EMAIL ?? 'cjerez@curifor.com').toLowerCase()
+export const ADMIN_EMAILS = (process.env.ADMIN_EMAIL ?? 'icalderon@curifor.com,cjerez@curifor.com')
+  .split(',')
+  .map((s) => s.trim().toLowerCase())
+  .filter(Boolean)
+
+/** El primero de la lista: a quién dirigir los pedidos de acceso. */
+export const ADMIN_EMAIL = ADMIN_EMAILS[0] ?? ''
 
 export function esAdmin(u: Usuario | null | undefined): boolean {
-  return Boolean(u && (u.email ?? '').toLowerCase() === ADMIN_EMAIL)
+  return Boolean(u && ADMIN_EMAILS.includes((u.email ?? '').toLowerCase()))
 }
 
 export type Usuario = {
