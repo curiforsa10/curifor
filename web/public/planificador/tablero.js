@@ -69,10 +69,23 @@ let COTIZ_PP = null;
 // codigo de la pauta no esta en ese bundle chico. 22/07/2026.
 let STOCK_FULL = null;
 (async function(){
-  if(!_STOCK_GZ) return;
   try{
     if(typeof DecompressionStream==='undefined') return;
-    const bin=Uint8Array.from(atob(_STOCK_GZ), c=>c.charCodeAt(0));
+    // El catalogo ya no viaja dentro del HTML: en Streamlit se inyectaban 9 MB
+    // de JSON en la pagina aunque nadie abriera Pre-picking. Ahora se pide a
+    // /api/stock, que lo manda comprimido (~0,69 MB) con el mismo formato, asi
+    // que el descompresor de abajo queda igual. Sin permiso de Pre-picking la
+    // ruta responde 403 y el catalogo simplemente no se carga.
+    let gzB64 = _STOCK_GZ;
+    if(!gzB64){
+      if(!PUEDE_PREPICK) return;
+      const r = await fetch('/api/stock');
+      if(!r.ok) return;
+      const j = await r.json();
+      if(!j || !j.ok || !j.gz) return;
+      gzB64 = j.gz;
+    }
+    const bin=Uint8Array.from(atob(gzB64), c=>c.charCodeAt(0));
     const ds=new DecompressionStream('gzip');
     const stream=new Blob([bin]).stream().pipeThrough(ds);
     const buf=await new Response(stream).arrayBuffer();
