@@ -1,0 +1,16 @@
+# Lo que NO se sube al desplegar.
+#
+# Vercel instala dependencias y compila en su lado, asi que mandarle el build y
+# los paquetes locales solo hace mas lento el deploy: son 423 MB de .next y
+# 459 MB de node_modules, casi 900 MB por subida.
+node_modules
+.next
+out
+
+# Secretos: las variables van en Settings > Environment Variables, no en el
+# paquete que se sube.
+.env
+.env.*
+
+.vercel
+*.tsbuildinfo
