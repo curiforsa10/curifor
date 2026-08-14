@@ -23,6 +23,7 @@ const MODULOS: Array<{
   { href: '/campanas', nombre: 'Campañas', detalle: 'Revisión Ford', permiso: 'puede_campanas' },
   { href: '/loaners', nombre: 'Loaners', detalle: 'Vehículos de cortesía', permiso: 'puede_loaners' },
   { href: '/indicadores', nombre: 'Indicadores', detalle: 'Power BI', permiso: 'puede_indicadores' },
+  { href: '/asistente', nombre: 'Asistente App', detalle: 'Consulta por lote de patentes o folios', permiso: 'puede_asistente_app' },
   { href: '/cotizador', nombre: 'Cotizador', detalle: 'Mantenciones por modelo', permiso: 'puede_cotizador', pendiente: true },
 ]
 
