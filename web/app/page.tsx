@@ -101,6 +101,20 @@ export default async function Inicio() {
             {admin && (
               <li>
                 <a
+                  href="/analisis"
+                  className="block rounded-lg border border-azul-500 bg-panel p-4
+                             transition-colors duration-150 hover:border-azul-700"
+                >
+                  <span className="font-semibold text-azul-800">Análisis de Gestión</span>
+                  <span className="mt-0.5 block text-texto-suave">
+                    Evolución de cierres por actualización
+                  </span>
+                </a>
+              </li>
+            )}
+            {admin && (
+              <li>
+                <a
                   href="/admin"
                   className="block rounded-lg border border-azul-500 bg-panel p-4
                              transition-colors duration-150 hover:border-azul-700"

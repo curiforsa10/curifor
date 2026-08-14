@@ -19,14 +19,16 @@ esquivar las limitaciones de los widgets — el Planificador entero.
 |---|---|
 | Login | ✅ |
 | Planificador | ✅ — incluye pre-picking, control de taller, producción, historial y programación |
-| Control y Gestión | ✅ 9 de 13 pestañas · faltan Documentos, Repuestos Pendientes, Facturas X y Admin |
+| Control y Gestión | ✅ 11 pestañas: Resumen, Detalle+edición, Por sucursal, Por asesor, Análisis, Comentarios, Notificaciones, Ranking, Buscar cliente, Repuestos, Facturas X |
 | Cuenta Ficha | ✅ |
 | Informes de Gestión | ✅ |
 | Campañas | ✅ |
 | Loaners | ✅ |
 | Indicadores | ✅ |
-| Cotizador | pendiente — sigue en Streamlit |
-| Análisis de Gestión | pendiente (solo admin) |
+| Asistente App | ✅ — consulta por lote |
+| Administración | ✅ — usuarios, permisos, auditoría (solo admin) |
+| Análisis de Gestión | ✅ — evolución de cierres (solo admin) |
+| Cotizador · Agenda de Taller · Recepción | fuera de alcance por ahora — siguen en Streamlit |
 
 ### Pesos de envío
 
