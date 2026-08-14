@@ -3,6 +3,11 @@ import { exigirUsuario } from '@/lib/sesion'
 import { leerDocumento } from '@/lib/supabase'
 import type { OT } from '@/lib/ots'
 
+// repuestos son 881 OT con su detalle: el default de 10 s del plan Hobby queda corto si
+// Supabase responde lento. 60 s es el maximo que admite el plan.
+export const maxDuration = 60
+
+
 /**
  * Datos de OT que el listado principal NO envía.
  *

@@ -3,6 +3,11 @@ import { exigirUsuario } from '@/lib/sesion'
 import { leerDocumento, guardarDocumento } from '@/lib/supabase'
 import { COLUMNAS_EDITABLES, type ColumnaEditable, type OT } from '@/lib/ots'
 
+// guardar relee las 2.043 OT antes de escribir: el default de 10 s del plan Hobby queda corto si
+// Supabase responde lento. 60 s es el maximo que admite el plan.
+export const maxDuration = 60
+
+
 const DOC = 'datos_dashboard.json'
 
 type Cambios = Record<string, Partial<Record<ColumnaEditable, string>>>

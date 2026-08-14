@@ -3,6 +3,11 @@ import zlib from 'node:zlib'
 import { exigirUsuario } from '@/lib/sesion'
 import { leerDocumento } from '@/lib/supabase'
 
+// el catalogo son 29.765 productos: el default de 10 s del plan Hobby queda corto si
+// Supabase responde lento. 60 s es el maximo que admite el plan.
+export const maxDuration = 60
+
+
 type Producto = { producto?: string; descripcion?: string; bodega?: string; stock?: number }
 
 /**

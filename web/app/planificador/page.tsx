@@ -9,6 +9,10 @@ import Tablero from './Tablero'
 
 export const dynamic = 'force-dynamic'
 
+// el Planificador junta agenda, tablero y produccion: el default de 10 s del plan Hobby queda corto si
+// Supabase responde lento. 60 s es el maximo que admite el plan.
+export const maxDuration = 60
+
 export default async function Planificador() {
   const sesion = leerSesion((await cookies()).get(COOKIE_SESION)?.value)
   if (!sesion) redirect('/login')

@@ -5,6 +5,10 @@ import Reportes from './Reportes'
 
 export const dynamic = 'force-dynamic'
 
+// Informes descomprime el gz de los reportes: el default de 10 s del plan Hobby queda corto si
+// Supabase responde lento. 60 s es el maximo que admite el plan.
+export const maxDuration = 60
+
 export default async function Informes() {
   // En app.py este módulo lo abre quien tiene Cuenta Ficha: no hay un flag
   // propio de informes en el modelo de usuarios.

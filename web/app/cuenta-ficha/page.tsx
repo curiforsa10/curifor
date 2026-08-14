@@ -5,6 +5,10 @@ import Clientes from './Clientes'
 
 export const dynamic = 'force-dynamic'
 
+// Cuenta Ficha descomprime 1,8 MB: el default de 10 s del plan Hobby queda corto si
+// Supabase responde lento. 60 s es el maximo que admite el plan.
+export const maxDuration = 60
+
 export default async function CuentaFicha() {
   const usuario = await exigirUsuario('puede_cuenta_ficha')
   const [{ clientes, resumen, actualizado }, revisados] = await Promise.all([

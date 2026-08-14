@@ -6,6 +6,10 @@ import Panel, { type Comentario, type Notificacion, type Ranking } from './Panel
 
 export const dynamic = 'force-dynamic'
 
+// Control trae el listado de 2.043 OT: el default de 10 s del plan Hobby queda corto si
+// Supabase responde lento. 60 s es el maximo que admite el plan.
+export const maxDuration = 60
+
 export default async function Control() {
   const usuario = await exigirUsuario('puede_control')
 
