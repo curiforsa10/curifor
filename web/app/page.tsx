@@ -2,16 +2,28 @@ import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { leerSesion, buscarUsuario, COOKIE_SESION, type Usuario } from '@/lib/auth'
 
-/** Módulos de la app, con el permiso que los habilita (mismos flags que app.py). */
-const MODULOS: Array<{ href: string; nombre: string; detalle: string; permiso: keyof Usuario }> = [
-  { href: '/planificador', nombre: 'Planificador', detalle: 'Tablero de taller, 5 días', permiso: 'puede_planificador' },
-  { href: '/prepicking', nombre: 'Pre-picking', detalle: 'Preparación de repuestos', permiso: 'puede_prepicking' },
-  { href: '/control', nombre: 'Control de OTs', detalle: 'Órdenes pendientes', permiso: 'puede_control' },
-  { href: '/cotizador', nombre: 'Cotizador', detalle: 'Mantenciones por modelo', permiso: 'puede_cotizador' },
-  { href: '/cuenta-ficha', nombre: 'Cuenta Ficha', detalle: 'Saldos e historial', permiso: 'puede_cuenta_ficha' },
+/**
+ * Módulos de la app, con el permiso que los habilita (mismos flags que app.py).
+ *
+ * `pendiente` marca los que todavía no se migran desde Streamlit. Se muestran
+ * apagados y sin enlace en vez de omitirlos: quien los usaba a diario necesita
+ * ver que existen y que faltan, no que desaparecieron sin explicación.
+ */
+const MODULOS: Array<{
+  href: string
+  nombre: string
+  detalle: string
+  permiso: keyof Usuario
+  pendiente?: boolean
+}> = [
+  { href: '/planificador', nombre: 'Planificador', detalle: 'Tablero de taller · pre-picking · producción', permiso: 'puede_planificador' },
+  { href: '/control', nombre: 'Control de OTs', detalle: 'Órdenes pendientes, edición y análisis', permiso: 'puede_control' },
+  { href: '/cuenta-ficha', nombre: 'Cuenta Ficha', detalle: 'Saldos e historial por cliente', permiso: 'puede_cuenta_ficha' },
+  { href: '/informes', nombre: 'Informes de Gestión', detalle: 'Reportes AG e IMOP Ford', permiso: 'puede_cuenta_ficha' },
   { href: '/campanas', nombre: 'Campañas', detalle: 'Revisión Ford', permiso: 'puede_campanas' },
   { href: '/loaners', nombre: 'Loaners', detalle: 'Vehículos de cortesía', permiso: 'puede_loaners' },
   { href: '/indicadores', nombre: 'Indicadores', detalle: 'Power BI', permiso: 'puede_indicadores' },
+  { href: '/cotizador', nombre: 'Cotizador', detalle: 'Mantenciones por modelo', permiso: 'puede_cotizador', pendiente: true },
 ]
 
 export default async function Inicio() {
@@ -58,18 +70,32 @@ export default async function Inicio() {
           </p>
         ) : (
           <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {visibles.map((m) => (
-              <li key={m.href}>
-                <a
-                  href={m.href}
-                  className="block rounded-lg border border-borde bg-panel p-4
-                             transition-colors duration-150 hover:border-azul-500"
+            {visibles.map((m) =>
+              m.pendiente ? (
+                <li
+                  key={m.href}
+                  className="rounded-lg border border-dashed border-borde-fuerte bg-panel-alt p-4"
+                  aria-disabled="true"
                 >
-                  <span className="font-semibold text-azul-800">{m.nombre}</span>
-                  <span className="mt-0.5 block text-texto-suave">{m.detalle}</span>
-                </a>
-              </li>
-            ))}
+                  <span className="font-semibold text-texto-tenue">{m.nombre}</span>
+                  <span className="mt-0.5 block text-texto-tenue">{m.detalle}</span>
+                  <span className="mt-1 block text-texto-tenue">
+                    Todavía en la app anterior — aún no migrado
+                  </span>
+                </li>
+              ) : (
+                <li key={m.href}>
+                  <a
+                    href={m.href}
+                    className="block rounded-lg border border-borde bg-panel p-4
+                               transition-colors duration-150 hover:border-azul-500"
+                  >
+                    <span className="font-semibold text-azul-800">{m.nombre}</span>
+                    <span className="mt-0.5 block text-texto-suave">{m.detalle}</span>
+                  </a>
+                </li>
+              ),
+            )}
           </ul>
         )}
       </main>
