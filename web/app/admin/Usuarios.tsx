@@ -72,6 +72,9 @@ export default function Usuarios({
   }
 
   const activos = usuarios.filter((u) => u.activo !== false).length
+  // Cuentas creadas desde /registro que esperan aprobación. Se avisan arriba
+  // porque, si no, quien se registró queda esperando sin que nadie se entere.
+  const pendientes = usuarios.filter((u) => u.activo === false)
   const btn = 'min-h-11 cursor-pointer rounded-md px-4 font-medium transition-colors duration-150'
 
   return (
@@ -96,6 +99,15 @@ export default function Usuarios({
           <span role="status" className={error ? 'text-peligro' : 'text-exito'}>{aviso}</span>
         )}
       </div>
+
+      {vista === 'usuarios' && pendientes.length > 0 && (
+        <p className="mb-3 rounded-lg border border-ambar bg-amber-50 px-4 py-2.5 text-ambar-700">
+          {pendientes.length === 1
+            ? '1 cuenta espera aprobación'
+            : `${pendientes.length} cuentas esperan aprobación`}
+          : {pendientes.map((u) => u.email).join(', ')}. Marcá «Activo» para habilitarlas.
+        </p>
+      )}
 
       {vista === 'auditoria' ? (
         <>

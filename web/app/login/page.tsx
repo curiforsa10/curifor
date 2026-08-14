@@ -116,8 +116,10 @@ export default function Login() {
             {enviando ? 'Ingresando…' : 'Ingresar'}
           </button>
 
-          <p className="mt-4 text-center text-texto-tenue">
-            Solo cuentas @curifor.com. Si no tienes acceso, pídelo a tu administrador.
+          <p className="mt-4 text-center text-texto-tenue">Solo cuentas @curifor.com.</p>
+          <p className="mt-3 text-center">
+            ¿No tienes cuenta?{' '}
+            <a href="/registro" className="text-azul-700 hover:underline">Crear una</a>
           </p>
         </form>
       </div>
