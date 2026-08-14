@@ -18,8 +18,28 @@ esquivar las limitaciones de los widgets — el Planificador entero.
 | Módulo | Estado |
 |---|---|
 | Login | ✅ |
-| Planificador | en curso |
-| Pre-picking, Control, Cotizador, Cuenta Ficha, Campañas, Loaners, Indicadores | pendientes |
+| Planificador | ✅ — incluye pre-picking, control de taller, producción, historial y programación |
+| Control y Gestión | ✅ 9 de 13 pestañas · faltan Documentos, Repuestos Pendientes, Facturas X y Admin |
+| Cuenta Ficha | ✅ |
+| Informes de Gestión | ✅ |
+| Campañas | ✅ |
+| Loaners | ✅ |
+| Indicadores | ✅ |
+| Cotizador | pendiente — sigue en Streamlit |
+| Análisis de Gestión | pendiente (solo admin) |
+
+### Pesos de envío
+
+Tres documentos no caben enteros en una respuesta de función serverless (tope
+4,5 MB en Vercel) y se recortan o se piden bajo demanda:
+
+| Documento | Completo | Se envía | Cómo |
+|---|---|---|---|
+| `datos_dashboard` | 4,11 MB | 0,81 MB | `aligerar()` deja solo `CAMPOS_LISTADO` |
+| `cuenta_ficha` | 1,8 MB | listado sin movimientos | detalle por `/api/cuenta-ficha?rut=` |
+| `stock_repuestos` | 9,4 MB | — | **pendiente**: hoy va vacío al Planificador |
+
+`cotizador_data` (1,1 MB) está en la misma situación que el stock.
 
 ## Cómo correr
 
